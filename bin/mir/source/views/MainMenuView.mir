@@ -1,0 +1,49 @@
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 10; @symbol_classdef = [MainMenuView,10,6,18]; @symbol_extends<0> = [WatchUi,10,27,34]; @symbol_extends<1> = [View,10,35,39]; ]
+class MainMenuView extends WatchUi.View {
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 12; @position = 16; @symbol_vardef = [_menu,12,16,21]; @symbol_type<0> = [WatchUi,12,25,32]; @symbol_type<1> = [Menu2,12,33,38]; ]
+    private
+    var _menu as WatchUi.Menu2;
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; ]
+    function initialize() as Void {
+_home_w5hacksphere_Projects_BreathCount_source_views_MainMenuView_mc_17_26_23_4_start:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc" 19 8 ]
+        symbol [ View %tmp.2 19 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 19 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc" 21 8 ]
+        %tmp.4 = self;
+        symbol [ makeMainMenu %tmp.5 21 16 28 ];
+        %tmp.5 = getv function %tmp.4 :makeMainMenu;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ _menu ? 21 8 13 ];
+        putv self :_menu %tmp.6;
+_home_w5hacksphere_Projects_BreathCount_source_views_MainMenuView_mc_17_26_23_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 26; @symbol_functiondef = [getMenu,26,14,21]; @symbol_return<0> = [WatchUi,26,27,34]; @symbol_return<1> = [Menu2,26,35,40]; ]
+    function getMenu() as WatchUi.Menu2 {
+_home_w5hacksphere_Projects_BreathCount_source_views_MainMenuView_mc_26_41_28_5_start:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc" 27 8 ]
+        symbol [ _menu %tmp.2 27 15 20 ];
+        %tmp.2 = getv ? :_menu;
+        ret %tmp.2;
+_home_w5hacksphere_Projects_BreathCount_source_views_MainMenuView_mc_26_41_28_5_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/MainMenuView.mc"; @line = 1; ]
+<init> {
+}

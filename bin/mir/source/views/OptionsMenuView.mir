@@ -1,0 +1,123 @@
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Application,2,13,24]; ]
+using Toybox.Application;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 10; @symbol_classdef = [OptionsMenuView,10,6,21]; @symbol_extends<0> = [WatchUi,10,30,37]; @symbol_extends<1> = [Menu2,10,38,43]; ]
+class OptionsMenuView extends WatchUi.Menu2 {
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
+    function initialize() as Void {
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_15_26_21_4_start:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 18 8 ]
+        symbol [ Menu2 %tmp.2 18 8 13 ];
+        %tmp.2 = getv ? :Menu2;
+        symbol [ initialize %tmp.3 18 14 24 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = newd 1;
+        %tmp.6 = const :title;
+        symbol [ title %tmp.6 18 29 34 const ];
+        %tmp.7 = "Options";
+        %tmp.8 = dup %tmp.4;
+        %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.9);
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 20 8 ]
+        %tmp.10 = self;
+        symbol [ loadMenu %tmp.11 20 8 16 ];
+        %tmp.11 = getv function %tmp.10 :loadMenu;
+        invoke %tmp.10 %tmp.11();
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_15_26_21_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 27; @symbol_functiondef = [onShow,27,13,19]; ]
+    function onShow() as Void {
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_27_30_32_4_start:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 29 8 ]
+        symbol [ Menu2 %tmp.2 29 8 13 ];
+        %tmp.2 = getv ? :Menu2;
+        symbol [ initialize %tmp.3 29 14 24 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = newd 1;
+        %tmp.6 = const :title;
+        symbol [ title %tmp.6 29 29 34 const ];
+        %tmp.7 = "Options";
+        %tmp.8 = dup %tmp.4;
+        %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.9);
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 31 8 ]
+        %tmp.10 = self;
+        symbol [ loadMenu %tmp.11 31 8 16 ];
+        %tmp.11 = getv function %tmp.10 :loadMenu;
+        invoke %tmp.10 %tmp.11();
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_27_30_32_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 37; @symbol_functiondef = [loadMenu,37,13,21]; ]
+    function loadMenu() as Void {
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_37_32_53_4_start:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 39 8 ]
+        [ "_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_37_32_53_4_start" "_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_37_32_53_4_stop" ]
+        %dailyCount.1 = local;
+        symbol [ dailyCount %dailyCount.1 39 12 22 ];
+        symbol [ Application %tmp.1 39 25 36 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 39 37 44 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ getValue %tmp.3 39 45 53 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "dailyBreathCount";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %dailyCount.1 %tmp.5;
+        symbol [ dailyCount %dailyCount.1 39 12 22 ];
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 41 8 ]
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_8_44_8_if_stmt:
+        %tmp.6 = lgetv %dailyCount.1;
+        symbol [ dailyCount %tmp.6 41 15 25 ];
+        symbol [ Lang %tmp.7 41 37 41 ];
+        %tmp.7 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.8 41 42 48 ];
+        %tmp.8 = getv %tmp.7 :Number;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        %tmp.10 = not %tmp.9;
+        bf %tmp.10 @_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_8_44_8_if_end;
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_8_44_8_if_true:
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_52_44_8_start:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 43 15 ]
+        %tmp.11 = 108;
+        lputv %dailyCount.1 %tmp.11;
+        symbol [ dailyCount %dailyCount.1 43 15 25 ];
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_52_44_8_stop:
+        goto @_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_8_44_8_if_end;
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_41_8_44_8_if_end:
+[ "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc" 47 8 ]
+        %tmp.12 = self;
+        symbol [ addItem %tmp.13 47 8 15 ];
+        %tmp.13 = getv function %tmp.12 :addItem;
+        symbol [ WatchUi %tmp.16 47 21 28 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.17 47 29 37 ];
+        %tmp.17 = getv function ? %tmp.16 :MenuItem;
+        %tmp.18 = "Daily Count";
+        %tmp.19 = lgetv %dailyCount.1;
+        symbol [ dailyCount %tmp.19 49 12 22 ];
+        symbol [ toString %tmp.20 49 23 31 ];
+        %tmp.20 = getv function %tmp.19 :toString;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.23 = const :setDailyCount;
+        symbol [ setDailyCount %tmp.23 50 13 26 const ];
+        %tmp.24 = newd 0;
+        %tmp.14 = newc %tmp.17 (%tmp.18, %tmp.21, %tmp.23, %tmp.24);
+        invoke %tmp.12 %tmp.13(%tmp.14);
+_home_w5hacksphere_Projects_BreathCount_source_views_OptionsMenuView_mc_37_32_53_4_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/OptionsMenuView.mc"; @line = 1; ]
+<init> {
+}
