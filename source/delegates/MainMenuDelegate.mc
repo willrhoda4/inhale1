@@ -24,9 +24,13 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
         
         System.println( "Menu item selected: " + id );
 
-        if ( id == :daily ) {
+        if ( id == :daily || id == :freestyle ) {
+           
+           
+            System.println( id + " mode selected - launching Timer" );
+            
 
-            var view     = new BreathCountView( :daily, null );
+            var view     = new BreathCountView( id, null );
             var delegate = new BreathCountDelegate( view );
             
             WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
@@ -35,9 +39,9 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
 
             System.println( "Custom mode selected - launching Picker" );
 
-            var defaultCount = Application.Storage.getValue( "dailyBreathCount" );
+            var defaultCount = Application.Storage.getValue( "customBreathCount" );
             
-            if ( !(defaultCount instanceof Lang.Number) ) {
+            if ( !( defaultCount instanceof Lang.Number ) ) {
                 defaultCount = 108; // Default
             }
 
@@ -48,23 +52,29 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
                 WatchUi.SLIDE_LEFT
             );
 
-        } else if (id == :freestyle) {
-            System.println("Freestyle mode selected - launching timer");
-            var view = new BreathCountView(:freestyle, null);
-            var delegate = new BreathCountDelegate(view);
-            WatchUi.pushView(view, delegate, WatchUi.SLIDE_LEFT);
-            // Still need logic within BreathCountView/Delegate for post-session input
+        } else if ( id == :freestyle ) {
 
-        } else if (id == :options) {
-            System.println("Options selected - launching Options Menu");
-            var view = new OptionsMenuView(); // Now OptionsMenuView IS the Menu2
+            System.println( "Freestyle mode selected - launching timer" );
+
+            var view     = new BreathCountView(     :freestyle, null );
+            var delegate = new BreathCountDelegate(  view            );
+            
+            WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
+
+        } else if ( id == :options ) {
+            
+            System.println( "Options selected - launching Options Menu" );
+
+            var view     = new OptionsMenuView(); // Now OptionsMenuView IS the Menu2
             var delegate = new OptionsMenuDelegate();
-            WatchUi.pushView(view, delegate, WatchUi.SLIDE_LEFT);
+            
+            WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
         }
     }
 
     function onBack() as Void {
-        System.println("Back pressed on main menu - Exiting");
+
+        System.println( "Back pressed on main menu - Exiting" );
         System.exit();
     }
 }

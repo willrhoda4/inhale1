@@ -27,6 +27,8 @@ class CustomPickerDelegate extends WatchUi.PickerDelegate {
 
             System.println( "Custom Count picked: " + selectedValue );
 
+            Application.Storage.setValue( "customBreathCount", selectedValue );
+
             var options  =     { :breathCount => selectedValue };
             var view     = new BreathCountView( :custom, options );
             var delegate = new BreathCountDelegate( view );
