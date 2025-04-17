@@ -1,10 +1,10 @@
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
 using Toybox.WatchUi;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc"; @line = 9; @symbol_functiondef = [makeMainMenu,9,9,21]; @symbol_return<0> = [WatchUi,9,27,34]; @symbol_return<1> = [Menu2,9,35,40]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc"; @line = 9; @symbol_functiondef = [makeMainMenu,9,9,21]; @symbol_return<0> = [WatchUi,9,27,34]; @symbol_return<1> = [Menu2,9,35,40]; ]
 function makeMainMenu() as WatchUi.Menu2 {
-_home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc" 11 8 ]
-    [ "_home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_start" "_home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_stop" ]
+_home_w5hacksphere_Projects_inhale1_source_funcs_makeMainMenu_mc_9_41_20_0_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 11 8 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_makeMainMenu_mc_9_41_20_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_makeMainMenu_mc_9_41_20_0_stop" ]
     %menu.1 = local;
     symbol [ menu %menu.1 11 12 16 ];
     symbol [ WatchUi %tmp.3 11 23 30 ];
@@ -20,7 +20,7 @@ _home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_s
     %tmp.1 = newc %tmp.4 (%tmp.10);
     lputv %menu.1 %tmp.1;
     symbol [ menu %menu.1 11 12 16 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc" 13 12 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 13 12 ]
     %tmp.11 = lgetv %menu.1;
     symbol [ menu %tmp.11 13 12 16 ];
     symbol [ addItem %tmp.12 13 17 24 ];
@@ -30,13 +30,13 @@ _home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_s
     symbol [ MenuItem %tmp.16 13 38 46 ];
     %tmp.16 = getv function ? %tmp.15 :MenuItem;
     %tmp.17 = "Daily";
-    %tmp.18 = "Use Stored Count";
+    %tmp.18 = "used stored count";
     %tmp.20 = const :daily;
-    symbol [ daily %tmp.20 13 82 87 const ];
+    symbol [ daily %tmp.20 13 83 88 const ];
     %tmp.21 = newd 0;
     %tmp.13 = newc %tmp.16 (%tmp.17, %tmp.18, %tmp.20, %tmp.21);
     invoke %tmp.11 %tmp.12(%tmp.13);
-[ "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc" 14 12 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 14 12 ]
     %tmp.22 = lgetv %menu.1;
     symbol [ menu %tmp.22 14 12 16 ];
     symbol [ addItem %tmp.23 14 17 24 ];
@@ -46,13 +46,13 @@ _home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_s
     symbol [ MenuItem %tmp.27 14 38 46 ];
     %tmp.27 = getv function ? %tmp.26 :MenuItem;
     %tmp.28 = "Custom";
-    %tmp.29 = "Set Count First";
+    %tmp.29 = "set count first";
     %tmp.31 = const :custom;
-    symbol [ custom %tmp.31 14 82 88 const ];
+    symbol [ custom %tmp.31 14 83 89 const ];
     %tmp.32 = newd 0;
     %tmp.24 = newc %tmp.27 (%tmp.28, %tmp.29, %tmp.31, %tmp.32);
     invoke %tmp.22 %tmp.23(%tmp.24);
-[ "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc" 15 12 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 15 12 ]
     %tmp.33 = lgetv %menu.1;
     symbol [ menu %tmp.33 15 12 16 ];
     symbol [ addItem %tmp.34 15 17 24 ];
@@ -62,13 +62,13 @@ _home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_s
     symbol [ MenuItem %tmp.38 15 38 46 ];
     %tmp.38 = getv function ? %tmp.37 :MenuItem;
     %tmp.39 = "Freestyle";
-    %tmp.40 = "Set Count After";
+    %tmp.40 = "set count after";
     %tmp.42 = const :freestyle;
-    symbol [ freestyle %tmp.42 15 82 91 const ];
+    symbol [ freestyle %tmp.42 15 83 92 const ];
     %tmp.43 = newd 0;
     %tmp.35 = newc %tmp.38 (%tmp.39, %tmp.40, %tmp.42, %tmp.43);
     invoke %tmp.33 %tmp.34(%tmp.35);
-[ "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc" 16 12 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 16 12 ]
     %tmp.44 = lgetv %menu.1;
     symbol [ menu %tmp.44 16 12 16 ];
     symbol [ addItem %tmp.45 16 17 24 ];
@@ -77,19 +77,31 @@ _home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_s
     %tmp.48 = getm $.Toybox.WatchUi;
     symbol [ MenuItem %tmp.49 16 38 46 ];
     %tmp.49 = getv function ? %tmp.48 :MenuItem;
-    %tmp.50 = "Options";
-    %tmp.51 = "Settings";
+    %tmp.50 = "Settings";
+    %tmp.51 = "your preferences";
     %tmp.53 = const :options;
-    symbol [ options %tmp.53 16 82 89 const ];
+    symbol [ options %tmp.53 16 83 90 const ];
     %tmp.54 = newd 0;
     %tmp.46 = newc %tmp.49 (%tmp.50, %tmp.51, %tmp.53, %tmp.54);
     invoke %tmp.44 %tmp.45(%tmp.46);
-[ "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc" 18 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 18 12 ]
     %tmp.55 = lgetv %menu.1;
-    symbol [ menu %tmp.55 18 15 19 ];
-    ret %tmp.55;
-_home_w5hacksphere_Projects_BreathCount_source_funcs_makeMainMenu_mc_9_41_19_0_stop:
+    symbol [ menu %tmp.55 18 12 16 ];
+    symbol [ setIcon %tmp.56 18 17 24 ];
+    %tmp.56 = getv function %tmp.55 :setIcon;
+    symbol [ Rez %tmp.58 18 26 29 ];
+    %tmp.58 = getv ? :Rez;
+    symbol [ Drawables %tmp.59 18 30 39 ];
+    %tmp.59 = getv %tmp.58 :Drawables;
+    symbol [ main_menu_icon %tmp.60 18 40 54 ];
+    %tmp.60 = getv %tmp.59 :main_menu_icon;
+    invoke %tmp.55 %tmp.56(%tmp.60);
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" 19 8 ]
+    %tmp.61 = lgetv %menu.1;
+    symbol [ menu %tmp.61 19 15 19 ];
+    ret %tmp.61;
+_home_w5hacksphere_Projects_inhale1_source_funcs_makeMainMenu_mc_9_41_20_0_stop:
 }
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/funcs/makeMainMenu.mc"; @line = 1; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc"; @line = 1; ]
 <init> {
 }

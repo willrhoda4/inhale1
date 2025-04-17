@@ -7,6 +7,10 @@ using Toybox.Graphics as Gfx;
 module Rez {
     module Drawables {
         (:initialized) var id_monkey as ResourceId;
+        (:initialized) var main_menu_icon as ResourceId;
+        (:initialized) var options_menu_icon as ResourceId;
+        (:initialized) var session_menu_icon as ResourceId;
+        (:initialized) var results_view_icon as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
@@ -32,9 +36,13 @@ module Rez {
     } // Menus
 
     module Strings {
+        (:initialized) var BpmUnit as ResourceId;
+        (:initialized) var BreathsUnit as ResourceId;
+        (:initialized) var BreathRateLabel as ResourceId;
         (:initialized) var menu_label_1 as ResourceId;
         (:initialized) var menu_label_2 as ResourceId;
         (:initialized) var prompt as ResourceId;
+        (:initialized) var BreathCountLabel as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 

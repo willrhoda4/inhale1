@@ -11,14 +11,14 @@ class ResultsView extends WatchUi.Menu2 {
 
 
 
-    private var _breathCountView as BreathCountView; // Holds the reference to the BreathCountView
+    private var _MeditationView as MeditationView; // Holds the reference to the MeditationView
     /**
      * Constructor. Initializes the options menu.
      */
-    function initialize( breathCountView as BreathCountView) {
+    function initialize( MeditationView as MeditationView) {
 
 
-        _breathCountView = breathCountView; // Store the reference to the BreathCountView 
+        _MeditationView = MeditationView; // Store the reference to the MeditationView 
         // Call the parent Menu2's initialize
         Menu2.initialize( { :title=>"Session Summary" } );
         
@@ -29,7 +29,13 @@ class ResultsView extends WatchUi.Menu2 {
     /**
      * Called when the View is shown. Reload the menu by creating a new one.
      */
-    function onShow() as Void { initialize( _breathCountView ); } 
+    function onShow() as Void { 
+        
+        initialize( _MeditationView ); 
+        
+        vibrate( 2 );
+        
+    } 
 
 
     /**
@@ -40,22 +46,41 @@ class ResultsView extends WatchUi.Menu2 {
 
 
         addItem( new WatchUi.MenuItem(
-            formatTime( _breathCountView._elapsedTime ),
+            formatTime( _MeditationView._elapsedTime ),
             "total time spent",
             null,
             {}
         ) );
     
         addItem( new WatchUi.MenuItem(
-            _breathCountView._breathCount+" breaths",
+            _MeditationView._breathCount+" breaths",
             "total breath count",
             null,
             {}
         ) );
 
         addItem( new WatchUi.MenuItem(
-            _breathCountView._breathRate.format("%.2f")+" bpm",
+            _MeditationView._breathRate.format("%.2f")+" bpm",
             "breaths per minute",
+            null,
+            {}
+        ) );    
+
+        addItem( new WatchUi.MenuItem(
+            _MeditationView._maxHeartRate.format("%.2f")+" bpm",
+            "max heart rate",
+            null,
+            {}
+        ) );    
+        addItem( new WatchUi.MenuItem(
+            _MeditationView._avgHeartRate.format("%.2f")+" bpm",
+            "average heart rate",
+            null,
+            {}
+        ) );    
+        addItem( new WatchUi.MenuItem(
+            _MeditationView._minHeartRate.format("%.2f")+" bpm",
+            "min heart rate",
             null,
             {}
         ) );    

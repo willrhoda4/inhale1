@@ -5,7 +5,7 @@ using Toybox.WatchUi;
 /**
  * Main Application class for the BreathCount Timer.
  */
-class BreathCountApp extends Application.AppBase {
+class Inhale1App extends Application.AppBase {
 
     /**
      * Constructor.
@@ -36,6 +36,6 @@ class BreathCountApp extends Application.AppBase {
  * Helper function to easily get a reference to the main application object.
  * @return BreathCountApp The application object
  */
-function getApp() as BreathCountApp {
-    return Application.getApp() as BreathCountApp;
+function getApp() as Inhale1App {
+    return Application.getApp() as Inhale1App;
 }

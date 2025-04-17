@@ -8,13 +8,13 @@ using Toybox.Application; // For Rez access
 /**
  * Creates and starts an ActivityRecording session for meditation.
  * Returns the session and created developer field objects.
- * @return Dictionary containing {:session, :fieldBreathCount, :fieldBreathRate} or null on error
+ * @return Dictionary containing {:session, :fieldMeditation, :fieldBreathRate} or null on error
  */
 function initiateSession() as Lang.Dictionary or Null {
 
 
     var session             = null;
-    var devFieldBreathCount = null;
+    var devFieldMeditation = null;
     var devFieldBreathRate  = null;
 
 
@@ -29,7 +29,7 @@ function initiateSession() as Lang.Dictionary or Null {
         } );
 
         // Create and STORE the developer fields
-        devFieldBreathCount =   session.createField(
+        devFieldMeditation =   session.createField(
                                     "total_breaths", 
                                      0, 
                                      FitContributor.DATA_TYPE_UINT16,
@@ -58,7 +58,7 @@ function initiateSession() as Lang.Dictionary or Null {
         // Return all created objects in a dictionary
         return {
             :session          => session,
-            :fieldBreathCount => devFieldBreathCount,
+            :fieldMeditation => devFieldMeditation,
             :fieldBreathRate  => devFieldBreathRate
         };
 

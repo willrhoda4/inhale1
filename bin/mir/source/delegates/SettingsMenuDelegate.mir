@@ -1,0 +1,254 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Application,3,13,24]; ]
+using Toybox.Application;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 15; @symbol_classdef = [SettingsMenuDelegate,15,6,26]; @symbol_extends<0> = [WatchUi,15,35,42]; @symbol_extends<1> = [Menu2InputDelegate,15,43,61]; ]
+class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 15; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 15; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; ]
+    function initialize() as Void {
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_17_26_19_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 18 8 ]
+        symbol [ Menu2InputDelegate %tmp.2 18 8 26 ];
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 18 27 37 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_17_26_19_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 21; @symbol_functiondef = [onSelect,21,13,21]; @symbol_param<0> = [item,21,22,26]; @symbol_param<0>_type<0> = [WatchUi,21,30,37]; @symbol_param<0>_type<1> = [MenuItem,21,38,46]; ]
+    function onSelect(item as WatchUi.MenuItem) as Void {
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_21_56_62_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 23 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_21_56_62_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_21_56_62_4_stop" ]
+        %id.1 = local;
+        symbol [ id %id.1 23 12 14 ];
+        %tmp.1 = lgetv %item;
+        symbol [ item %tmp.1 23 17 21 ];
+        symbol [ getId %tmp.2 23 22 27 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %id.1 %tmp.3;
+        symbol [ id %id.1 23 12 14 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 25 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_8_61_8_if_stmt:
+        %tmp.4 = lgetv %id.1;
+        symbol [ id %tmp.4 25 13 15 ];
+        %tmp.6 = const :setDailyCount;
+        symbol [ setDailyCount %tmp.6 25 20 33 const ];
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_8_61_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_8_61_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_36_42_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 27 12 ]
+        symbol [ System %tmp.8 27 12 18 ];
+        %tmp.8 = getm $.Toybox.System;
+        symbol [ println %tmp.9 27 19 26 ];
+        %tmp.9 = getv function %tmp.8 :println;
+        %tmp.10 = "Setting Daily Count selected - using Picker";
+        invoke %tmp.8 %tmp.9(%tmp.10);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 29 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_36_42_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_36_42_8_stop" ]
+        %currentCount.2 = local;
+        symbol [ currentCount %currentCount.2 29 16 28 ];
+        symbol [ Application %tmp.11 29 31 42 ];
+        %tmp.11 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.12 29 43 50 ];
+        %tmp.12 = getv %tmp.11 :Storage;
+        symbol [ getValue %tmp.13 29 51 59 ];
+        %tmp.13 = getv function %tmp.12 :getValue;
+        %tmp.14 = "dailyMeditation";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        lputv %currentCount.2 %tmp.15;
+        symbol [ currentCount %currentCount.2 29 16 28 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 31 12 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_12_33_12_if_stmt:
+        %tmp.16 = lgetv %currentCount.2;
+        symbol [ currentCount %tmp.16 31 19 31 ];
+        symbol [ Lang %tmp.17 31 43 47 ];
+        %tmp.17 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.18 31 48 54 ];
+        %tmp.18 = getv %tmp.17 :Number;
+        %tmp.19 = isa %tmp.16 %tmp.18;
+        %tmp.20 = not %tmp.19;
+        bf %tmp.20 @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_12_33_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_12_33_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_58_33_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 32 16 ]
+        %tmp.21 = 108;
+        lputv %currentCount.2 %tmp.21;
+        symbol [ currentCount %currentCount.2 32 16 28 ];
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_58_33_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_12_33_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_31_12_33_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 35 12 ]
+        symbol [ WatchUi %tmp.22 35 12 19 ];
+        %tmp.22 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.23 35 20 28 ];
+        %tmp.23 = getv function %tmp.22 :pushView;
+        symbol [ CountPickerView %tmp.27 36 20 35 ];
+        %tmp.27 = getv ? :CountPickerView;
+        %tmp.28 = "set count";
+        %tmp.29 = lgetv %currentCount.2;
+        symbol [ currentCount %tmp.29 36 50 62 ];
+        %tmp.24 = newc %tmp.27 (%tmp.28, %tmp.29);
+        symbol [ DailyCountPickerDelegate %tmp.33 37 20 44 ];
+        %tmp.33 = getv ? :DailyCountPickerDelegate;
+        %tmp.30 = newc %tmp.33 ();
+        symbol [ WatchUi %tmp.34 38 16 23 ];
+        %tmp.34 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.35 38 24 34 ];
+        %tmp.35 = getv %tmp.34 :SLIDE_LEFT;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.30, %tmp.35);
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_36_42_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_8_61_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_8_61_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 42 15 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_15_61_8_if_stmt:
+        %tmp.36 = lgetv %id.1;
+        symbol [ id %tmp.36 42 20 22 ];
+        %tmp.38 = const :setVibrationSetting;
+        symbol [ setVibrationSetting %tmp.38 42 27 46 const ];
+        %tmp.39 = eq %tmp.36 %tmp.38;
+        bf %tmp.39 @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_15_61_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_15_61_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 44 12 ]
+        symbol [ System %tmp.40 44 12 18 ];
+        %tmp.40 = getm $.Toybox.System;
+        symbol [ println %tmp.41 44 19 26 ];
+        %tmp.41 = getv function %tmp.40 :println;
+        %tmp.42 = "Attempting to update vibration setting.";
+        invoke %tmp.40 %tmp.41(%tmp.42);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 46 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_stop" ]
+        %currVibSetting.3 = local;
+        symbol [ currVibSetting %currVibSetting.3 46 16 30 ];
+        symbol [ Application %tmp.43 46 33 44 ];
+        %tmp.43 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.44 46 45 52 ];
+        %tmp.44 = getv %tmp.43 :Storage;
+        symbol [ getValue %tmp.45 46 53 61 ];
+        %tmp.45 = getv function %tmp.44 :getValue;
+        %tmp.46 = "vibrationSetting";
+        %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
+        lputv %currVibSetting.3 %tmp.47;
+        symbol [ currVibSetting %currVibSetting.3 46 16 30 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 48 12 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_12_51_12_if_stmt:
+        %tmp.48 = lgetv %currVibSetting.3;
+        symbol [ currVibSetting %tmp.48 48 20 34 ];
+        symbol [ Lang %tmp.49 48 46 50 ];
+        %tmp.49 = getm $.Toybox.Lang;
+        symbol [ Boolean %tmp.50 48 51 58 ];
+        %tmp.50 = getv %tmp.49 :Boolean;
+        %tmp.51 = isa %tmp.48 %tmp.50;
+        %tmp.52 = not %tmp.51;
+        bf %tmp.52 @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_12_51_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_12_51_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_63_51_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 50 16 ]
+        %tmp.53 = false;
+        lputv %currVibSetting.3 %tmp.53;
+        symbol [ currVibSetting %currVibSetting.3 50 16 30 ];
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_63_51_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_12_51_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_48_12_51_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 53 12 ]
+        symbol [ Application %tmp.54 53 12 23 ];
+        %tmp.54 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.55 53 24 31 ];
+        %tmp.55 = getv %tmp.54 :Storage;
+        symbol [ setValue %tmp.56 53 32 40 ];
+        %tmp.56 = getv function %tmp.55 :setValue;
+        %tmp.57 = "vibrationSetting";
+        %tmp.58 = lgetv %currVibSetting.3;
+        symbol [ currVibSetting %tmp.58 53 63 77 ];
+        %tmp.59 = not %tmp.58;
+        invoke %tmp.55 %tmp.56(%tmp.57, %tmp.59);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 55 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_stop" ]
+        %view.4 = local;
+        symbol [ view %view.4 55 16 20 ];
+        symbol [ SettingsMenuView %tmp.63 55 31 47 ];
+        %tmp.63 = getv ? :SettingsMenuView;
+        %tmp.60 = newc %tmp.63 ();
+        lputv %view.4 %tmp.60;
+        symbol [ view %view.4 55 16 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 56 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_stop" ]
+        %delegate.5 = local;
+        symbol [ delegate %delegate.5 56 16 24 ];
+        symbol [ SettingsMenuDelegate %tmp.67 56 31 51 ];
+        %tmp.67 = getv ? :SettingsMenuDelegate;
+        %tmp.64 = newc %tmp.67 ();
+        lputv %delegate.5 %tmp.64;
+        symbol [ delegate %delegate.5 56 16 24 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 58 12 ]
+        symbol [ WatchUi %tmp.68 58 12 19 ];
+        %tmp.68 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.69 58 20 27 ];
+        %tmp.69 = getv function %tmp.68 :popView;
+        symbol [ WatchUi %tmp.70 58 29 36 ];
+        %tmp.70 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.71 58 37 52 ];
+        %tmp.71 = getv %tmp.70 :SLIDE_IMMEDIATE;
+        invoke %tmp.68 %tmp.69(%tmp.71);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 59 12 ]
+        symbol [ WatchUi %tmp.72 59 12 19 ];
+        %tmp.72 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.73 59 20 28 ];
+        %tmp.73 = getv function %tmp.72 :pushView;
+        %tmp.74 = lgetv %view.4;
+        symbol [ view %tmp.74 59 30 34 ];
+        %tmp.75 = lgetv %delegate.5;
+        symbol [ delegate %tmp.75 59 36 44 ];
+        symbol [ WatchUi %tmp.76 59 46 53 ];
+        %tmp.76 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.77 59 54 69 ];
+        %tmp.77 = getv %tmp.76 :SLIDE_IMMEDIATE;
+        invoke %tmp.72 %tmp.73(%tmp.74, %tmp.75, %tmp.77);
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_49_61_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_15_61_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_42_15_61_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_25_8_61_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_21_56_62_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 64; @symbol_functiondef = [onBack,64,13,19]; ]
+    function onBack() as Void {
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_64_30_68_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 66 8 ]
+        symbol [ System %tmp.1 66 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 66 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Back pressed on options menu - Popping View";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" 67 8 ]
+        symbol [ WatchUi %tmp.4 67 8 15 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.5 67 16 23 ];
+        %tmp.5 = getv function %tmp.4 :popView;
+        symbol [ WatchUi %tmp.6 67 24 31 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.7 67 32 43 ];
+        %tmp.7 = getv %tmp.6 :SLIDE_RIGHT;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+_home_w5hacksphere_Projects_inhale1_source_delegates_SettingsMenuDelegate_mc_64_30_68_4_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,29 @@
+<resources>
+    
+    <fitContributions>
+        
+        <fitField 
+            id="0"
+            displayInChart="false"
+            displayInActivityLaps="false"
+            displayInActivitySummary="true"
+            sortOrder="0"
+            precision="0"
+            dataLabel="@Strings.BreathCountLabel"
+            unitLabel="@Strings.BreathsUnit"
+        />
+        
+        <fitField 
+            id="1"
+            displayInChart="false"
+            displayInActivityLaps="false"
+            displayInActivitySummary="true"
+            sortOrder="1"
+            precision="1"
+            dataLabel="@Strings.BreathRateLabel"
+            unitLabel="@Strings.BpmUnit"
+        />
+    
+    </fitContributions>
+
+</resources>

@@ -1,0 +1,65 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Lang,1,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc"; @line = 7; @symbol_functiondef = [formatTime,7,9,19]; @symbol_param<0> = [time,7,21,25]; @symbol_param<0>_type<0> = [Lang,7,29,33]; @symbol_param<0>_type<1> = [Number,7,34,40]; @symbol_return<0> = [Lang,7,46,50]; @symbol_return<1> = [String,7,51,57]; ]
+function formatTime(time as Lang.Number) as Lang.String {
+_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" 11 4 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_stop" ]
+    %totalSeconds.1 = local;
+    symbol [ totalSeconds %totalSeconds.1 11 8 20 ];
+    %tmp.1 = lgetv %time;
+    symbol [ time %tmp.1 11 23 27 ];
+    %tmp.2 = 1000;
+    %tmp.3 = div %tmp.1 %tmp.2;
+    lputv %totalSeconds.1 %tmp.3;
+    symbol [ totalSeconds %totalSeconds.1 11 8 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" 13 4 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_stop" ]
+    %minutes.2 = local;
+    symbol [ minutes %minutes.2 13 8 15 ];
+    %tmp.4 = lgetv %totalSeconds.1;
+    symbol [ totalSeconds %tmp.4 13 18 30 ];
+    %tmp.5 = 60;
+    %tmp.6 = div %tmp.4 %tmp.5;
+    lputv %minutes.2 %tmp.6;
+    symbol [ minutes %minutes.2 13 8 15 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" 14 4 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_stop" ]
+    %seconds.3 = local;
+    symbol [ seconds %seconds.3 14 8 15 ];
+    %tmp.7 = lgetv %totalSeconds.1;
+    symbol [ totalSeconds %tmp.7 14 18 30 ];
+    %tmp.8 = 60;
+    %tmp.9 = mod %tmp.7 %tmp.8;
+    lputv %seconds.3 %tmp.9;
+    symbol [ seconds %seconds.3 14 8 15 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" 16 4 ]
+    symbol [ Lang %tmp.10 16 11 15 ];
+    %tmp.10 = getm $.Toybox.Lang;
+    symbol [ format %tmp.11 16 16 22 ];
+    %tmp.11 = getv function %tmp.10 :format;
+    %tmp.12 = "$1$:$2$";
+    %tmp.13 = newa 2;
+    %tmp.14 = lgetv %minutes.2;
+    symbol [ minutes %tmp.14 19 12 19 ];
+    symbol [ format %tmp.15 19 20 26 ];
+    %tmp.15 = getv function %tmp.14 :format;
+    %tmp.16 = "%02d";
+    %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+    %tmp.18 = dup %tmp.13;
+    %tmp.19 = aputv %tmp.18 0 %tmp.17;
+    %tmp.20 = lgetv %seconds.3;
+    symbol [ seconds %tmp.20 20 12 19 ];
+    symbol [ format %tmp.21 20 20 26 ];
+    %tmp.21 = getv function %tmp.20 :format;
+    %tmp.22 = "%02d";
+    %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+    %tmp.24 = dup %tmp.19;
+    %tmp.25 = aputv %tmp.24 1 %tmp.23;
+    %tmp.26 = invoke %tmp.10 %tmp.11(%tmp.12, %tmp.25);
+    ret %tmp.26;
+_home_w5hacksphere_Projects_inhale1_source_funcs_formatTime_mc_7_58_23_0_stop:
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc"; @line = 1; ]
+<init> {
+}

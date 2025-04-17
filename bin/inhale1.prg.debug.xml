@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/w5hacksphere/Projects/inhale1/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="1" lineNum="15" parent="globals/SettingsMenuDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="2" lineNum="8" parent="globals/SessionMenuView" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="3" lineNum="10" parent="globals/SettingsMenuView" pc="268435498" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="4" lineNum="9" parent="globals/CustomPickerDelegate" pc="268435517" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435536" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="6" parent="globals" pc="268435560" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="9" parent="globals" pc="268435572" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="11" parent="globals" pc="268435594" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="11" parent="globals" pc="268435613" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="14" parent="globals" pc="268435620" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="16" parent="globals" pc="268435635" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="23" parent="globals" pc="268435645" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="25" parent="globals" pc="268435694" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/vibrate.mc" id="6" lineNum="25" parent="globals" pc="268435699" symbol="vibrate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="7" lineNum="6" parent="globals/DailyCountPickerDelegate" pc="268435724" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="8" lineNum="13" parent="globals/MainMenuDelegate" pc="268435743" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="9" lineNum="9" parent="globals/InhaleDelegate" pc="268435762" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="9" parent="globals" pc="268435781" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="11" parent="globals" pc="268435793" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="13" parent="globals" pc="268435840" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="14" parent="globals" pc="268435899" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="15" parent="globals" pc="268435958" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="16" parent="globals" pc="268436017" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="18" parent="globals" pc="268436076" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/makeMainMenu.mc" id="10" lineNum="19" parent="globals" pc="268436108" symbol="makeMainMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="11" lineNum="8" parent="globals/NumberPickerNumberFactory" pc="268436111" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="12" lineNum="9" parent="globals/MeditationDelegate" pc="268436130" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="13" lineNum="12" parent="globals/SessionMenuDelegate" pc="268436149" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="14" lineNum="39" parent="globals" pc="268436168" symbol="getApp"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="14" lineNum="40" parent="globals" pc="268436178" symbol="getApp"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="15" lineNum="7" parent="globals/FreestyleCountPickerDelegate" pc="268436194" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="16" lineNum="8" parent="globals/Inhale1App" pc="268436213" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MainMenuView.mc" id="17" lineNum="10" parent="globals/MainMenuView" pc="268436232" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="18" lineNum="15" parent="globals/MeditationView" pc="268436251" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" id="19" lineNum="7" parent="globals" pc="268436270" symbol="formatTime"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" id="19" lineNum="11" parent="globals" pc="268436282" symbol="formatTime"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" id="19" lineNum="13" parent="globals" pc="268436292" symbol="formatTime"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" id="19" lineNum="14" parent="globals" pc="268436302" symbol="formatTime"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/formatTime.mc" id="19" lineNum="16" parent="globals" pc="268436312" symbol="formatTime"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="20" lineNum="11" parent="globals/CountPickerView" pc="268436387" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="21" lineNum="10" parent="globals/ResultsView" pc="268436406" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="22" lineNum="8" parent="globals/InhaleView" pc="268436425" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="13" parent="globals" pc="268436444" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="16" parent="globals" pc="268436456" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="17" parent="globals" pc="268436459" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="18" parent="globals" pc="268436462" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="23" parent="globals" pc="268436465" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="25" parent="globals" pc="268436486" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="32" parent="globals" pc="268436548" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="42" parent="globals" pc="268436608" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="53" parent="globals" pc="268436668" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="55" parent="globals" pc="268436680" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="59" parent="globals" pc="268436701" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="65" parent="globals" pc="268436747" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="67" parent="globals" pc="268436769" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" id="23" lineNum="70" parent="globals" pc="268436802" symbol="initiateSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="24" lineNum="5" parent="globals/ResultsDelegate" pc="268436821" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="25" lineNum="64" parent="globals/SettingsMenuDelegate" pc="268436840" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="25" lineNum="66" parent="globals/SettingsMenuDelegate" pc="268436842" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="25" lineNum="67" parent="globals/SettingsMenuDelegate" pc="268436863" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="26" lineNum="17" parent="globals/SettingsMenuDelegate" pc="268436885" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="26" lineNum="18" parent="globals/SettingsMenuDelegate" pc="268436887" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="21" parent="globals/SettingsMenuDelegate" pc="268436906" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="23" parent="globals/SettingsMenuDelegate" pc="268436910" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="25" parent="globals/SettingsMenuDelegate" pc="268436923" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="27" parent="globals/SettingsMenuDelegate" pc="268436934" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="29" parent="globals/SettingsMenuDelegate" pc="268436955" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="31" parent="globals/SettingsMenuDelegate" pc="268436977" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="32" parent="globals/SettingsMenuDelegate" pc="268436996" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="35" parent="globals/SettingsMenuDelegate" pc="268437006" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="42" parent="globals/SettingsMenuDelegate" pc="268437089" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="44" parent="globals/SettingsMenuDelegate" pc="268437100" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="46" parent="globals/SettingsMenuDelegate" pc="268437121" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="48" parent="globals/SettingsMenuDelegate" pc="268437143" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="50" parent="globals/SettingsMenuDelegate" pc="268437162" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="53" parent="globals/SettingsMenuDelegate" pc="268437169" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="55" parent="globals/SettingsMenuDelegate" pc="268437193" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="56" parent="globals/SettingsMenuDelegate" pc="268437221" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="58" parent="globals/SettingsMenuDelegate" pc="268437245" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SettingsMenuDelegate.mc" id="27" lineNum="59" parent="globals/SettingsMenuDelegate" pc="268437266" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="28" lineNum="22" parent="globals/SessionMenuView" pc="268437295" symbol="onLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="29" lineNum="10" parent="globals/SessionMenuView" pc="268437298" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="29" lineNum="12" parent="globals/SessionMenuView" pc="268437300" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="29" lineNum="15" parent="globals/SessionMenuView" pc="268437337" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="29" lineNum="16" parent="globals/SessionMenuView" pc="268437391" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="29" lineNum="17" parent="globals/SessionMenuView" pc="268437445" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SessionMenuView.mc" id="29" lineNum="19" parent="globals/SessionMenuView" pc="268437499" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="31" lineNum="15" parent="globals/SettingsMenuView" pc="268437536" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="31" lineNum="18" parent="globals/SettingsMenuView" pc="268437538" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="31" lineNum="20" parent="globals/SettingsMenuView" pc="268437575" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="33" parent="globals/SettingsMenuView" pc="268437588" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="35" parent="globals/SettingsMenuView" pc="268437592" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="37" parent="globals/SettingsMenuView" pc="268437614" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="37" parent="globals/SettingsMenuView" pc="268437633" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="39" parent="globals/SettingsMenuView" pc="268437643" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="41" parent="globals/SettingsMenuView" pc="268437665" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="41" parent="globals/SettingsMenuView" pc="268437684" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="44" parent="globals/SettingsMenuView" pc="268437691" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="51" parent="globals/SettingsMenuView" pc="268437756" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/SettingsMenuView.mc" id="32" lineNum="60" parent="globals/SettingsMenuView" pc="268437828" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="33" lineNum="54" parent="globals/CustomPickerDelegate" pc="268437865" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="33" lineNum="56" parent="globals/CustomPickerDelegate" pc="268437867" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="33" lineNum="57" parent="globals/CustomPickerDelegate" pc="268437888" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="33" lineNum="58" parent="globals/CustomPickerDelegate" pc="268437909" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="34" lineNum="12" parent="globals/CustomPickerDelegate" pc="268437912" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="34" lineNum="13" parent="globals/CustomPickerDelegate" pc="268437914" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="22" parent="globals/CustomPickerDelegate" pc="268437933" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="24" parent="globals/CustomPickerDelegate" pc="268437937" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="26" parent="globals/CustomPickerDelegate" pc="268437947" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="28" parent="globals/CustomPickerDelegate" pc="268437965" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="30" parent="globals/CustomPickerDelegate" pc="268437989" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="32" parent="globals/CustomPickerDelegate" pc="268438012" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="33" parent="globals/CustomPickerDelegate" pc="268438030" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="34" parent="globals/CustomPickerDelegate" pc="268438065" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="37" parent="globals/CustomPickerDelegate" pc="268438095" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="39" parent="globals/CustomPickerDelegate" pc="268438120" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="43" parent="globals/CustomPickerDelegate" pc="268438126" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="44" parent="globals/CustomPickerDelegate" pc="268438150" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/CustomPickerDelegate.mc" id="35" lineNum="46" parent="globals/CustomPickerDelegate" pc="268438171" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="36" lineNum="33" parent="globals/DailyCountPickerDelegate" pc="268438175" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="36" lineNum="35" parent="globals/DailyCountPickerDelegate" pc="268438177" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="36" lineNum="37" parent="globals/DailyCountPickerDelegate" pc="268438198" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="37" lineNum="8" parent="globals/DailyCountPickerDelegate" pc="268438201" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="37" lineNum="9" parent="globals/DailyCountPickerDelegate" pc="268438203" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="12" parent="globals/DailyCountPickerDelegate" pc="268438222" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="14" parent="globals/DailyCountPickerDelegate" pc="268438226" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="16" parent="globals/DailyCountPickerDelegate" pc="268438236" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="18" parent="globals/DailyCountPickerDelegate" pc="268438260" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="20" parent="globals/DailyCountPickerDelegate" pc="268438283" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="21" parent="globals/DailyCountPickerDelegate" pc="268438311" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="25" parent="globals/DailyCountPickerDelegate" pc="268438339" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="26" parent="globals/DailyCountPickerDelegate" pc="268438360" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="27" parent="globals/DailyCountPickerDelegate" pc="268438381" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" id="38" lineNum="30" parent="globals/DailyCountPickerDelegate" pc="268438406" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="39" lineNum="75" parent="globals/MainMenuDelegate" pc="268438409" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="39" lineNum="77" parent="globals/MainMenuDelegate" pc="268438411" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="39" lineNum="78" parent="globals/MainMenuDelegate" pc="268438432" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="40" lineNum="16" parent="globals/MainMenuDelegate" pc="268438449" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="40" lineNum="17" parent="globals/MainMenuDelegate" pc="268438451" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="21" parent="globals/MainMenuDelegate" pc="268438470" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="23" parent="globals/MainMenuDelegate" pc="268438474" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="25" parent="globals/MainMenuDelegate" pc="268438487" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="27" parent="globals/MainMenuDelegate" pc="268438511" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="30" parent="globals/MainMenuDelegate" pc="268438533" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="33" parent="globals/MainMenuDelegate" pc="268438557" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="34" parent="globals/MainMenuDelegate" pc="268438588" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="36" parent="globals/MainMenuDelegate" pc="268438618" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="38" parent="globals/MainMenuDelegate" pc="268438646" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="40" parent="globals/MainMenuDelegate" pc="268438657" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="42" parent="globals/MainMenuDelegate" pc="268438678" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="44" parent="globals/MainMenuDelegate" pc="268438700" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="45" parent="globals/MainMenuDelegate" pc="268438719" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="49" parent="globals/MainMenuDelegate" pc="268438729" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="55" parent="globals/MainMenuDelegate" pc="268438812" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="57" parent="globals/MainMenuDelegate" pc="268438823" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="59" parent="globals/MainMenuDelegate" pc="268438844" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="60" parent="globals/MainMenuDelegate" pc="268438878" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="62" parent="globals/MainMenuDelegate" pc="268438908" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="64" parent="globals/MainMenuDelegate" pc="268438936" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="66" parent="globals/MainMenuDelegate" pc="268438947" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="68" parent="globals/MainMenuDelegate" pc="268438968" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="69" parent="globals/MainMenuDelegate" pc="268438996" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" id="41" lineNum="71" parent="globals/MainMenuDelegate" pc="268439024" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="42" lineNum="25" parent="globals/InhaleDelegate" pc="268439053" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="42" lineNum="25" parent="globals/InhaleDelegate" pc="268439055" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="43" lineNum="16" parent="globals/InhaleDelegate" pc="268439058" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="43" lineNum="18" parent="globals/InhaleDelegate" pc="268439060" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="44" lineNum="22" parent="globals/InhaleDelegate" pc="268439079" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" id="44" lineNum="22" parent="globals/InhaleDelegate" pc="268439081" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="45" lineNum="55" parent="globals/NumberPickerNumberFactory" pc="268439084" symbol="getValue"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="45" lineNum="56" parent="globals/NumberPickerNumberFactory" pc="268439086" symbol="getValue"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="46" lineNum="30" parent="globals/NumberPickerNumberFactory" pc="268439107" symbol="getSize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="46" lineNum="31" parent="globals/NumberPickerNumberFactory" pc="268439109" symbol="getSize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="47" lineNum="40" parent="globals/NumberPickerNumberFactory" pc="268439142" symbol="getDrawable"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="47" lineNum="41" parent="globals/NumberPickerNumberFactory" pc="268439146" symbol="getDrawable"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="47" lineNum="42" parent="globals/NumberPickerNumberFactory" pc="268439168" symbol="getDrawable"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="48" lineNum="19" parent="globals/NumberPickerNumberFactory" pc="268439259" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="48" lineNum="20" parent="globals/NumberPickerNumberFactory" pc="268439261" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="48" lineNum="21" parent="globals/NumberPickerNumberFactory" pc="268439279" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="48" lineNum="22" parent="globals/NumberPickerNumberFactory" pc="268439289" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/utils/NumberPickerNumberFactory.mc" id="48" lineNum="23" parent="globals/NumberPickerNumberFactory" pc="268439299" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="78" parent="globals/MeditationDelegate" pc="268439310" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="80" parent="globals/MeditationDelegate" pc="268439312" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="82" parent="globals/MeditationDelegate" pc="268439333" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="82" parent="globals/MeditationDelegate" pc="268439347" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="85" parent="globals/MeditationDelegate" pc="268439362" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="86" parent="globals/MeditationDelegate" pc="268439380" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="49" lineNum="88" parent="globals/MeditationDelegate" pc="268439401" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="50" lineNum="25" parent="globals/MeditationDelegate" pc="268439404" symbol="isRecording"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="50" lineNum="27" parent="globals/MeditationDelegate" pc="268439408" symbol="isRecording"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="50" lineNum="29" parent="globals/MeditationDelegate" pc="268439412" symbol="isRecording"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="50" lineNum="29" parent="globals/MeditationDelegate" pc="268439431" symbol="isRecording"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="50" lineNum="31" parent="globals/MeditationDelegate" pc="268439459" symbol="isRecording"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="51" lineNum="17" parent="globals/MeditationDelegate" pc="268439462" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="51" lineNum="19" parent="globals/MeditationDelegate" pc="268439464" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="51" lineNum="21" parent="globals/MeditationDelegate" pc="268439482" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="52" lineNum="34" parent="globals/MeditationDelegate" pc="268439493" symbol="loadSessionMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="52" lineNum="36" parent="globals/MeditationDelegate" pc="268439497" symbol="loadSessionMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="52" lineNum="38" parent="globals/MeditationDelegate" pc="268439515" symbol="loadSessionMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="52" lineNum="40" parent="globals/MeditationDelegate" pc="268439543" symbol="loadSessionMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="52" parent="globals/MeditationDelegate" pc="268439601" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="54" parent="globals/MeditationDelegate" pc="268439603" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="56" parent="globals/MeditationDelegate" pc="268439624" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="56" parent="globals/MeditationDelegate" pc="268439638" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="60" parent="globals/MeditationDelegate" pc="268439653" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="62" parent="globals/MeditationDelegate" pc="268439671" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" id="53" lineNum="70" parent="globals/MeditationDelegate" pc="268439744" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="54" lineNum="82" parent="globals/SessionMenuDelegate" pc="268439747" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="54" lineNum="84" parent="globals/SessionMenuDelegate" pc="268439749" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="54" lineNum="86" parent="globals/SessionMenuDelegate" pc="268439770" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="54" lineNum="87" parent="globals/SessionMenuDelegate" pc="268439791" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="55" lineNum="18" parent="globals/SessionMenuDelegate" pc="268439810" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="55" lineNum="20" parent="globals/SessionMenuDelegate" pc="268439812" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="55" lineNum="22" parent="globals/SessionMenuDelegate" pc="268439830" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="26" parent="globals/SessionMenuDelegate" pc="268439841" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="29" parent="globals/SessionMenuDelegate" pc="268439845" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="31" parent="globals/SessionMenuDelegate" pc="268439858" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="34" parent="globals/SessionMenuDelegate" pc="268439869" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="36" parent="globals/SessionMenuDelegate" pc="268439892" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="37" parent="globals/SessionMenuDelegate" pc="268439914" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="40" parent="globals/SessionMenuDelegate" pc="268439949" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="46" parent="globals/SessionMenuDelegate" pc="268440006" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="50" parent="globals/SessionMenuDelegate" pc="268440010" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="52" parent="globals/SessionMenuDelegate" pc="268440031" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="55" parent="globals/SessionMenuDelegate" pc="268440049" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="63" parent="globals/SessionMenuDelegate" pc="268440147" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="65" parent="globals/SessionMenuDelegate" pc="268440158" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="67" parent="globals/SessionMenuDelegate" pc="268440179" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="68" parent="globals/SessionMenuDelegate" pc="268440200" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="71" parent="globals/SessionMenuDelegate" pc="268440221" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="73" parent="globals/SessionMenuDelegate" pc="268440232" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="75" parent="globals/SessionMenuDelegate" pc="268440253" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="76" parent="globals/SessionMenuDelegate" pc="268440271" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/SessionMenuDelegate.mc" id="56" lineNum="77" parent="globals/SessionMenuDelegate" pc="268440292" symbol="onSelect"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="57" lineNum="40" parent="globals/FreestyleCountPickerDelegate" pc="268440317" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="57" lineNum="42" parent="globals/FreestyleCountPickerDelegate" pc="268440319" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="57" lineNum="44" parent="globals/FreestyleCountPickerDelegate" pc="268440340" symbol="onCancel"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="58" lineNum="11" parent="globals/FreestyleCountPickerDelegate" pc="268440343" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="58" lineNum="13" parent="globals/FreestyleCountPickerDelegate" pc="268440345" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="58" lineNum="14" parent="globals/FreestyleCountPickerDelegate" pc="268440363" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="18" parent="globals/FreestyleCountPickerDelegate" pc="268440374" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="20" parent="globals/FreestyleCountPickerDelegate" pc="268440378" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="22" parent="globals/FreestyleCountPickerDelegate" pc="268440388" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="24" parent="globals/FreestyleCountPickerDelegate" pc="268440412" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="26" parent="globals/FreestyleCountPickerDelegate" pc="268440428" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="29" parent="globals/FreestyleCountPickerDelegate" pc="268440446" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/FreestyleCountPickerDelegate.mc" id="59" lineNum="37" parent="globals/FreestyleCountPickerDelegate" pc="268440541" symbol="onAccept"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="60" lineNum="17" parent="globals/Inhale1App" pc="268440544" symbol="onStart"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="61" lineNum="23" parent="globals/Inhale1App" pc="268440547" symbol="getInitialView"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="61" lineNum="26" parent="globals/Inhale1App" pc="268440551" symbol="getInitialView"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="61" lineNum="28" parent="globals/Inhale1App" pc="268440564" symbol="getInitialView"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="61" lineNum="31" parent="globals/Inhale1App" pc="268440592" symbol="getInitialView"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="62" lineNum="13" parent="globals/Inhale1App" pc="268440619" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="62" lineNum="14" parent="globals/Inhale1App" pc="268440621" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/core/BreathCountApp.mc" id="63" lineNum="20" parent="globals/Inhale1App" pc="268440640" symbol="onStop"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MainMenuView.mc" id="64" lineNum="26" parent="globals/MainMenuView" pc="268440643" symbol="getMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MainMenuView.mc" id="64" lineNum="27" parent="globals/MainMenuView" pc="268440645" symbol="getMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MainMenuView.mc" id="65" lineNum="17" parent="globals/MainMenuView" pc="268440654" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MainMenuView.mc" id="65" lineNum="19" parent="globals/MainMenuView" pc="268440656" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MainMenuView.mc" id="65" lineNum="21" parent="globals/MainMenuView" pc="268440674" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="66" lineNum="280" parent="globals/MeditationView" pc="268440694" symbol="resumeMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="66" lineNum="282" parent="globals/MeditationView" pc="268440696" symbol="resumeMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="66" lineNum="284" parent="globals/MeditationView" pc="268440709" symbol="resumeMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="66" lineNum="285" parent="globals/MeditationView" pc="268440727" symbol="resumeMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="66" lineNum="286" parent="globals/MeditationView" pc="268440739" symbol="resumeMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="66" lineNum="290" parent="globals/MeditationView" pc="268440758" symbol="resumeMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="236" parent="globals/MeditationView" pc="268440780" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="238" parent="globals/MeditationView" pc="268440784" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="240" parent="globals/MeditationView" pc="268440796" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="241" parent="globals/MeditationView" pc="268440799" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="243" parent="globals/MeditationView" pc="268440812" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="245" parent="globals/MeditationView" pc="268440819" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="246" parent="globals/MeditationView" pc="268440835" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="247" parent="globals/MeditationView" pc="268440851" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="249" parent="globals/MeditationView" pc="268440867" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="250" parent="globals/MeditationView" pc="268440879" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="255" parent="globals/MeditationView" pc="268440898" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="67" lineNum="259" parent="globals/MeditationView" pc="268440922" symbol="startMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="68" lineNum="121" parent="globals/MeditationView" pc="268440944" symbol="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="68" lineNum="123" parent="globals/MeditationView" pc="268440946" symbol="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="68" lineNum="125" parent="globals/MeditationView" pc="268440959" symbol="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="68" lineNum="127" parent="globals/MeditationView" pc="268440977" symbol="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="68" lineNum="129" parent="globals/MeditationView" pc="268440986" symbol="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="69" lineNum="226" parent="globals/MeditationView" pc="268441011" symbol="updateView"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="69" lineNum="228" parent="globals/MeditationView" pc="268441013" symbol="updateView"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="70" lineNum="390" parent="globals/MeditationView" pc="268441030" symbol="onHide"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="70" lineNum="390" parent="globals/MeditationView" pc="268441032" symbol="onHide"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="71" lineNum="265" parent="globals/MeditationView" pc="268441055" symbol="pauseMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="71" lineNum="267" parent="globals/MeditationView" pc="268441057" symbol="pauseMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="71" lineNum="269" parent="globals/MeditationView" pc="268441070" symbol="pauseMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="71" lineNum="270" parent="globals/MeditationView" pc="268441088" symbol="pauseMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="71" lineNum="271" parent="globals/MeditationView" pc="268441100" symbol="pauseMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="71" lineNum="274" parent="globals/MeditationView" pc="268441119" symbol="pauseMeditation"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="304" parent="globals/MeditationView" pc="268441141" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="307" parent="globals/MeditationView" pc="268441145" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="309" parent="globals/MeditationView" pc="268441166" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="311" parent="globals/MeditationView" pc="268441178" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="315" parent="globals/MeditationView" pc="268441191" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="319" parent="globals/MeditationView" pc="268441273" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="323" parent="globals/MeditationView" pc="268441283" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="323" parent="globals/MeditationView" pc="268441296" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="324" parent="globals/MeditationView" pc="268441325" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="326" parent="globals/MeditationView" pc="268441346" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="326" parent="globals/MeditationView" pc="268441359" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="327" parent="globals/MeditationView" pc="268441388" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="330" parent="globals/MeditationView" pc="268441409" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="331" parent="globals/MeditationView" pc="268441430" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="334" parent="globals/MeditationView" pc="268441451" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="335" parent="globals/MeditationView" pc="268441481" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="337" parent="globals/MeditationView" pc="268441505" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="339" parent="globals/MeditationView" pc="268441522" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="341" parent="globals/MeditationView" pc="268441529" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="342" parent="globals/MeditationView" pc="268441545" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="345" parent="globals/MeditationView" pc="268441564" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="346" parent="globals/MeditationView" pc="268441594" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="347" parent="globals/MeditationView" pc="268441624" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="348" parent="globals/MeditationView" pc="268441654" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="350" parent="globals/MeditationView" pc="268441684" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="352" parent="globals/MeditationView" pc="268441703" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="354" parent="globals/MeditationView" pc="268441730" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="72" lineNum="356" parent="globals/MeditationView" pc="268441751" symbol="saveSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="73" lineNum="381" parent="globals/MeditationView" pc="268441764" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="73" lineNum="383" parent="globals/MeditationView" pc="268441766" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="73" lineNum="385" parent="globals/MeditationView" pc="268441801" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="73" lineNum="385" parent="globals/MeditationView" pc="268441814" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="74" lineNum="140" parent="globals/MeditationView" pc="268441830" symbol="onLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="75" lineNum="133" parent="globals/MeditationView" pc="268441833" symbol="updateUi"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="75" lineNum="135" parent="globals/MeditationView" pc="268441835" symbol="updateUi"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="76" lineNum="295" parent="globals/MeditationView" pc="268441852" symbol="clearSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="76" lineNum="297" parent="globals/MeditationView" pc="268441854" symbol="clearSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="76" lineNum="298" parent="globals/MeditationView" pc="268441863" symbol="clearSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="76" lineNum="299" parent="globals/MeditationView" pc="268441872" symbol="clearSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="361" parent="globals/MeditationView" pc="268441882" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="363" parent="globals/MeditationView" pc="268441884" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="365" parent="globals/MeditationView" pc="268441905" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="367" parent="globals/MeditationView" pc="268441917" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="369" parent="globals/MeditationView" pc="268441930" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="370" parent="globals/MeditationView" pc="268441948" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="371" parent="globals/MeditationView" pc="268441972" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="77" lineNum="373" parent="globals/MeditationView" pc="268441993" symbol="discardSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="44" parent="globals/MeditationView" pc="268442006" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="46" parent="globals/MeditationView" pc="268442010" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="49" parent="globals/MeditationView" pc="268442028" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="50" parent="globals/MeditationView" pc="268442038" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="51" parent="globals/MeditationView" pc="268442047" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="52" parent="globals/MeditationView" pc="268442056" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="53" parent="globals/MeditationView" pc="268442065" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="54" parent="globals/MeditationView" pc="268442078" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="56" parent="globals/MeditationView" pc="268442091" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="57" parent="globals/MeditationView" pc="268442100" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="58" parent="globals/MeditationView" pc="268442109" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="59" parent="globals/MeditationView" pc="268442118" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="65" parent="globals/MeditationView" pc="268442127" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="68" parent="globals/MeditationView" pc="268442144" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="70" parent="globals/MeditationView" pc="268442166" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="72" parent="globals/MeditationView" pc="268442202" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="75" parent="globals/MeditationView" pc="268442235" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="78" parent="globals/MeditationView" pc="268442252" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="82" parent="globals/MeditationView" pc="268442302" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="85" parent="globals/MeditationView" pc="268442321" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="86" parent="globals/MeditationView" pc="268442334" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="89" parent="globals/MeditationView" pc="268442355" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="91" parent="globals/MeditationView" pc="268442388" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="93" parent="globals/MeditationView" pc="268442405" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="95" parent="globals/MeditationView" pc="268442418" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="99" parent="globals/MeditationView" pc="268442442" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="78" lineNum="101" parent="globals/MeditationView" pc="268442455" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="79" lineNum="109" parent="globals/MeditationView" pc="268442477" symbol="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="79" lineNum="111" parent="globals/MeditationView" pc="268442479" symbol="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="79" lineNum="113" parent="globals/MeditationView" pc="268442491" symbol="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="79" lineNum="115" parent="globals/MeditationView" pc="268442525" symbol="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="79" lineNum="117" parent="globals/MeditationView" pc="268442566" symbol="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="146" parent="globals/MeditationView" pc="268442591" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="148" parent="globals/MeditationView" pc="268442595" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="150" parent="globals/MeditationView" pc="268442617" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="153" parent="globals/MeditationView" pc="268442629" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="155" parent="globals/MeditationView" pc="268442642" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="157" parent="globals/MeditationView" pc="268442659" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="158" parent="globals/MeditationView" pc="268442679" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="162" parent="globals/MeditationView" pc="268442698" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="164" parent="globals/MeditationView" pc="268442715" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="166" parent="globals/MeditationView" pc="268442733" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="168" parent="globals/MeditationView" pc="268442740" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="170" parent="globals/MeditationView" pc="268442764" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="172" parent="globals/MeditationView" pc="268442780" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="176" parent="globals/MeditationView" pc="268442812" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="179" parent="globals/MeditationView" pc="268442831" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="181" parent="globals/MeditationView" pc="268442848" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="183" parent="globals/MeditationView" pc="268442855" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="194" parent="globals/MeditationView" pc="268442946" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="195" parent="globals/MeditationView" pc="268442959" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="196" parent="globals/MeditationView" pc="268442972" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="198" parent="globals/MeditationView" pc="268442982" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="199" parent="globals/MeditationView" pc="268443003" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="200" parent="globals/MeditationView" pc="268443010" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="204" parent="globals/MeditationView" pc="268443029" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="212" parent="globals/MeditationView" pc="268443069" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="213" parent="globals/MeditationView" pc="268443104" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" id="80" lineNum="215" parent="globals/MeditationView" pc="268443124" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="14" parent="globals/CountPickerView" pc="268443165" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="17" parent="globals/CountPickerView" pc="268443169" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="17" parent="globals/CountPickerView" pc="268443188" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="20" parent="globals/CountPickerView" pc="268443198" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="22" parent="globals/CountPickerView" pc="268443241" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="23" parent="globals/CountPickerView" pc="268443269" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/CountPickerView.mc" id="81" lineNum="27" parent="globals/CountPickerView" pc="268443279" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="82" lineNum="32" parent="globals/ResultsView" pc="268443441" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="82" lineNum="34" parent="globals/ResultsView" pc="268443443" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="82" lineNum="36" parent="globals/ResultsView" pc="268443463" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="83" lineNum="18" parent="globals/ResultsView" pc="268443481" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="83" lineNum="21" parent="globals/ResultsView" pc="268443483" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="83" lineNum="23" parent="globals/ResultsView" pc="268443493" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="83" lineNum="25" parent="globals/ResultsView" pc="268443530" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="44" parent="globals/ResultsView" pc="268443543" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="48" parent="globals/ResultsView" pc="268443545" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="55" parent="globals/ResultsView" pc="268443620" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="62" parent="globals/ResultsView" pc="268443690" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="69" parent="globals/ResultsView" pc="268443774" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="75" parent="globals/ResultsView" pc="268443858" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="81" parent="globals/ResultsView" pc="268443942" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/ResultsView.mc" id="84" lineNum="88" parent="globals/ResultsView" pc="268444026" symbol="loadMenu"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="85" lineNum="22" parent="globals/InhaleView" pc="268444063" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="85" lineNum="25" parent="globals/InhaleView" pc="268444065" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="85" lineNum="27" parent="globals/InhaleView" pc="268444082" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="85" lineNum="36" parent="globals/InhaleView" pc="268444187" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="85" lineNum="39" parent="globals/InhaleView" pc="268444221" symbol="onShow"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="86" lineNum="14" parent="globals/InhaleView" pc="268444263" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="86" lineNum="16" parent="globals/InhaleView" pc="268444265" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="86" lineNum="18" parent="globals/InhaleView" pc="268444283" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="87" lineNum="43" parent="globals/InhaleView" pc="268444293" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="87" lineNum="45" parent="globals/InhaleView" pc="268444295" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="87" lineNum="46" parent="globals/InhaleView" pc="268444317" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="87" lineNum="47" parent="globals/InhaleView" pc="268444329" symbol="onUpdate"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="88" lineNum="51" parent="globals/InhaleView" pc="268444350" symbol="backToSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="88" lineNum="53" parent="globals/InhaleView" pc="268444352" symbol="backToSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="88" lineNum="55" parent="globals/InhaleView" pc="268444365" symbol="backToSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="88" lineNum="56" parent="globals/InhaleView" pc="268444383" symbol="backToSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" id="88" lineNum="59" parent="globals/InhaleView" pc="268444395" symbol="backToSession"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="15" parent="globals/ResultsDelegate" pc="268444417" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="17" parent="globals/ResultsDelegate" pc="268444419" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="19" parent="globals/ResultsDelegate" pc="268444440" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="20" parent="globals/ResultsDelegate" pc="268444461" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="21" parent="globals/ResultsDelegate" pc="268444482" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="23" parent="globals/ResultsDelegate" pc="268444503" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="89" lineNum="24" parent="globals/ResultsDelegate" pc="268444537" symbol="onBack"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="90" lineNum="9" parent="globals/ResultsDelegate" pc="268444562" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="90" lineNum="10" parent="globals/ResultsDelegate" pc="268444564" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="90" lineNum="11" parent="globals/ResultsDelegate" pc="268444574" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/source/delegates/ResultsDelegate.mc" id="90" lineNum="12" parent="globals/ResultsDelegate" pc="268444604" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="91" lineNum="18" parent="globals/Rez/Layouts" pc="268444623" symbol="MainLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="91" lineNum="19" parent="globals/Rez/Layouts" pc="268444635" symbol="MainLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="91" lineNum="21" parent="globals/Rez/Layouts" pc="268444766" symbol="MainLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="91" lineNum="22" parent="globals/Rez/Layouts" pc="268444871" symbol="MainLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="91" lineNum="24" parent="globals/Rez/Layouts" pc="268444911" symbol="MainLayout"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="92" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268444938" symbol="&lt;init&gt;"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="93" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268444957" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="93" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268444959" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="93" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268444977" symbol="initialize"/>
+        <entry filename="/home/w5hacksphere/Projects/inhale1/bin/gen/006-B4394-00/source/Rez.mcgen" id="93" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268445033" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="18" object="true" symbol="NumberPickerNumberFactory"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389626" method="true" symbol="onAccept"/>
+        <entry id="12" object="true" symbol="InhaleDelegate"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry field="true" id="40" symbol="_avgHeartRate"/>
+        <entry id="35" method="true" symbol="loadSessionMenu"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="11" object="true" symbol="Inhale1App"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="8389849" symbol="units"/>
+        <entry field="true" id="45" symbol="_devFieldBreathRate"/>
+        <entry field="true" id="33" symbol="&lt;globals/NumberPickerNumberFactory/&lt;&gt;_stop&gt;"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
+        <entry id="72" method="true" symbol="MainLayout"/>
+        <entry id="10" object="true" symbol="FreestyleCountPickerDelegate"/>
+        <entry id="14" object="true" symbol="MainMenuDelegate"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry id="64" method="true" symbol="backToSession"/>
+        <entry field="true" id="77" symbol="BreathRateLabel"/>
+        <entry field="true" id="65" symbol="&lt;globals/ResultsDelegate/&lt;&gt;_mode&gt;"/>
+        <entry id="23" object="true" symbol="SettingsMenuDelegate"/>
+        <entry field="true" id="32" symbol="&lt;globals/NumberPickerNumberFactory/&lt;&gt;_start&gt;"/>
+        <entry field="true" id="34" symbol="&lt;globals/MeditationDelegate/&lt;&gt;_view&gt;"/>
+        <entry id="39" method="true" symbol="getMenu"/>
+        <entry id="8389629" method="true" symbol="getValue"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="17" object="true" symbol="MeditationView"/>
+        <entry field="true" id="42" symbol="_breathRate"/>
+        <entry id="95" symbol="fieldBreathCount"/>
+        <entry id="16" object="true" symbol="MeditationDelegate"/>
+        <entry id="8" object="true" symbol="CustomPickerDelegate"/>
+        <entry field="true" id="41" symbol="_breathCount"/>
+        <entry id="20" object="true" symbol="ResultsView"/>
+        <entry field="true" id="74" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="25" method="true" symbol="formatTime"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry field="true" id="43" symbol="_currHeartRate"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="84" symbol="freestyle"/>
+        <entry field="true" id="75" symbol="BpmUnit"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="50" symbol="_session"/>
+        <entry field="true" id="81" symbol="prompt"/>
+        <entry field="true" id="67" symbol="id_monkey"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="94" symbol="Meditation"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="46" symbol="_elapsedTime"/>
+        <entry id="8389630" method="true" symbol="getSize"/>
+        <entry id="98" symbol="item_2"/>
+        <entry id="97" symbol="item_1"/>
+        <entry id="30" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="13" object="true" symbol="InhaleView"/>
+        <entry id="54" method="true" symbol="pauseMeditation"/>
+        <entry id="87" symbol="fieldMeditation"/>
+        <entry field="true" id="62" symbol="&lt;globals/ResultsView/&lt;&gt;_MeditationView&gt;"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="7" object="true" symbol="CountPickerView"/>
+        <entry field="true" id="49" symbol="_mode"/>
+        <entry id="8388987" method="true" symbol="vibrate"/>
+        <entry field="true" id="63" symbol="_timer"/>
+        <entry id="15" object="true" symbol="MainMenuView"/>
+        <entry id="8389644" symbol="defaults"/>
+        <entry id="93" symbol="discard_session"/>
+        <entry field="true" id="48" symbol="_minHeartRate"/>
+        <entry field="true" id="70" symbol="results_view_icon"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="52" method="true" symbol="clearSession"/>
+        <entry id="88" symbol="fieldBreathRate"/>
+        <entry id="73" object="true" symbol="MainMenu"/>
+        <entry id="26" method="true" symbol="initiateSession"/>
+        <entry id="59" method="true" symbol="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;"/>
+        <entry id="8389628" method="true" symbol="getDrawable"/>
+        <entry field="true" id="31" symbol="&lt;globals/NumberPickerNumberFactory/&lt;&gt;_increment&gt;"/>
+        <entry field="true" id="69" symbol="options_menu_icon"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="92" symbol="return_session"/>
+        <entry id="28" method="true" symbol="loadMenu"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="91" symbol="save_session"/>
+        <entry field="true" id="68" symbol="main_menu_icon"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8388881" method="true" symbol="isRecording"/>
+        <entry id="96" symbol="breathCount"/>
+        <entry id="83" symbol="custom"/>
+        <entry field="true" id="66" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8388643" module="true" symbol="Sensor"/>
+        <entry field="true" id="36" symbol="&lt;globals/SessionMenuDelegate/&lt;&gt;_MeditationView&gt;"/>
+        <entry id="60" method="true" symbol="updateUi"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="44" symbol="_devFieldBreathCount"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="21" object="true" symbol="SessionMenuDelegate"/>
+        <entry field="true" id="78" symbol="BreathsUnit"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="57" method="true" symbol="startMeditation"/>
+        <entry id="19" object="true" symbol="ResultsDelegate"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="8388891" symbol="subSport"/>
+        <entry id="22" object="true" symbol="SessionMenuView"/>
+        <entry id="8389780" module="true" symbol="FitContributor"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389541" method="true" symbol="onCancel"/>
+        <entry id="61" method="true" symbol="updateView"/>
+        <entry id="55" method="true" symbol="resumeMeditation"/>
+        <entry field="true" id="76" symbol="BreathCountLabel"/>
+        <entry id="90" symbol="setVibrationSetting"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="24" object="true" symbol="SettingsMenuView"/>
+        <entry id="8389847" symbol="mesgType"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="58" method="true" symbol="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;"/>
+        <entry field="true" id="71" symbol="session_menu_icon"/>
+        <entry field="true" id="47" symbol="_maxHeartRate"/>
+        <entry id="82" symbol="daily"/>
+        <entry field="true" id="51" symbol="&lt;globals/MeditationView/&lt;&gt;_timer&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="29" module="true" symbol="Layouts"/>
+        <entry id="27" method="true" symbol="makeMainMenu"/>
+        <entry field="true" id="37" symbol="&lt;globals/FreestyleCountPickerDelegate/&lt;&gt;_meditationView&gt;"/>
+        <entry id="8388636" module="true" symbol="Attention"/>
+        <entry id="56" method="true" symbol="saveSession"/>
+        <entry id="8389643" symbol="pattern"/>
+        <entry id="9" object="true" symbol="DailyCountPickerDelegate"/>
+        <entry id="89" symbol="setDailyCount"/>
+        <entry field="true" id="38" symbol="&lt;globals/MainMenuView/&lt;&gt;_menu&gt;"/>
+        <entry id="85" symbol="options"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="86" symbol="session"/>
+        <entry id="53" method="true" symbol="discardSession"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389642" symbol="title"/>
+        <entry field="true" id="80" symbol="menu_label_2"/>
+        <entry field="true" id="79" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435723" name="duration" stackId="1" startPc="268435560"/>
+        <entry endPc="268435722" name="setToVibe" stackId="2" startPc="268435572"/>
+        <entry endPc="268435719" name="milliseconds" stackId="3" startPc="268435635"/>
+        <entry endPc="268435719" name="vibeData" stackId="4" startPc="268435635"/>
+        <entry endPc="268436110" name="menu" stackId="1" startPc="268435793"/>
+        <entry arg="true" endPc="268436386" name="time" stackId="1" startPc="268436270"/>
+        <entry endPc="268436386" name="totalSeconds" stackId="2" startPc="268436282"/>
+        <entry endPc="268436386" name="minutes" stackId="3" startPc="268436282"/>
+        <entry endPc="268436386" name="seconds" stackId="4" startPc="268436282"/>
+        <entry endPc="268436819" name="session" stackId="1" startPc="268436456"/>
+        <entry endPc="268436819" name="devFieldMeditation" stackId="2" startPc="268436456"/>
+        <entry endPc="268436819" name="devFieldBreathRate" stackId="3" startPc="268436456"/>
+        <entry endPc="268436814" name="ex" stackId="4" startPc="268436747"/>
+        <entry arg="true" endPc="268437294" name="item" stackId="1" startPc="268436906"/>
+        <entry endPc="268437293" name="id" stackId="2" startPc="268436910"/>
+        <entry endPc="268437085" name="currentCount" stackId="3" startPc="268436934"/>
+        <entry endPc="268437290" name="currVibSetting" stackId="4" startPc="268437100"/>
+        <entry endPc="268437290" name="view" stackId="5" startPc="268437100"/>
+        <entry endPc="268437290" name="delegate" stackId="6" startPc="268437100"/>
+        <entry endPc="268437863" name="dailyCount" stackId="1" startPc="268437592"/>
+        <entry endPc="268437863" name="vibSetting" stackId="2" startPc="268437592"/>
+        <entry arg="true" endPc="268438174" name="values" stackId="1" startPc="268437933"/>
+        <entry endPc="268438173" name="selectedValue" stackId="2" startPc="268437937"/>
+        <entry endPc="268438122" name="options" stackId="3" startPc="268437965"/>
+        <entry endPc="268438122" name="view" stackId="4" startPc="268437965"/>
+        <entry endPc="268438122" name="delegate" stackId="5" startPc="268437965"/>
+        <entry arg="true" endPc="268438408" name="values" stackId="1" startPc="268438222"/>
+        <entry endPc="268438408" name="newDailyCount" stackId="2" startPc="268438226"/>
+        <entry endPc="268438408" name="view" stackId="3" startPc="268438226"/>
+        <entry endPc="268438408" name="delegate" stackId="4" startPc="268438226"/>
+        <entry arg="true" endPc="268439052" name="item" stackId="1" startPc="268438470"/>
+        <entry endPc="268439051" name="id" stackId="2" startPc="268438474"/>
+        <entry endPc="268438642" name="view" stackId="3" startPc="268438533"/>
+        <entry endPc="268438642" name="delegate" stackId="4" startPc="268438533"/>
+        <entry endPc="268438808" name="defaultCount" stackId="5" startPc="268438657"/>
+        <entry endPc="268438932" name="view" stackId="6" startPc="268438823"/>
+        <entry endPc="268438932" name="delegate" stackId="7" startPc="268438823"/>
+        <entry endPc="268439048" name="view" stackId="8" startPc="268438947"/>
+        <entry endPc="268439048" name="delegate" stackId="9" startPc="268438947"/>
+        <entry arg="true" endPc="268439106" name="item" stackId="1" startPc="268439084"/>
+        <entry arg="true" endPc="268439258" name="item" stackId="1" startPc="268439142"/>
+        <entry arg="true" endPc="268439258" name="isSelected" stackId="2" startPc="268439142"/>
+        <entry endPc="268439258" name="value" stackId="3" startPc="268439146"/>
+        <entry arg="true" endPc="268439309" name="start" stackId="1" startPc="268439259"/>
+        <entry arg="true" endPc="268439309" name="stop" stackId="2" startPc="268439259"/>
+        <entry arg="true" endPc="268439309" name="increment" stackId="3" startPc="268439259"/>
+        <entry endPc="268439461" name="recording" stackId="1" startPc="268439408"/>
+        <entry arg="true" endPc="268439492" name="view" stackId="1" startPc="268439462"/>
+        <entry endPc="268439599" name="sessionMenuView" stackId="1" startPc="268439497"/>
+        <entry arg="true" endPc="268439840" name="MeditationView" stackId="1" startPc="268439810"/>
+        <entry arg="true" endPc="268440316" name="item" stackId="1" startPc="268439841"/>
+        <entry endPc="268440315" name="id" stackId="2" startPc="268439845"/>
+        <entry endPc="268440006" name="defaultCount" stackId="3" startPc="268439892"/>
+        <entry endPc="268440006" name="picker" stackId="4" startPc="268439892"/>
+        <entry arg="true" endPc="268440373" name="meditationView" stackId="1" startPc="268440343"/>
+        <entry arg="true" endPc="268440543" name="values" stackId="1" startPc="268440374"/>
+        <entry endPc="268440543" name="breathCount" stackId="2" startPc="268440378"/>
+        <entry endPc="268440618" name="menu" stackId="1" startPc="268440551"/>
+        <entry endPc="268440618" name="delegate" stackId="2" startPc="268440551"/>
+        <entry endPc="268440918" name="sessionData" stackId="1" startPc="268440796"/>
+        <entry endPc="268441726" name="avgBreathRate" stackId="1" startPc="268441191"/>
+        <entry endPc="268441726" name="info" stackId="2" startPc="268441191"/>
+        <entry endPc="268441726" name="saveStatus" stackId="3" startPc="268441191"/>
+        <entry arg="true" endPc="268442476" name="mode" stackId="1" startPc="268442006"/>
+        <entry arg="true" endPc="268442476" name="options" stackId="2" startPc="268442006"/>
+        <entry endPc="268442231" name="storedCount" stackId="3" startPc="268442144"/>
+        <entry arg="true" endPc="268443164" name="dc" stackId="1" startPc="268442591"/>
+        <entry endPc="268442942" name="info" stackId="2" startPc="268442642"/>
+        <entry endPc="268442942" name="sensorInfo" stackId="3" startPc="268442642"/>
+        <entry endPc="268442939" name="subscreen" stackId="4" startPc="268442740"/>
+        <entry endPc="268443163" name="screenWidth" stackId="5" startPc="268442595"/>
+        <entry endPc="268443163" name="screenHeight" stackId="6" startPc="268442595"/>
+        <entry endPc="268443163" name="centerX" stackId="7" startPc="268442595"/>
+        <entry endPc="268443163" name="timeStr" stackId="8" startPc="268442595"/>
+        <entry endPc="268443163" name="timeFont" stackId="9" startPc="268442595"/>
+        <entry endPc="268443163" name="timeFontHeight" stackId="10" startPc="268442595"/>
+        <entry endPc="268443163" name="inProgress" stackId="11" startPc="268442595"/>
+        <entry endPc="268443163" name="promptText" stackId="12" startPc="268442595"/>
+        <entry arg="true" endPc="268443440" name="title" stackId="1" startPc="268443165"/>
+        <entry arg="true" endPc="268443440" name="currentCount" stackId="2" startPc="268443165"/>
+        <entry endPc="268443439" name="factory" stackId="3" startPc="268443169"/>
+        <entry arg="true" endPc="268443542" name="MeditationView" stackId="1" startPc="268443481"/>
+        <entry arg="true" endPc="268444349" name="dc" stackId="1" startPc="268444293"/>
+        <entry arg="true" endPc="268444622" name="mode" stackId="1" startPc="268444562"/>
+        <entry arg="true" endPc="268444937" name="dc" stackId="1" startPc="268444623"/>
+        <entry endPc="268444937" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268444635"/>
+        <entry endPc="268444937" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268444635"/>
+    </localVars>
+    <deviceInfo deviceVersion="cb6f0b4fd292b4751f8713977c1b9f4f85af5b4e" partNumber="006-B4394-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="results_view_icon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="main_menu_icon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BpmUnit"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BreathCountLabel"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BreathsUnit"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="options_menu_icon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BreathRateLabel"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="session_menu_icon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/SettingsMenuDelegate" offset="302" parentId="globals" symbolId="SettingsMenuDelegate" type="class"/>
+        <dataEntry label="globals/SessionMenuView" offset="365" parentId="globals" symbolId="SessionMenuView" type="class"/>
+        <dataEntry label="globals/SettingsMenuView" offset="420" parentId="globals" symbolId="SettingsMenuView" type="class"/>
+        <dataEntry label="globals/CustomPickerDelegate" offset="483" parentId="globals" symbolId="CustomPickerDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="546" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/DailyCountPickerDelegate" offset="609" parentId="globals" symbolId="DailyCountPickerDelegate" type="class"/>
+        <dataEntry label="globals/MainMenuDelegate" offset="672" parentId="globals" symbolId="MainMenuDelegate" type="class"/>
+        <dataEntry label="globals/InhaleDelegate" offset="735" parentId="globals" symbolId="InhaleDelegate" type="class"/>
+        <dataEntry label="globals/NumberPickerNumberFactory" offset="798" parentId="globals" symbolId="NumberPickerNumberFactory" type="class"/>
+        <dataEntry label="globals/MeditationDelegate" offset="893" parentId="globals" symbolId="MeditationDelegate" type="class"/>
+        <dataEntry label="globals/SessionMenuDelegate" offset="980" parentId="globals" symbolId="SessionMenuDelegate" type="class"/>
+        <dataEntry label="globals/FreestyleCountPickerDelegate" offset="1051" parentId="globals" symbolId="FreestyleCountPickerDelegate" type="class"/>
+        <dataEntry label="globals/Inhale1App" offset="1122" parentId="globals" symbolId="Inhale1App" type="class"/>
+        <dataEntry label="globals/MainMenuView" offset="1193" parentId="globals" symbolId="MainMenuView" type="class"/>
+        <dataEntry label="globals/MeditationView" offset="1256" parentId="globals" symbolId="MeditationView" type="class"/>
+        <dataEntry label="globals/CountPickerView" offset="1511" parentId="globals" symbolId="CountPickerView" type="class"/>
+        <dataEntry label="globals/ResultsView" offset="1558" parentId="globals" symbolId="ResultsView" type="class"/>
+        <dataEntry label="globals/InhaleView" offset="1629" parentId="globals" symbolId="InhaleView" type="class"/>
+        <dataEntry label="globals/ResultsDelegate" offset="1716" parentId="globals" symbolId="ResultsDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1779" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1858" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1897" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1936" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="2031" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="SettingsMenuDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="SessionMenuView" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435516" name="&lt;init&gt;" parent="SettingsMenuView" startPc="268435498">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435535" name="&lt;init&gt;" parent="CustomPickerDelegate" startPc="268435517">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435559" name="&lt;init&gt;" parent="Rez" startPc="268435536">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435723" name="vibrate" startPc="268435560">
+            <param id="duration"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435742" name="&lt;init&gt;" parent="DailyCountPickerDelegate" startPc="268435724">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435761" name="&lt;init&gt;" parent="MainMenuDelegate" startPc="268435743">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435780" name="&lt;init&gt;" parent="InhaleDelegate" startPc="268435762">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436110" name="makeMainMenu" startPc="268435781">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436129" name="&lt;init&gt;" parent="NumberPickerNumberFactory" startPc="268436111">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436148" name="&lt;init&gt;" parent="MeditationDelegate" startPc="268436130">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436167" name="&lt;init&gt;" parent="SessionMenuDelegate" startPc="268436149">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436193" name="getApp" startPc="268436168">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436212" name="&lt;init&gt;" parent="FreestyleCountPickerDelegate" startPc="268436194">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436231" name="&lt;init&gt;" parent="Inhale1App" startPc="268436213">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436250" name="&lt;init&gt;" parent="MainMenuView" startPc="268436232">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436269" name="&lt;init&gt;" parent="MeditationView" startPc="268436251">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436386" name="formatTime" startPc="268436270">
+            <param id="time"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436405" name="&lt;init&gt;" parent="CountPickerView" startPc="268436387">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436424" name="&lt;init&gt;" parent="ResultsView" startPc="268436406">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436443" name="&lt;init&gt;" parent="InhaleView" startPc="268436425">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436820" name="initiateSession" startPc="268436444">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436839" name="&lt;init&gt;" parent="ResultsDelegate" startPc="268436821">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436884" name="onBack" parent="SettingsMenuDelegate" startPc="268436840">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436905" name="initialize" parent="SettingsMenuDelegate" startPc="268436885">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437294" name="onSelect" parent="SettingsMenuDelegate" startPc="268436906">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437297" name="onLayout" parent="SessionMenuView" startPc="268437295">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437535" name="initialize" parent="SessionMenuView" startPc="268437298">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="SettingsMenuView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437587" name="initialize" parent="SettingsMenuView" startPc="268437536">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437864" name="loadMenu" parent="SettingsMenuView" startPc="268437588">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437911" name="onCancel" parent="CustomPickerDelegate" startPc="268437865">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437932" name="initialize" parent="CustomPickerDelegate" startPc="268437912">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438174" name="onAccept" parent="CustomPickerDelegate" startPc="268437933">
+            <param id="values"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438200" name="onCancel" parent="DailyCountPickerDelegate" startPc="268438175">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438221" name="initialize" parent="DailyCountPickerDelegate" startPc="268438201">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438408" name="onAccept" parent="DailyCountPickerDelegate" startPc="268438222">
+            <param id="values"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438448" name="onBack" parent="MainMenuDelegate" startPc="268438409">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438469" name="initialize" parent="MainMenuDelegate" startPc="268438449">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439052" name="onSelect" parent="MainMenuDelegate" startPc="268438470">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439057" name="onBack" parent="InhaleDelegate" startPc="268439053">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439078" name="initialize" parent="InhaleDelegate" startPc="268439058">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439083" name="onSelect" parent="InhaleDelegate" startPc="268439079">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439106" name="getValue" parent="NumberPickerNumberFactory" startPc="268439084">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439141" name="getSize" parent="NumberPickerNumberFactory" startPc="268439107">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439258" name="getDrawable" parent="NumberPickerNumberFactory" startPc="268439142">
+            <param id="item"/>
+            <param id="isSelected"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439309" name="initialize" parent="NumberPickerNumberFactory" startPc="268439259">
+            <param id="start"/>
+            <param id="stop"/>
+            <param id="increment"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439403" name="onBack" parent="MeditationDelegate" startPc="268439310">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439461" name="isRecording" parent="MeditationDelegate" startPc="268439404">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439492" name="initialize" parent="MeditationDelegate" startPc="268439462">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439600" name="loadSessionMenu" parent="MeditationDelegate" startPc="268439493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439746" name="onSelect" parent="MeditationDelegate" startPc="268439601">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439809" name="onBack" parent="SessionMenuDelegate" startPc="268439747">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439840" name="initialize" parent="SessionMenuDelegate" startPc="268439810">
+            <param id="MeditationView"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440316" name="onSelect" parent="SessionMenuDelegate" startPc="268439841">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440342" name="onCancel" parent="FreestyleCountPickerDelegate" startPc="268440317">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440373" name="initialize" parent="FreestyleCountPickerDelegate" startPc="268440343">
+            <param id="meditationView"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440543" name="onAccept" parent="FreestyleCountPickerDelegate" startPc="268440374">
+            <param id="values"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440546" name="onStart" parent="Inhale1App" startPc="268440544">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440618" name="getInitialView" parent="Inhale1App" startPc="268440547">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440639" name="initialize" parent="Inhale1App" startPc="268440619">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440642" name="onStop" parent="Inhale1App" startPc="268440640">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440653" name="getMenu" parent="MainMenuView" startPc="268440643">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440693" name="initialize" parent="MainMenuView" startPc="268440654">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440779" name="resumeMeditation" parent="MeditationView" startPc="268440694">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440943" name="startMeditation" parent="MeditationView" startPc="268440780">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268441010" name="&lt;globals/MeditationView/&lt;&gt;stopUiTimer&gt;" parent="MeditationView" startPc="268440944">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441029" name="updateView" parent="MeditationView" startPc="268441011">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441054" name="onHide" parent="MeditationView" startPc="268441030">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441140" name="pauseMeditation" parent="MeditationView" startPc="268441055">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441763" name="saveSession" parent="MeditationView" startPc="268441141">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441829" name="onShow" parent="MeditationView" startPc="268441764">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441832" name="onLayout" parent="MeditationView" startPc="268441830">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441851" name="updateUi" parent="MeditationView" startPc="268441833">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441881" name="clearSession" parent="MeditationView" startPc="268441852">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442005" name="discardSession" parent="MeditationView" startPc="268441882">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442476" name="initialize" parent="MeditationView" startPc="268442006">
+            <param id="mode"/>
+            <param id="options"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268442590" name="&lt;globals/MeditationView/&lt;&gt;startUiTimer&gt;" parent="MeditationView" startPc="268442477">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443164" name="onUpdate" parent="MeditationView" startPc="268442591">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443440" name="initialize" parent="CountPickerView" startPc="268443165">
+            <param id="title"/>
+            <param id="currentCount"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443480" name="onShow" parent="ResultsView" startPc="268443441">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443542" name="initialize" parent="ResultsView" startPc="268443481">
+            <param id="MeditationView"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444062" name="loadMenu" parent="ResultsView" startPc="268443543">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444262" name="onShow" parent="InhaleView" startPc="268444063">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444292" name="initialize" parent="InhaleView" startPc="268444263">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444349" name="onUpdate" parent="InhaleView" startPc="268444293">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444416" name="backToSession" parent="InhaleView" startPc="268444350">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444561" name="onBack" parent="ResultsDelegate" startPc="268444417">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444622" name="initialize" parent="ResultsDelegate" startPc="268444562">
+            <param id="mode"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444937" name="MainLayout" parent="Layouts" startPc="268444623">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444956" name="&lt;init&gt;" parent="MainMenu" startPc="268444938">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445089" name="initialize" parent="MainMenu" startPc="268444957">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

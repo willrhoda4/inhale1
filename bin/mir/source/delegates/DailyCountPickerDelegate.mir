@@ -1,32 +1,32 @@
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
 using Toybox.WatchUi;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
 using Toybox.Lang;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 6; @symbol_classdef = [DailyCountPickerDelegate,6,6,30]; @symbol_extends<0> = [WatchUi,6,39,46]; @symbol_extends<1> = [PickerDelegate,6,47,61]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 6; @symbol_classdef = [DailyCountPickerDelegate,6,6,30]; @symbol_extends<0> = [WatchUi,6,39,46]; @symbol_extends<1> = [PickerDelegate,6,47,61]; ]
 class DailyCountPickerDelegate extends WatchUi.PickerDelegate {
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 6; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 6; ]
     <init> {
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 6; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 6; ]
     static
     <init> {
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
     function initialize() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_8_26_10_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 9 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_8_26_10_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 9 8 ]
         symbol [ PickerDelegate %tmp.2 9 8 22 ];
         %tmp.2 = getv ? :PickerDelegate;
         symbol [ initialize %tmp.3 9 23 33 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_8_26_10_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_8_26_10_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 12; @symbol_functiondef = [onAccept,12,13,21]; @symbol_param<0> = [values,12,23,29]; @symbol_param<0>_type<0> = [Lang,12,33,37]; @symbol_param<0>_type<1> = [Array,12,38,43]; @symbol_return<0> = [Lang,12,49,53]; @symbol_return<1> = [Boolean,12,54,61]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 12; @symbol_functiondef = [onAccept,12,13,21]; @symbol_param<0> = [values,12,23,29]; @symbol_param<0>_type<0> = [Lang,12,33,37]; @symbol_param<0>_type<1> = [Array,12,38,43]; @symbol_return<0> = [Lang,12,49,53]; @symbol_return<1> = [Boolean,12,54,61]; ]
     function onAccept(values as Lang.Array) as Lang.Boolean {
-_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 14 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop" ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 14 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop" ]
         %newDailyCount.1 = local;
         symbol [ newDailyCount %newDailyCount.1 14 12 25 ];
         %tmp.1 = lgetv %values;
@@ -38,7 +38,7 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         symbol [ Number %tmp.4 14 46 52 ];
         lputv %newDailyCount.1 %tmp.4;
         symbol [ newDailyCount %newDailyCount.1 14 12 25 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 16 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 16 8 ]
         symbol [ System %tmp.6 16 8 14 ];
         %tmp.6 = getv ? :System;
         symbol [ println %tmp.7 16 15 22 ];
@@ -48,7 +48,7 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         symbol [ newDailyCount %tmp.9 16 50 63 ];
         %tmp.10 = add %tmp.8 %tmp.9;
         invoke %tmp.6 %tmp.7(%tmp.10);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 18 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 18 8 ]
         symbol [ Application %tmp.12 18 8 19 ];
         %tmp.12 = getv ? :Application;
         symbol [ Storage %tmp.13 18 20 27 ];
@@ -59,25 +59,25 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         %tmp.16 = lgetv %newDailyCount.1;
         symbol [ newDailyCount %tmp.16 18 58 71 ];
         invoke %tmp.13 %tmp.14(%tmp.15, %tmp.16);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 20 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop" ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 20 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop" ]
         %view.2 = local;
         symbol [ view %view.2 20 12 16 ];
-        symbol [ OptionsMenuView %tmp.20 20 27 42 ];
-        %tmp.20 = getv ? :OptionsMenuView;
+        symbol [ SettingsMenuView %tmp.20 20 27 43 ];
+        %tmp.20 = getv ? :SettingsMenuView;
         %tmp.17 = newc %tmp.20 ();
         lputv %view.2 %tmp.17;
         symbol [ view %view.2 20 12 16 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 21 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop" ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 21 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop" ]
         %delegate.3 = local;
         symbol [ delegate %delegate.3 21 12 20 ];
-        symbol [ OptionsMenuDelegate %tmp.24 21 27 46 ];
-        %tmp.24 = getv ? :OptionsMenuDelegate;
+        symbol [ SettingsMenuDelegate %tmp.24 21 27 47 ];
+        %tmp.24 = getv ? :SettingsMenuDelegate;
         %tmp.21 = newc %tmp.24 ();
         lputv %delegate.3 %tmp.21;
         symbol [ delegate %delegate.3 21 12 20 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 25 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 25 8 ]
         symbol [ WatchUi %tmp.25 25 8 15 ];
         %tmp.25 = getm $.Toybox.WatchUi;
         symbol [ popView %tmp.26 25 16 23 ];
@@ -87,7 +87,7 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         symbol [ SLIDE_RIGHT %tmp.28 25 50 61 ];
         %tmp.28 = getv %tmp.27 :SLIDE_RIGHT;
         invoke %tmp.25 %tmp.26(%tmp.28);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 26 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 26 8 ]
         symbol [ WatchUi %tmp.29 26 8 15 ];
         %tmp.29 = getm $.Toybox.WatchUi;
         symbol [ popView %tmp.30 26 16 23 ];
@@ -97,7 +97,7 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         symbol [ SLIDE_IMMEDIATE %tmp.32 26 50 65 ];
         %tmp.32 = getv %tmp.31 :SLIDE_IMMEDIATE;
         invoke %tmp.29 %tmp.30(%tmp.32);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 27 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 27 8 ]
         symbol [ WatchUi %tmp.33 27 8 15 ];
         %tmp.33 = getm $.Toybox.WatchUi;
         symbol [ pushView %tmp.34 27 16 24 ];
@@ -111,15 +111,15 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         symbol [ SLIDE_LEFT %tmp.38 27 50 60 ];
         %tmp.38 = getv %tmp.37 :SLIDE_LEFT;
         invoke %tmp.33 %tmp.34(%tmp.35, %tmp.36, %tmp.38);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 30 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 30 8 ]
         %tmp.39 = true;
         ret %tmp.39;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_12_62_31_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 33; @symbol_functiondef = [onCancel,33,13,21]; @symbol_return<0> = [Lang,33,27,31]; @symbol_return<1> = [Boolean,33,32,39]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 33; @symbol_functiondef = [onCancel,33,13,21]; @symbol_return<0> = [Lang,33,27,31]; @symbol_return<1> = [Boolean,33,32,39]; ]
     function onCancel() as Lang.Boolean {
-_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_33_40_38_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 35 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_33_40_38_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 35 8 ]
         symbol [ WatchUi %tmp.1 35 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
         symbol [ popView %tmp.2 35 16 23 ];
@@ -129,12 +129,12 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegat
         symbol [ SLIDE_RIGHT %tmp.4 35 32 43 ];
         %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc" 37 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc" 37 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_DailyCountPickerDelegate_mc_33_40_38_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_DailyCountPickerDelegate_mc_33_40_38_4_stop:
     }
 }
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/DailyCountPickerDelegate.mc"; @line = 1; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/DailyCountPickerDelegate.mc"; @line = 1; ]
 <init> {
 }

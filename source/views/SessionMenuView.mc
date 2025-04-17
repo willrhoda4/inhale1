@@ -7,7 +7,7 @@ using Toybox.Lang;
 
 class SessionMenuView extends WatchUi.Menu2 {
 
-    function initialize( elapsedTime as Lang.Number, breathCount as Lang.Number ) {
+    function initialize() {
 
         Menu2.initialize( { :title=>"now exhale..." } );
 

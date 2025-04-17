@@ -17,8 +17,8 @@ class DailyCountPickerDelegate extends WatchUi.PickerDelegate {
         
         Application.Storage.setValue( "dailyBreathCount", newDailyCount );
         
-        var view     = new OptionsMenuView(); // Now OptionsMenuView IS the Menu2
-        var delegate = new OptionsMenuDelegate();
+        var view     = new SettingsMenuView(); // Now OptionsMenuView IS the Menu2
+        var delegate = new SettingsMenuDelegate();
         
         // pop tte picker and the previous menu
         // then refresh the menu with our new value.

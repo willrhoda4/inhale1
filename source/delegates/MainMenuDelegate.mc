@@ -30,8 +30,8 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
             System.println( id + " mode selected - launching Timer" );
             
 
-            var view     = new BreathCountView( id, null );
-            var delegate = new BreathCountDelegate( view );
+            var view     = new MeditationView( id, null );
+            var delegate = new MeditationDelegate( view );
             
             WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
 
@@ -39,7 +39,7 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
 
             System.println( "Custom mode selected - launching Picker" );
 
-            var defaultCount = Application.Storage.getValue( "customBreathCount" );
+            var defaultCount = Application.Storage.getValue( "customMeditation" );
             
             if ( !( defaultCount instanceof Lang.Number ) ) {
                 defaultCount = 108; // Default
@@ -56,8 +56,8 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
 
             System.println( "Freestyle mode selected - launching timer" );
 
-            var view     = new SessionView(     :freestyle, null );
-            var delegate = new SessionDelegate(  view            );
+            var view     = new MeditationView(     :freestyle, null );
+            var delegate = new MeditationDelegate(  view            );
             
             WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
 
@@ -65,8 +65,8 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
             
             System.println( "Options selected - launching Options Menu" );
 
-            var view     = new OptionsMenuView(); // Now OptionsMenuView IS the Menu2
-            var delegate = new OptionsMenuDelegate();
+            var view     = new SettingsMenuView(); // Now OptionsMenuView IS the Menu2
+            var delegate = new SettingsMenuDelegate();
             
             WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
         }

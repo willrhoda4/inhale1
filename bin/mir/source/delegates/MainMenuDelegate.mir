@@ -1,38 +1,38 @@
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
 using Toybox.WatchUi;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
 using Toybox.System;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
 using Toybox.Lang;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Application,4,13,24]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Application,4,13,24]; ]
 using Toybox.Application;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; ]
 using Toybox.Graphics;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 13; @symbol_classdef = [MainMenuDelegate,13,6,22]; @symbol_extends<0> = [WatchUi,13,31,38]; @symbol_extends<1> = [Menu2InputDelegate,13,39,57]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 13; @symbol_classdef = [MainMenuDelegate,13,6,22]; @symbol_extends<0> = [WatchUi,13,31,38]; @symbol_extends<1> = [Menu2InputDelegate,13,39,57]; ]
 class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 13; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 13; ]
     <init> {
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 13; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 13; ]
     static
     <init> {
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; ]
     function initialize() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_16_26_18_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 17 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_16_26_18_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 17 8 ]
         symbol [ Menu2InputDelegate %tmp.2 17 8 26 ];
         %tmp.2 = getv ? :Menu2InputDelegate;
         symbol [ initialize %tmp.3 17 27 37 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_16_26_18_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_16_26_18_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 21; @symbol_functiondef = [onSelect,21,13,21]; @symbol_param<0> = [item,21,23,27]; @symbol_param<0>_type<0> = [WatchUi,21,31,38]; @symbol_param<0>_type<1> = [MenuItem,21,39,47]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 21; @symbol_functiondef = [onSelect,21,13,21]; @symbol_param<0> = [item,21,23,27]; @symbol_param<0>_type<0> = [WatchUi,21,31,38]; @symbol_param<0>_type<1> = [MenuItem,21,39,47]; ]
     function onSelect(item as WatchUi.MenuItem) as Void {
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_21_58_64_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 23 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_21_58_64_4_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_21_58_64_4_stop" ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_21_58_73_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 23 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_21_58_73_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_21_58_73_4_stop" ]
         %id.1 = local;
         symbol [ id %id.1 23 12 14 ];
         %tmp.1 = lgetv %item;
@@ -45,7 +45,7 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_21_
         symbol [ Symbol %tmp.4 23 38 44 ];
         lputv %id.1 %tmp.4;
         symbol [ id %id.1 23 12 14 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 25 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 25 8 ]
         symbol [ System %tmp.5 25 8 14 ];
         %tmp.5 = getm $.Toybox.System;
         symbol [ println %tmp.6 25 15 22 ];
@@ -55,262 +55,283 @@ _home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_21_
         symbol [ id %tmp.8 25 49 51 ];
         %tmp.9 = add %tmp.7 %tmp.8;
         invoke %tmp.5 %tmp.6(%tmp.9);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 27 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_8_63_8_if_stmt:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 27 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_stmt:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_13_27_36_begin:
         %tmp.10 = lgetv %id.1;
         symbol [ id %tmp.10 27 13 15 ];
         %tmp.12 = const :daily;
         symbol [ daily %tmp.12 27 20 25 const ];
         %tmp.13 = eq %tmp.10 %tmp.12;
-        bf %tmp.13 @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_8_63_8_if_false;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_8_63_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_28_34_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 29 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_28_34_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_28_34_8_stop" ]
+        bt %tmp.13 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_true;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_29_27_36_false:
+        %tmp.14 = lgetv %id.1;
+        symbol [ id %tmp.14 27 29 31 ];
+        %tmp.16 = const :freestyle;
+        symbol [ freestyle %tmp.16 27 36 45 const ];
+        %tmp.17 = eq %tmp.14 %tmp.16;
+        push %tmp.17;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_29_27_36_end:
+        %tmp.18 = phi [%tmp.13 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_13_27_36_begin] [%tmp.17 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_29_27_36_false] [%tmp.18 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_29_27_36_end];
+        bf %tmp.18 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_48_38_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 30 12 ]
+        symbol [ System %tmp.19 30 12 18 ];
+        %tmp.19 = getm $.Toybox.System;
+        symbol [ println %tmp.20 30 19 26 ];
+        %tmp.20 = getv function %tmp.19 :println;
+        %tmp.21 = lgetv %id.1;
+        symbol [ id %tmp.21 30 28 30 ];
+        %tmp.22 = " mode selected - launching Timer";
+        %tmp.23 = add %tmp.21 %tmp.22;
+        invoke %tmp.19 %tmp.20(%tmp.23);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 33 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_48_38_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_48_38_8_stop" ]
         %view.2 = local;
-        symbol [ view %view.2 29 16 20 ];
-        symbol [ BreathCountView %tmp.17 29 31 46 ];
-        %tmp.17 = getv ? :BreathCountView;
-        %tmp.19 = const :daily;
-        symbol [ daily %tmp.19 29 49 54 const ];
-        %tmp.20 = null;
-        %tmp.14 = newc %tmp.17 (%tmp.19, %tmp.20);
-        lputv %view.2 %tmp.14;
-        symbol [ view %view.2 29 16 20 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 30 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_28_34_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_28_34_8_stop" ]
+        symbol [ view %view.2 33 16 20 ];
+        symbol [ MeditationView %tmp.27 33 31 45 ];
+        %tmp.27 = getv ? :MeditationView;
+        %tmp.28 = lgetv %id.1;
+        symbol [ id %tmp.28 33 47 49 ];
+        %tmp.29 = null;
+        %tmp.24 = newc %tmp.27 (%tmp.28, %tmp.29);
+        lputv %view.2 %tmp.24;
+        symbol [ view %view.2 33 16 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 34 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_48_38_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_48_38_8_stop" ]
         %delegate.3 = local;
-        symbol [ delegate %delegate.3 30 16 24 ];
-        symbol [ BreathCountDelegate %tmp.24 30 31 50 ];
-        %tmp.24 = getv ? :BreathCountDelegate;
-        %tmp.25 = lgetv %view.2;
-        symbol [ view %tmp.25 30 52 56 ];
-        %tmp.21 = newc %tmp.24 (%tmp.25);
-        lputv %delegate.3 %tmp.21;
-        symbol [ delegate %delegate.3 30 16 24 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 32 12 ]
-        symbol [ WatchUi %tmp.26 32 12 19 ];
-        %tmp.26 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.27 32 20 28 ];
-        %tmp.27 = getv function %tmp.26 :pushView;
-        %tmp.28 = lgetv %view.2;
-        symbol [ view %tmp.28 32 30 34 ];
-        %tmp.29 = lgetv %delegate.3;
-        symbol [ delegate %tmp.29 32 36 44 ];
-        symbol [ WatchUi %tmp.30 32 46 53 ];
-        %tmp.30 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.31 32 54 64 ];
-        %tmp.31 = getv %tmp.30 :SLIDE_LEFT;
-        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.31);
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_28_34_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_8_63_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_8_63_8_if_false:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 34 15 ]
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_15_63_8_if_stmt:
-        %tmp.32 = lgetv %id.1;
-        symbol [ id %tmp.32 34 20 22 ];
-        %tmp.34 = const :custom;
-        symbol [ custom %tmp.34 34 27 33 const ];
-        %tmp.35 = eq %tmp.32 %tmp.34;
-        bf %tmp.35 @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_15_63_8_if_false;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_15_63_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_36_51_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 36 12 ]
-        symbol [ System %tmp.36 36 12 18 ];
-        %tmp.36 = getm $.Toybox.System;
-        symbol [ println %tmp.37 36 19 26 ];
-        %tmp.37 = getv function %tmp.36 :println;
-        %tmp.38 = "Custom mode selected - launching Picker";
-        invoke %tmp.36 %tmp.37(%tmp.38);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 38 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_36_51_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_36_51_8_stop" ]
+        symbol [ delegate %delegate.3 34 16 24 ];
+        symbol [ MeditationDelegate %tmp.33 34 31 49 ];
+        %tmp.33 = getv ? :MeditationDelegate;
+        %tmp.34 = lgetv %view.2;
+        symbol [ view %tmp.34 34 51 55 ];
+        %tmp.30 = newc %tmp.33 (%tmp.34);
+        lputv %delegate.3 %tmp.30;
+        symbol [ delegate %delegate.3 34 16 24 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 36 12 ]
+        symbol [ WatchUi %tmp.35 36 12 19 ];
+        %tmp.35 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.36 36 20 28 ];
+        %tmp.36 = getv function %tmp.35 :pushView;
+        %tmp.37 = lgetv %view.2;
+        symbol [ view %tmp.37 36 30 34 ];
+        %tmp.38 = lgetv %delegate.3;
+        symbol [ delegate %tmp.38 36 36 44 ];
+        symbol [ WatchUi %tmp.39 36 46 53 ];
+        %tmp.39 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.40 36 54 64 ];
+        %tmp.40 = getv %tmp.39 :SLIDE_LEFT;
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.38, %tmp.40);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_48_38_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 38 15 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_15_72_8_if_stmt:
+        %tmp.41 = lgetv %id.1;
+        symbol [ id %tmp.41 38 20 22 ];
+        %tmp.43 = const :custom;
+        symbol [ custom %tmp.43 38 27 33 const ];
+        %tmp.44 = eq %tmp.41 %tmp.43;
+        bf %tmp.44 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_15_72_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_15_72_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_36_55_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 40 12 ]
+        symbol [ System %tmp.45 40 12 18 ];
+        %tmp.45 = getm $.Toybox.System;
+        symbol [ println %tmp.46 40 19 26 ];
+        %tmp.46 = getv function %tmp.45 :println;
+        %tmp.47 = "Custom mode selected - launching Picker";
+        invoke %tmp.45 %tmp.46(%tmp.47);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 42 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_36_55_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_36_55_8_stop" ]
         %defaultCount.4 = local;
-        symbol [ defaultCount %defaultCount.4 38 16 28 ];
-        symbol [ Application %tmp.39 38 31 42 ];
-        %tmp.39 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.40 38 43 50 ];
-        %tmp.40 = getv %tmp.39 :Storage;
-        symbol [ getValue %tmp.41 38 51 59 ];
-        %tmp.41 = getv function %tmp.40 :getValue;
-        %tmp.42 = "dailyBreathCount";
-        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
-        lputv %defaultCount.4 %tmp.43;
-        symbol [ defaultCount %defaultCount.4 38 16 28 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 40 12 ]
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_12_42_12_if_stmt:
-        %tmp.44 = lgetv %defaultCount.4;
-        symbol [ defaultCount %tmp.44 40 19 31 ];
-        symbol [ Lang %tmp.45 40 43 47 ];
-        %tmp.45 = getm $.Toybox.Lang;
-        symbol [ Number %tmp.46 40 48 54 ];
-        %tmp.46 = getv %tmp.45 :Number;
-        %tmp.47 = isa %tmp.44 %tmp.46;
-        %tmp.48 = not %tmp.47;
-        bf %tmp.48 @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_12_42_12_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_12_42_12_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_58_42_12_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 41 16 ]
-        %tmp.49 = 108;
-        lputv %defaultCount.4 %tmp.49;
-        symbol [ defaultCount %defaultCount.4 41 16 28 ];
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_58_42_12_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_12_42_12_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_40_12_42_12_if_end:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 45 12 ]
-        symbol [ WatchUi %tmp.50 45 12 19 ];
-        %tmp.50 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.51 45 20 28 ];
-        %tmp.51 = getv function %tmp.50 :pushView;
-        symbol [ CountPickerView %tmp.55 46 20 35 ];
-        %tmp.55 = getv ? :CountPickerView;
-        %tmp.56 = "set today's count";
-        %tmp.57 = lgetv %defaultCount.4;
-        symbol [ defaultCount %tmp.57 46 58 70 ];
-        %tmp.52 = newc %tmp.55 (%tmp.56, %tmp.57);
-        symbol [ CustomPickerDelegate %tmp.61 47 20 40 ];
-        %tmp.61 = getv ? :CustomPickerDelegate;
-        %tmp.58 = newc %tmp.61 ();
-        symbol [ WatchUi %tmp.62 48 16 23 ];
-        %tmp.62 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.63 48 24 34 ];
-        %tmp.63 = getv %tmp.62 :SLIDE_LEFT;
-        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.58, %tmp.63);
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_36_51_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_15_63_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_15_63_8_if_false:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 51 15 ]
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_15_63_8_if_stmt:
-        %tmp.64 = lgetv %id.1;
-        symbol [ id %tmp.64 51 19 21 ];
-        %tmp.66 = const :freestyle;
-        symbol [ freestyle %tmp.66 51 26 35 const ];
-        %tmp.67 = eq %tmp.64 %tmp.66;
-        bf %tmp.67 @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_15_63_8_if_false;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_15_63_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_37_58_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 52 12 ]
-        symbol [ System %tmp.68 52 12 18 ];
-        %tmp.68 = getm $.Toybox.System;
-        symbol [ println %tmp.69 52 19 26 ];
-        %tmp.69 = getv function %tmp.68 :println;
-        %tmp.70 = "Freestyle mode selected - launching timer";
-        invoke %tmp.68 %tmp.69(%tmp.70);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 53 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_37_58_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_37_58_8_stop" ]
+        symbol [ defaultCount %defaultCount.4 42 16 28 ];
+        symbol [ Application %tmp.48 42 31 42 ];
+        %tmp.48 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.49 42 43 50 ];
+        %tmp.49 = getv %tmp.48 :Storage;
+        symbol [ getValue %tmp.50 42 51 59 ];
+        %tmp.50 = getv function %tmp.49 :getValue;
+        %tmp.51 = "customMeditation";
+        %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
+        lputv %defaultCount.4 %tmp.52;
+        symbol [ defaultCount %defaultCount.4 42 16 28 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 44 12 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_12_46_12_if_stmt:
+        %tmp.53 = lgetv %defaultCount.4;
+        symbol [ defaultCount %tmp.53 44 20 32 ];
+        symbol [ Lang %tmp.54 44 44 48 ];
+        %tmp.54 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.55 44 49 55 ];
+        %tmp.55 = getv %tmp.54 :Number;
+        %tmp.56 = isa %tmp.53 %tmp.55;
+        %tmp.57 = not %tmp.56;
+        bf %tmp.57 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_12_46_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_12_46_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_60_46_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 45 16 ]
+        %tmp.58 = 108;
+        lputv %defaultCount.4 %tmp.58;
+        symbol [ defaultCount %defaultCount.4 45 16 28 ];
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_60_46_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_12_46_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_44_12_46_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 49 12 ]
+        symbol [ WatchUi %tmp.59 49 12 19 ];
+        %tmp.59 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.60 49 20 28 ];
+        %tmp.60 = getv function %tmp.59 :pushView;
+        symbol [ CountPickerView %tmp.64 50 20 35 ];
+        %tmp.64 = getv ? :CountPickerView;
+        %tmp.65 = "set count";
+        %tmp.66 = lgetv %defaultCount.4;
+        symbol [ defaultCount %tmp.66 50 50 62 ];
+        %tmp.61 = newc %tmp.64 (%tmp.65, %tmp.66);
+        symbol [ CustomPickerDelegate %tmp.70 51 20 40 ];
+        %tmp.70 = getv ? :CustomPickerDelegate;
+        %tmp.67 = newc %tmp.70 ();
+        symbol [ WatchUi %tmp.71 52 16 23 ];
+        %tmp.71 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.72 52 24 34 ];
+        %tmp.72 = getv %tmp.71 :SLIDE_LEFT;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.67, %tmp.72);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_36_55_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_15_72_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_15_72_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 55 15 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_15_72_8_if_stmt:
+        %tmp.73 = lgetv %id.1;
+        symbol [ id %tmp.73 55 20 22 ];
+        %tmp.75 = const :freestyle;
+        symbol [ freestyle %tmp.75 55 27 36 const ];
+        %tmp.76 = eq %tmp.73 %tmp.75;
+        bf %tmp.76 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_15_72_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_15_72_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_39_64_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 57 12 ]
+        symbol [ System %tmp.77 57 12 18 ];
+        %tmp.77 = getm $.Toybox.System;
+        symbol [ println %tmp.78 57 19 26 ];
+        %tmp.78 = getv function %tmp.77 :println;
+        %tmp.79 = "Freestyle mode selected - launching timer";
+        invoke %tmp.77 %tmp.78(%tmp.79);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 59 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_39_64_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_39_64_8_stop" ]
         %view.5 = local;
-        symbol [ view %view.5 53 16 20 ];
-        symbol [ BreathCountView %tmp.74 53 27 42 ];
-        %tmp.74 = getv ? :BreathCountView;
-        %tmp.76 = const :freestyle;
-        symbol [ freestyle %tmp.76 53 44 53 const ];
-        %tmp.77 = null;
-        %tmp.71 = newc %tmp.74 (%tmp.76, %tmp.77);
-        lputv %view.5 %tmp.71;
-        symbol [ view %view.5 53 16 20 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 54 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_37_58_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_37_58_8_stop" ]
+        symbol [ view %view.5 59 16 20 ];
+        symbol [ MeditationView %tmp.83 59 31 45 ];
+        %tmp.83 = getv ? :MeditationView;
+        %tmp.85 = const :freestyle;
+        symbol [ freestyle %tmp.85 59 52 61 const ];
+        %tmp.86 = null;
+        %tmp.80 = newc %tmp.83 (%tmp.85, %tmp.86);
+        lputv %view.5 %tmp.80;
+        symbol [ view %view.5 59 16 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 60 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_39_64_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_39_64_8_stop" ]
         %delegate.6 = local;
-        symbol [ delegate %delegate.6 54 16 24 ];
-        symbol [ BreathCountDelegate %tmp.81 54 31 50 ];
-        %tmp.81 = getv ? :BreathCountDelegate;
-        %tmp.82 = lgetv %view.5;
-        symbol [ view %tmp.82 54 51 55 ];
-        %tmp.78 = newc %tmp.81 (%tmp.82);
-        lputv %delegate.6 %tmp.78;
-        symbol [ delegate %delegate.6 54 16 24 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 55 12 ]
-        symbol [ WatchUi %tmp.83 55 12 19 ];
-        %tmp.83 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.84 55 20 28 ];
-        %tmp.84 = getv function %tmp.83 :pushView;
-        %tmp.85 = lgetv %view.5;
-        symbol [ view %tmp.85 55 29 33 ];
-        %tmp.86 = lgetv %delegate.6;
-        symbol [ delegate %tmp.86 55 35 43 ];
-        symbol [ WatchUi %tmp.87 55 45 52 ];
-        %tmp.87 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.88 55 53 63 ];
-        %tmp.88 = getv %tmp.87 :SLIDE_LEFT;
-        invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86, %tmp.88);
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_37_58_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_15_63_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_15_63_8_if_false:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 58 15 ]
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_15_63_8_if_stmt:
-        %tmp.89 = lgetv %id.1;
-        symbol [ id %tmp.89 58 19 21 ];
-        %tmp.91 = const :options;
-        symbol [ options %tmp.91 58 26 33 const ];
-        %tmp.92 = eq %tmp.89 %tmp.91;
-        bf %tmp.92 @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_15_63_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_15_63_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_35_63_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 59 12 ]
-        symbol [ System %tmp.93 59 12 18 ];
-        %tmp.93 = getm $.Toybox.System;
-        symbol [ println %tmp.94 59 19 26 ];
-        %tmp.94 = getv function %tmp.93 :println;
-        %tmp.95 = "Options selected - launching Options Menu";
-        invoke %tmp.93 %tmp.94(%tmp.95);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 60 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_35_63_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_35_63_8_stop" ]
+        symbol [ delegate %delegate.6 60 16 24 ];
+        symbol [ MeditationDelegate %tmp.90 60 31 49 ];
+        %tmp.90 = getv ? :MeditationDelegate;
+        %tmp.91 = lgetv %view.5;
+        symbol [ view %tmp.91 60 52 56 ];
+        %tmp.87 = newc %tmp.90 (%tmp.91);
+        lputv %delegate.6 %tmp.87;
+        symbol [ delegate %delegate.6 60 16 24 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 62 12 ]
+        symbol [ WatchUi %tmp.92 62 12 19 ];
+        %tmp.92 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.93 62 20 28 ];
+        %tmp.93 = getv function %tmp.92 :pushView;
+        %tmp.94 = lgetv %view.5;
+        symbol [ view %tmp.94 62 30 34 ];
+        %tmp.95 = lgetv %delegate.6;
+        symbol [ delegate %tmp.95 62 36 44 ];
+        symbol [ WatchUi %tmp.96 62 46 53 ];
+        %tmp.96 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.97 62 54 64 ];
+        %tmp.97 = getv %tmp.96 :SLIDE_LEFT;
+        invoke %tmp.92 %tmp.93(%tmp.94, %tmp.95, %tmp.97);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_39_64_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_15_72_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_15_72_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 64 15 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_15_72_8_if_stmt:
+        %tmp.98 = lgetv %id.1;
+        symbol [ id %tmp.98 64 20 22 ];
+        %tmp.100 = const :options;
+        symbol [ options %tmp.100 64 27 34 const ];
+        %tmp.101 = eq %tmp.98 %tmp.100;
+        bf %tmp.101 @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_15_72_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_15_72_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_37_72_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 66 12 ]
+        symbol [ System %tmp.102 66 12 18 ];
+        %tmp.102 = getm $.Toybox.System;
+        symbol [ println %tmp.103 66 19 26 ];
+        %tmp.103 = getv function %tmp.102 :println;
+        %tmp.104 = "Options selected - launching Options Menu";
+        invoke %tmp.102 %tmp.103(%tmp.104);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 68 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_37_72_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_37_72_8_stop" ]
         %view.7 = local;
-        symbol [ view %view.7 60 16 20 ];
-        symbol [ OptionsMenuView %tmp.99 60 27 42 ];
-        %tmp.99 = getv ? :OptionsMenuView;
-        %tmp.96 = newc %tmp.99 ();
-        lputv %view.7 %tmp.96;
-        symbol [ view %view.7 60 16 20 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 61 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_35_63_8_start" "_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_35_63_8_stop" ]
+        symbol [ view %view.7 68 16 20 ];
+        symbol [ SettingsMenuView %tmp.108 68 31 47 ];
+        %tmp.108 = getv ? :SettingsMenuView;
+        %tmp.105 = newc %tmp.108 ();
+        lputv %view.7 %tmp.105;
+        symbol [ view %view.7 68 16 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 69 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_37_72_8_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_37_72_8_stop" ]
         %delegate.8 = local;
-        symbol [ delegate %delegate.8 61 16 24 ];
-        symbol [ OptionsMenuDelegate %tmp.103 61 31 50 ];
-        %tmp.103 = getv ? :OptionsMenuDelegate;
-        %tmp.100 = newc %tmp.103 ();
-        lputv %delegate.8 %tmp.100;
-        symbol [ delegate %delegate.8 61 16 24 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 62 12 ]
-        symbol [ WatchUi %tmp.104 62 12 19 ];
-        %tmp.104 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.105 62 20 28 ];
-        %tmp.105 = getv function %tmp.104 :pushView;
-        %tmp.106 = lgetv %view.7;
-        symbol [ view %tmp.106 62 29 33 ];
-        %tmp.107 = lgetv %delegate.8;
-        symbol [ delegate %tmp.107 62 35 43 ];
-        symbol [ WatchUi %tmp.108 62 45 52 ];
-        %tmp.108 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.109 62 53 63 ];
-        %tmp.109 = getv %tmp.108 :SLIDE_LEFT;
-        invoke %tmp.104 %tmp.105(%tmp.106, %tmp.107, %tmp.109);
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_35_63_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_15_63_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_58_15_63_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_51_15_63_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_34_15_63_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_27_8_63_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_21_58_64_4_stop:
+        symbol [ delegate %delegate.8 69 16 24 ];
+        symbol [ SettingsMenuDelegate %tmp.112 69 31 51 ];
+        %tmp.112 = getv ? :SettingsMenuDelegate;
+        %tmp.109 = newc %tmp.112 ();
+        lputv %delegate.8 %tmp.109;
+        symbol [ delegate %delegate.8 69 16 24 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 71 12 ]
+        symbol [ WatchUi %tmp.113 71 12 19 ];
+        %tmp.113 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.114 71 20 28 ];
+        %tmp.114 = getv function %tmp.113 :pushView;
+        %tmp.115 = lgetv %view.7;
+        symbol [ view %tmp.115 71 30 34 ];
+        %tmp.116 = lgetv %delegate.8;
+        symbol [ delegate %tmp.116 71 36 44 ];
+        symbol [ WatchUi %tmp.117 71 46 53 ];
+        %tmp.117 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.118 71 54 64 ];
+        %tmp.118 = getv %tmp.117 :SLIDE_LEFT;
+        invoke %tmp.113 %tmp.114(%tmp.115, %tmp.116, %tmp.118);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_37_72_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_15_72_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_64_15_72_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_55_15_72_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_38_15_72_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_27_8_72_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_21_58_73_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 66; @symbol_functiondef = [onBack,66,13,19]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 75; @symbol_functiondef = [onBack,75,13,19]; ]
     function onBack() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_66_30_69_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 67 8 ]
-        symbol [ System %tmp.1 67 8 14 ];
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_75_30_79_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 77 8 ]
+        symbol [ System %tmp.1 77 8 14 ];
         %tmp.1 = getm $.Toybox.System;
-        symbol [ println %tmp.2 67 15 22 ];
+        symbol [ println %tmp.2 77 15 22 ];
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "Back pressed on main menu - Exiting";
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc" 68 8 ]
-        symbol [ System %tmp.4 68 8 14 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc" 78 8 ]
+        symbol [ System %tmp.4 78 8 14 ];
         %tmp.4 = getm $.Toybox.System;
-        symbol [ exit %tmp.5 68 15 19 ];
+        symbol [ exit %tmp.5 78 15 19 ];
         %tmp.5 = getv function %tmp.4 :exit;
         invoke %tmp.4 %tmp.5();
-_home_w5hacksphere_Projects_BreathCount_source_delegates_MainMenuDelegate_mc_66_30_69_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MainMenuDelegate_mc_75_30_79_4_stop:
     }
 }
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/delegates/MainMenuDelegate.mc"; @line = 1; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MainMenuDelegate.mc"; @line = 1; ]
 <init> {
 }

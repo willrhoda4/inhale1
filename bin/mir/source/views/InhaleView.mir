@@ -1,0 +1,190 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Attention,1,13,22]; ]
+using Toybox.Attention;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Graphics,3,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 8; @symbol_classdef = [InhaleView,8,6,16]; @symbol_extends<0> = [WatchUi,8,25,32]; @symbol_extends<1> = [View,8,33,37]; ]
+class InhaleView extends WatchUi.View {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 11; @position = 15; @symbol_vardef = [_timer,11,15,21]; ]
+    protected
+    var _timer;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 12; @position = 18; @symbol_vardef = [text,12,18,22]; @symbol_type<0> = [WatchUi,12,26,33]; @symbol_type<1> = [Text,12,34,38]; ]
+    protected
+    var text as WatchUi.Text or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 14; @symbol_functiondef = [initialize,14,13,23]; ]
+    function initialize() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_14_26_19_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 16 8 ]
+        symbol [ View %tmp.2 16 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 16 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 18 8 ]
+        %tmp.4 = null;
+        symbol [ _timer ? 18 8 14 ];
+        putv self :_timer %tmp.4;
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_14_26_19_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 22; @symbol_functiondef = [onShow,22,13,19]; ]
+    function onShow() {
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_22_22_40_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 25 8 ]
+        %tmp.1 = self;
+        symbol [ vibrate %tmp.2 25 8 15 ];
+        %tmp.2 = getv function %tmp.1 :vibrate;
+        %tmp.3 = 2;
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 27 8 ]
+        symbol [ WatchUi %tmp.6 27 19 26 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.7 27 27 31 ];
+        %tmp.7 = getv function ? %tmp.6 :Text;
+        %tmp.8 = newd 5;
+        %tmp.10 = const :text;
+        symbol [ text %tmp.10 28 21 25 const ];
+        %tmp.11 = "inhale...";
+        %tmp.12 = dup %tmp.8;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        %tmp.15 = const :color;
+        symbol [ color %tmp.15 29 21 26 const ];
+        symbol [ Graphics %tmp.16 29 28 36 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.17 29 37 48 ];
+        %tmp.17 = getv %tmp.16 :COLOR_WHITE;
+        %tmp.18 = dup %tmp.13;
+        %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
+        %tmp.21 = const :font;
+        symbol [ font %tmp.21 30 21 25 const ];
+        symbol [ Graphics %tmp.22 30 27 35 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.23 30 36 46 ];
+        %tmp.23 = getv %tmp.22 :FONT_LARGE;
+        %tmp.24 = dup %tmp.19;
+        %tmp.25 = aputv %tmp.24 %tmp.21 %tmp.23;
+        %tmp.27 = const :locX;
+        symbol [ locX %tmp.27 31 21 25 const ];
+        symbol [ WatchUi %tmp.28 31 27 34 ];
+        %tmp.28 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.29 31 35 55 ];
+        %tmp.29 = getv %tmp.28 :LAYOUT_HALIGN_CENTER;
+        %tmp.30 = dup %tmp.25;
+        %tmp.31 = aputv %tmp.30 %tmp.27 %tmp.29;
+        %tmp.33 = const :locY;
+        symbol [ locY %tmp.33 32 21 25 const ];
+        symbol [ WatchUi %tmp.34 32 27 34 ];
+        %tmp.34 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_VALIGN_CENTER %tmp.35 32 35 55 ];
+        %tmp.35 = getv %tmp.34 :LAYOUT_VALIGN_CENTER;
+        %tmp.36 = dup %tmp.31;
+        %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+        %tmp.4 = newc %tmp.7 (%tmp.37);
+        symbol [ text ? 27 8 12 ];
+        putv self :text %tmp.4;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 36 8 ]
+        symbol [ Timer %tmp.41 36 21 26 ];
+        %tmp.41 = getv ? :Timer;
+        symbol [ Timer %tmp.42 36 27 32 ];
+        %tmp.42 = getv function ? %tmp.41 :Timer;
+        %tmp.38 = newc %tmp.42 ();
+        symbol [ _timer ? 36 8 14 ];
+        putv self :_timer %tmp.38;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 39 8 ]
+        symbol [ _timer %tmp.44 39 8 14 ];
+        %tmp.44 = getv ? :_timer;
+        symbol [ start %tmp.45 39 15 20 ];
+        %tmp.45 = getv function %tmp.44 :start;
+        %tmp.46 = self;
+        symbol [ method %tmp.47 39 22 28 ];
+        %tmp.47 = getv function %tmp.46 :method;
+        %tmp.49 = const :backToSession;
+        symbol [ backToSession %tmp.49 39 31 44 const ];
+        %tmp.50 = invoke %tmp.46 %tmp.47(%tmp.49);
+        %tmp.51 = 2000;
+        %tmp.52 = true;
+        invoke %tmp.44 %tmp.45(%tmp.50, %tmp.51, %tmp.52);
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_22_22_40_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 43; @symbol_functiondef = [onUpdate,43,13,21]; @symbol_param<0> = [dc,43,23,25]; @symbol_param<0>_type<0> = [Graphics,43,29,37]; @symbol_param<0>_type<1> = [Dc,43,38,40]; ]
+    function onUpdate(dc as Graphics.Dc) as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_43_51_48_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 45 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 45 8 10 ];
+        symbol [ setColor %tmp.2 45 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 45 21 29 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 45 30 41 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 45 43 51 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 45 52 63 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 46 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 46 8 10 ];
+        symbol [ clear %tmp.8 46 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 47 8 ]
+        symbol [ text %tmp.10 47 8 12 ];
+        %tmp.10 = getv ? :text;
+        symbol [ draw %tmp.11 47 13 17 ];
+        %tmp.11 = getv function %tmp.10 :draw;
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 47 19 21 ];
+        invoke %tmp.10 %tmp.11(%tmp.12);
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_43_51_48_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 51; @symbol_functiondef = [backToSession,51,13,26]; ]
+    function backToSession() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_51_37_60_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 53 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_8_57_8_if_stmt:
+        symbol [ _timer %tmp.2 53 13 19 ];
+        %tmp.2 = getv ? :_timer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_8_57_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_8_57_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_30_57_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 55 12 ]
+        symbol [ _timer %tmp.6 55 12 18 ];
+        %tmp.6 = getv ? :_timer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 55 19 23 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 56 12 ]
+        %tmp.9 = null;
+        symbol [ _timer ? 56 12 18 ];
+        putv self :_timer %tmp.9;
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_30_57_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_8_57_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_53_8_57_8_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc" 59 8 ]
+        symbol [ WatchUi %tmp.10 59 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.11 59 16 23 ];
+        %tmp.11 = getv function %tmp.10 :popView;
+        symbol [ WatchUi %tmp.12 59 25 32 ];
+        %tmp.12 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_BLINK %tmp.13 59 33 44 ];
+        %tmp.13 = getv %tmp.12 :SLIDE_BLINK;
+        invoke %tmp.10 %tmp.11(%tmp.13);
+_home_w5hacksphere_Projects_inhale1_source_views_InhaleView_mc_51_37_60_4_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/InhaleView.mc"; @line = 1; ]
+<init> {
+}

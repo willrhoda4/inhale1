@@ -12,14 +12,14 @@ using Toybox.Activity;
 class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
 
 
-    private var _breathCountView as BreathCountView; // Reference to our mode-aware view
+    private var _MeditationView as MeditationView; // Reference to our mode-aware view
     
     
-    function initialize(breathCountView as BreathCountView) {
+    function initialize(MeditationView as MeditationView) {
 
         Menu2InputDelegate.initialize();
 
-        _breathCountView = breathCountView; // Remove if not used
+        _MeditationView = MeditationView; // Remove if not used
     }
 
 
@@ -31,15 +31,15 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
         if (id == :save_session) {
 
 
-            if (_breathCountView._mode == :freestyle) {
+            if (_MeditationView._mode == :freestyle) {
 
-                var defaultCount = Application.Storage.getValue( "dailyBreathCount" );
+                var defaultCount = Application.Storage.getValue( "dailyMeditation" );
                 var picker       = new CountPickerView( "set count", defaultCount );        
 
 
                 WatchUi.pushView(
                     picker, 
-                    new FreestyleCountPickerDelegate( _breathCountView ), 
+                    new FreestyleCountPickerDelegate( _MeditationView ), 
                     WatchUi.SLIDE_LEFT
                 );
 
@@ -49,12 +49,12 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
 
             System.println("Save Session selected");
             
-            _breathCountView.saveSession();
+            _MeditationView.saveSession();
 
 
             WatchUi.pushView( 
-                new ResultsView( _breathCountView ), 
-                new ResultsDelegate( _breathCountView._mode ), 
+                new ResultsView( _MeditationView ), 
+                new ResultsDelegate( _MeditationView._mode ), 
                 WatchUi.SLIDE_LEFT 
             );
 
@@ -65,14 +65,14 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
             System.println("Return to Session selected");
 
             WatchUi.popView( WatchUi.SLIDE_RIGHT     );
-            _breathCountView.resumeMeditation();
+            _MeditationView.resumeMeditation();
 
 
         } else if (id == :discard_session) {
 
             System.println("Discard Session selected");
 
-            _breathCountView.discardSession();
+            _MeditationView.discardSession();
             WatchUi.popView( WatchUi.SLIDE_RIGHT     );
             WatchUi.popView( WatchUi.SLIDE_IMMEDIATE );
         }
@@ -84,6 +84,6 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
         System.println( "Back pressed on Results/Save menu - Resuming" );
 
         WatchUi.popView( WatchUi.SLIDE_RIGHT     );      
-        _breathCountView.resumeMeditation();
+        _MeditationView.resumeMeditation();
     }
 }

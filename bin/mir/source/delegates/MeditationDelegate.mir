@@ -1,0 +1,223 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 9; @symbol_classdef = [MeditationDelegate,9,6,24]; @symbol_extends<0> = [WatchUi,9,33,40]; @symbol_extends<1> = [BehaviorDelegate,9,41,57]; ]
+class MeditationDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 11; @position = 16; @symbol_vardef = [_view,11,16,21]; @symbol_type<0> = [MeditationView,11,25,39]; ]
+    private
+    var _view as MeditationView;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; @symbol_param<0> = [view,17,25,29]; @symbol_param<0>_type<0> = [MeditationView,17,33,47]; ]
+    function initialize(view as MeditationView) as Void {
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_17_50_22_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 19 8 ]
+        symbol [ BehaviorDelegate %tmp.2 19 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 19 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 21 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 21 16 20 ];
+        symbol [ _view ? 21 8 13 ];
+        putv self :_view %tmp.4;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_17_50_22_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 25; @symbol_functiondef = [isRecording,25,13,24]; @symbol_return<0> = [Lang,25,30,34]; @symbol_return<1> = [Boolean,25,35,42]; ]
+    function isRecording() as Lang.Boolean {
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_25_43_32_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 27 9 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_25_43_32_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_25_43_32_4_stop" ]
+        %recording.1 = local;
+        symbol [ recording %recording.1 27 13 22 ];
+        %tmp.1 = false;
+        lputv %recording.1 %tmp.1;
+        symbol [ recording %recording.1 27 13 22 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 29 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_8_29_81_if_stmt:
+        symbol [ _view %tmp.3 29 13 18 ];
+        %tmp.3 = getv ? :_view;
+        symbol [ _session %tmp.4 29 19 27 ];
+        %tmp.4 = getv %tmp.3 :_session;
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_8_29_81_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_8_29_81_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_38_29_81_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 29 40 ]
+        symbol [ _view %tmp.8 29 51 56 ];
+        %tmp.8 = getv ? :_view;
+        symbol [ _session %tmp.9 29 57 65 ];
+        %tmp.9 = getv %tmp.8 :_session;
+        symbol [ isRecording %tmp.10 29 66 77 ];
+        %tmp.10 = getv function %tmp.9 :isRecording;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %recording.1 %tmp.11;
+        symbol [ recording %recording.1 29 40 49 ];
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_38_29_81_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_8_29_81_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_29_8_29_81_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 31 8 ]
+        %tmp.12 = lgetv %recording.1;
+        symbol [ recording %tmp.12 31 15 24 ];
+        ret %tmp.12;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_25_43_32_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 34; @symbol_functiondef = [loadSessionMenu,34,13,28]; ]
+    function loadSessionMenu() as Void {
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_34_39_45_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 36 8 ]
+        symbol [ _view %tmp.2 36 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ pauseMeditation %tmp.3 36 14 29 ];
+        %tmp.3 = getv function %tmp.2 :pauseMeditation;
+        invoke %tmp.2 %tmp.3();
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 38 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_34_39_45_4_start" "_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_34_39_45_4_stop" ]
+        %sessionMenuView.1 = local;
+        symbol [ sessionMenuView %sessionMenuView.1 38 12 27 ];
+        symbol [ SessionMenuView %tmp.7 38 34 49 ];
+        %tmp.7 = getv ? :SessionMenuView;
+        %tmp.4 = newc %tmp.7 ();
+        lputv %sessionMenuView.1 %tmp.4;
+        symbol [ sessionMenuView %sessionMenuView.1 38 12 27 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 40 8 ]
+        symbol [ WatchUi %tmp.8 40 8 15 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.9 40 16 24 ];
+        %tmp.9 = getv function %tmp.8 :pushView;
+        %tmp.10 = lgetv %sessionMenuView.1;
+        symbol [ sessionMenuView %tmp.10 41 12 27 ];
+        symbol [ SessionMenuDelegate %tmp.14 42 16 35 ];
+        %tmp.14 = getv ? :SessionMenuDelegate;
+        symbol [ _view %tmp.16 42 37 42 ];
+        %tmp.16 = getv ? :_view;
+        %tmp.11 = newc %tmp.14 (%tmp.16);
+        symbol [ WatchUi %tmp.17 43 12 19 ];
+        %tmp.17 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.18 43 20 30 ];
+        %tmp.18 = getv %tmp.17 :SLIDE_LEFT;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.11, %tmp.18);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_34_39_45_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 52; @symbol_functiondef = [onSelect,52,13,21]; @symbol_return<0> = [Lang,52,27,31]; @symbol_return<1> = [Boolean,52,32,39]; ]
+    function onSelect() as Lang.Boolean {
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_52_40_71_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 54 8 ]
+        symbol [ System %tmp.1 54 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 54 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Delegate: Select Pressed.";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 56 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_8_68_8_if_stmt:
+        %tmp.4 = self;
+        symbol [ isRecording %tmp.5 56 13 24 ];
+        %tmp.5 = getv function %tmp.4 :isRecording;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        bf %tmp.6 @_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_8_68_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_8_68_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_29_56_56_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 56 31 ]
+        %tmp.7 = self;
+        symbol [ loadSessionMenu %tmp.8 56 31 46 ];
+        %tmp.8 = getv function %tmp.7 :loadSessionMenu;
+        invoke %tmp.7 %tmp.8();
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_29_56_56_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_8_68_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_8_68_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_58_29_68_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 60 12 ]
+        symbol [ _view %tmp.10 60 12 17 ];
+        %tmp.10 = getv ? :_view;
+        symbol [ startMeditation %tmp.11 60 18 33 ];
+        %tmp.11 = getv function %tmp.10 :startMeditation;
+        invoke %tmp.10 %tmp.11();
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 62 12 ]
+        symbol [ WatchUi %tmp.12 62 12 19 ];
+        %tmp.12 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.13 62 20 28 ];
+        %tmp.13 = getv function %tmp.12 :pushView;
+        symbol [ InhaleView %tmp.17 63 20 30 ];
+        %tmp.17 = getv ? :InhaleView;
+        %tmp.14 = newc %tmp.17 ();
+        symbol [ InhaleDelegate %tmp.21 64 20 34 ];
+        %tmp.21 = getv ? :InhaleDelegate;
+        %tmp.18 = newc %tmp.21 ();
+        symbol [ WatchUi %tmp.22 65 16 23 ];
+        %tmp.22 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.23 65 24 34 ];
+        %tmp.23 = getv %tmp.22 :SLIDE_LEFT;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.18, %tmp.23);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_58_29_68_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_56_8_68_8_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 70 8 ]
+        %tmp.24 = true;
+        ret %tmp.24;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_52_40_71_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 78; @symbol_functiondef = [onBack,78,13,19]; @symbol_return<0> = [Lang,78,25,29]; @symbol_return<1> = [Boolean,78,30,37]; ]
+    function onBack() as Lang.Boolean {
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_78_38_89_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 80 8 ]
+        symbol [ System %tmp.1 80 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 80 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Back Pressed on Timer View - Popping View";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 82 8 ]
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_8_87_8_if_stmt:
+        %tmp.4 = self;
+        symbol [ isRecording %tmp.5 82 13 24 ];
+        %tmp.5 = getv function %tmp.4 :isRecording;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        bf %tmp.6 @_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_8_87_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_8_87_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_29_82_50_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 82 31 ]
+        %tmp.7 = self;
+        symbol [ loadSessionMenu %tmp.8 82 31 46 ];
+        %tmp.8 = getv function %tmp.7 :loadSessionMenu;
+        invoke %tmp.7 %tmp.8();
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_29_82_50_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_8_87_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_8_87_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_83_29_87_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 85 12 ]
+        symbol [ _view %tmp.10 85 12 17 ];
+        %tmp.10 = getv ? :_view;
+        symbol [ pauseMeditation %tmp.11 85 18 33 ];
+        %tmp.11 = getv function %tmp.10 :pauseMeditation;
+        invoke %tmp.10 %tmp.11();
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 86 12 ]
+        symbol [ WatchUi %tmp.12 86 12 19 ];
+        %tmp.12 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.13 86 20 27 ];
+        %tmp.13 = getv function %tmp.12 :popView;
+        symbol [ WatchUi %tmp.14 86 29 36 ];
+        %tmp.14 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.15 86 37 48 ];
+        %tmp.15 = getv %tmp.14 :SLIDE_RIGHT;
+        invoke %tmp.12 %tmp.13(%tmp.15);
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_83_29_87_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_82_8_87_8_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc" 88 8 ]
+        %tmp.16 = true;
+        ret %tmp.16;
+_home_w5hacksphere_Projects_inhale1_source_delegates_MeditationDelegate_mc_78_38_89_4_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/MeditationDelegate.mc"; @line = 1; ]
+<init> {
+}

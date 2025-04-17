@@ -1,0 +1,1422 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Timer,3,13,18]; ]
+using Toybox.Timer;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [System,5,13,19]; ]
+using Toybox.System;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Sensor,6,13,19]; ]
+using Toybox.Sensor;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [Application,7,13,24]; ]
+using Toybox.Application;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [ActivityRecording,8,13,30]; ]
+using Toybox.ActivityRecording;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 9; @symbol_usingdef<0> = [Toybox,9,6,12]; @symbol_usingdef<1> = [FitContributor,9,13,27]; ]
+using Toybox.FitContributor;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 15; @symbol_classdef = [MeditationView,15,6,20]; @symbol_extends<0> = [WatchUi,15,29,36]; @symbol_extends<1> = [View,15,37,41]; ]
+class MeditationView extends WatchUi.View {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 15; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 15; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 18; @position = 16; @symbol_vardef = [_mode,18,16,21]; @symbol_type<0> = [Lang,18,39,43]; @symbol_type<1> = [Symbol,18,44,50]; ]
+    public
+    var _mode as Lang.Symbol;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 19; @position = 16; @symbol_vardef = [_breathCount,19,16,28]; @symbol_type<0> = [Lang,19,39,43]; @symbol_type<1> = [Number,19,44,50]; ]
+    public
+    var _breathCount as Lang.Number;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 20; @position = 16; @symbol_vardef = [_breathRate,20,16,27]; @symbol_type<0> = [Lang,20,39,43]; @symbol_type<1> = [Float,20,44,49]; ]
+    public
+    var _breathRate as Lang.Float;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 21; @position = 16; @symbol_vardef = [_session,21,16,24]; @symbol_type<0> = [ActivityRecording,21,39,56]; @symbol_type<1> = [Session,21,57,64]; ]
+    public
+    var _session as ActivityRecording.Session or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 22; @position = 16; @symbol_vardef = [_elapsedTime,22,16,28]; @symbol_type<0> = [Lang,22,39,43]; @symbol_type<1> = [Number,22,44,50]; ]
+    public
+    var _elapsedTime as Lang.Number;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 24; @position = 16; @symbol_vardef = [_timer,24,16,22]; @symbol_type<0> = [Timer,24,39,44]; @symbol_type<1> = [Timer,24,45,50]; ]
+    private
+    var _timer as Timer.Timer or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 26; @position = 15; @symbol_vardef = [_devFieldBreathCount,26,15,35]; @symbol_type<0> = [FitContributor,26,39,53]; @symbol_type<1> = [Field,26,54,59]; ]
+    public
+    var _devFieldBreathCount as FitContributor.Field or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 27; @position = 15; @symbol_vardef = [_devFieldBreathRate,27,15,34]; @symbol_type<0> = [FitContributor,27,39,53]; @symbol_type<1> = [Field,27,54,59]; ]
+    public
+    var _devFieldBreathRate as FitContributor.Field or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 29; @position = 15; @symbol_vardef = [_minHeartRate,29,15,28]; @symbol_type<0> = [Lang,29,33,37]; @symbol_type<1> = [Number,29,38,44]; ]
+    public
+    var _minHeartRate as Lang.Number or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 30; @position = 15; @symbol_vardef = [_currHeartRate,30,15,29]; @symbol_type<0> = [Lang,30,33,37]; @symbol_type<1> = [Number,30,38,44]; ]
+    public
+    var _currHeartRate as Lang.Number or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 31; @position = 15; @symbol_vardef = [_maxHeartRate,31,15,28]; @symbol_type<0> = [Lang,31,33,37]; @symbol_type<1> = [Number,31,38,44]; ]
+    public
+    var _maxHeartRate as Lang.Number or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 32; @position = 15; @symbol_vardef = [_avgHeartRate,32,15,28]; @symbol_type<0> = [Lang,32,33,37]; @symbol_type<1> = [Number,32,38,44]; ]
+    public
+    var _avgHeartRate as Lang.Number or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 35; @position = 15; @symbol_constdef = [DEFAULT_COUNT,35,15,28]; ]
+    const DEFAULT_COUNT = 108;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 44; @symbol_functiondef = [initialize,44,13,23]; @symbol_param<0> = [mode,44,25,29]; @symbol_param<0>_type<0> = [Lang,44,33,37]; @symbol_param<0>_type<1> = [Symbol,44,38,44]; @symbol_param<1> = [options,44,46,53]; @symbol_param<1>_type<0> = [Lang,44,57,61]; @symbol_param<1>_type<1> = [Dictionary,44,62,72]; ]
+    function initialize(mode as Lang.Symbol, options as Lang.Dictionary or Null) as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_44_76_103_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 46 8 ]
+        symbol [ View %tmp.2 46 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 46 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 49 8 ]
+        %tmp.4 = lgetv %mode;
+        symbol [ mode %tmp.4 49 31 35 ];
+        symbol [ _mode ? 49 8 13 ];
+        putv self :_mode %tmp.4;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 50 8 ]
+        %tmp.5 = null;
+        symbol [ _timer ? 50 8 14 ];
+        putv self :_timer %tmp.5;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 51 8 ]
+        %tmp.6 = null;
+        symbol [ _devFieldBreathCount ? 51 8 28 ];
+        putv self :_devFieldBreathCount %tmp.6;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 52 8 ]
+        %tmp.7 = null;
+        symbol [ _devFieldBreathRate ? 52 8 27 ];
+        putv self :_devFieldBreathRate %tmp.7;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 53 8 ]
+        %tmp.8 = 0;
+        symbol [ _elapsedTime ? 53 8 20 ];
+        putv self :_elapsedTime %tmp.8;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 54 8 ]
+        %tmp.9 = 0.0;
+        symbol [ _breathRate ? 54 8 19 ];
+        putv self :_breathRate %tmp.9;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 56 8 ]
+        %tmp.10 = null;
+        symbol [ _minHeartRate ? 56 8 21 ];
+        putv self :_minHeartRate %tmp.10;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 57 8 ]
+        %tmp.11 = null;
+        symbol [ _currHeartRate ? 57 8 22 ];
+        putv self :_currHeartRate %tmp.11;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 58 8 ]
+        %tmp.12 = null;
+        symbol [ _maxHeartRate ? 58 8 21 ];
+        putv self :_maxHeartRate %tmp.12;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 59 8 ]
+        %tmp.13 = null;
+        symbol [ _avgHeartRate ? 59 8 21 ];
+        putv self :_avgHeartRate %tmp.13;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 65 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_8_102_8_if_stmt:
+        symbol [ _mode %tmp.15 65 13 18 ];
+        %tmp.15 = getv ? :_mode;
+        %tmp.17 = const :daily;
+        symbol [ daily %tmp.17 65 23 28 const ];
+        %tmp.18 = eq %tmp.15 %tmp.17;
+        bf %tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_8_102_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_8_102_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_31_75_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 68 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_31_75_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_31_75_8_stop" ]
+        %storedCount.1 = local;
+        symbol [ storedCount %storedCount.1 68 16 27 ];
+        symbol [ Application %tmp.19 68 30 41 ];
+        %tmp.19 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.20 68 42 49 ];
+        %tmp.20 = getv %tmp.19 :Storage;
+        symbol [ getValue %tmp.21 68 50 58 ];
+        %tmp.21 = getv function %tmp.20 :getValue;
+        %tmp.22 = "dailyMeditation";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        lputv %storedCount.1 %tmp.23;
+        symbol [ storedCount %storedCount.1 68 16 27 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 70 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_begin:
+        %tmp.24 = lgetv %storedCount.1;
+        symbol [ storedCount %tmp.24 70 27 38 ];
+        symbol [ Lang %tmp.25 70 50 54 ];
+        %tmp.25 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.26 70 55 61 ];
+        %tmp.26 = getv %tmp.25 :Number;
+        %tmp.27 = isa %tmp.24 %tmp.26;
+        bf %tmp.27 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_true:
+        %tmp.28 = lgetv %storedCount.1;
+        symbol [ storedCount %tmp.28 70 64 75 ];
+        %tmp.29 = as %tmp.28 { (Lang.Number) };
+        push %tmp.29;
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_false:
+        symbol [ DEFAULT_COUNT %tmp.31 70 78 91 ];
+        %tmp.31 = getv ? :DEFAULT_COUNT;
+        push %tmp.31;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_end:
+        %tmp.32 = phi [%tmp.27 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_begin] [%tmp.29 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_true] [%tmp.31 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_false] [%tmp.32 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_70_27_70_78_end];
+        symbol [ _breathCount ? 70 12 24 ];
+        putv self :_breathCount %tmp.32;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 72 12 ]
+        symbol [ System %tmp.33 72 12 18 ];
+        %tmp.33 = getm $.Toybox.System;
+        symbol [ println %tmp.34 72 19 26 ];
+        %tmp.34 = getv function %tmp.33 :println;
+        %tmp.35 = "Daily mode breath count: ";
+        symbol [ _breathCount %tmp.37 72 58 70 ];
+        %tmp.37 = getv ? :_breathCount;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        invoke %tmp.33 %tmp.34(%tmp.38);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_31_75_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_8_102_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_8_102_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 75 15 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_15_102_8_if_stmt:
+        symbol [ _mode %tmp.40 75 20 25 ];
+        %tmp.40 = getv ? :_mode;
+        %tmp.42 = const :custom;
+        symbol [ custom %tmp.42 75 30 36 const ];
+        %tmp.43 = eq %tmp.40 %tmp.42;
+        bf %tmp.43 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_15_102_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_15_102_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_39_91_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 78 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_stmt:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_20_80_67_begin:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_20_79_49_begin:
+        %tmp.44 = lgetv %options;
+        symbol [ options %tmp.44 78 20 27 ];
+        %tmp.45 = null;
+        %tmp.46 = ne %tmp.44 %tmp.45;
+        bf %tmp.46 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_79_20_79_49_true:
+        %tmp.47 = lgetv %options;
+        symbol [ options %tmp.47 79 20 27 ];
+        %tmp.48 = as %tmp.47 { (!Null) };
+        symbol [ hasKey %tmp.49 79 28 34 ];
+        %tmp.49 = getv function %tmp.48 :hasKey;
+        %tmp.51 = const :breathCount;
+        symbol [ breathCount %tmp.51 79 37 48 const ];
+        %tmp.52 = invoke %tmp.48 %tmp.49(%tmp.51);
+        push %tmp.52;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_79_20_79_49_end:
+        %tmp.53 = phi [%tmp.46 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_20_79_49_begin] [%tmp.52 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_79_20_79_49_true] [%tmp.53 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_79_20_79_49_end];
+        bf %tmp.53 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_80_20_80_67_true:
+        %tmp.54 = lgetv %options;
+        symbol [ options %tmp.54 80 20 27 ];
+        %tmp.55 = as %tmp.54 { (!Null) };
+        %tmp.57 = const :breathCount;
+        symbol [ breathCount %tmp.57 80 37 48 const ];
+        %tmp.58 = agetv %tmp.55 %tmp.57;
+        symbol [ Lang %tmp.59 80 62 66 ];
+        %tmp.59 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.60 80 67 73 ];
+        %tmp.60 = getv %tmp.59 :Number;
+        %tmp.61 = isa %tmp.58 %tmp.60;
+        push %tmp.61;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_80_20_80_67_end:
+        %tmp.62 = phi [%tmp.53 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_20_80_67_begin] [%tmp.61 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_80_20_80_67_true] [%tmp.62 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_80_20_80_67_end];
+        bf %tmp.62 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_82_17_82_60_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 82 20 ]
+        %tmp.63 = lgetv %options;
+        symbol [ options %tmp.63 82 35 42 ];
+        %tmp.64 = as %tmp.63 { (!Null) };
+        %tmp.66 = const :breathCount;
+        symbol [ breathCount %tmp.66 82 45 56 const ];
+        %tmp.67 = agetv %tmp.64 %tmp.66;
+        symbol [ _breathCount ? 82 20 32 ];
+        putv self :_breathCount %tmp.67;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_82_17_82_60_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_84_17_87_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 85 20 ]
+        symbol [ DEFAULT_COUNT %tmp.69 85 35 48 ];
+        %tmp.69 = getv ? :DEFAULT_COUNT;
+        symbol [ _breathCount ? 85 20 32 ];
+        putv self :_breathCount %tmp.69;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 86 20 ]
+        symbol [ System %tmp.70 86 20 26 ];
+        %tmp.70 = getm $.Toybox.System;
+        symbol [ println %tmp.71 86 27 34 ];
+        %tmp.71 = getv function %tmp.70 :println;
+        %tmp.72 = "Warning: Custom mode started without valid breath count in options.";
+        invoke %tmp.70 %tmp.71(%tmp.72);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_84_17_87_12_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_78_12_87_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 89 12 ]
+        symbol [ System %tmp.73 89 12 18 ];
+        %tmp.73 = getm $.Toybox.System;
+        symbol [ println %tmp.74 89 19 26 ];
+        %tmp.74 = getv function %tmp.73 :println;
+        %tmp.75 = "Custom mode breath count: ";
+        symbol [ _breathCount %tmp.77 89 59 71 ];
+        %tmp.77 = getv ? :_breathCount;
+        %tmp.78 = add %tmp.75 %tmp.77;
+        invoke %tmp.73 %tmp.74(%tmp.78);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_39_91_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_15_102_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_15_102_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 91 15 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_15_102_8_if_stmt:
+        symbol [ _mode %tmp.80 91 20 25 ];
+        %tmp.80 = getv ? :_mode;
+        %tmp.82 = const :freestyle;
+        symbol [ freestyle %tmp.82 91 30 39 const ];
+        %tmp.83 = eq %tmp.80 %tmp.82;
+        bf %tmp.83 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_15_102_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_15_102_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_42_97_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 93 13 ]
+        %tmp.84 = 0;
+        symbol [ _breathCount ? 93 13 25 ];
+        putv self :_breathCount %tmp.84;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 95 13 ]
+        symbol [ System %tmp.85 95 13 19 ];
+        %tmp.85 = getm $.Toybox.System;
+        symbol [ println %tmp.86 95 20 27 ];
+        %tmp.86 = getv function %tmp.85 :println;
+        %tmp.87 = "Freestyle mode - breath count TBD";
+        invoke %tmp.85 %tmp.86(%tmp.87);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_42_97_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_15_102_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_15_102_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_97_15_102_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 99 13 ]
+        symbol [ DEFAULT_COUNT %tmp.89 99 28 41 ];
+        %tmp.89 = getv ? :DEFAULT_COUNT;
+        symbol [ _breathCount ? 99 13 25 ];
+        putv self :_breathCount %tmp.89;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 101 13 ]
+        symbol [ System %tmp.90 101 13 19 ];
+        %tmp.90 = getm $.Toybox.System;
+        symbol [ println %tmp.91 101 20 27 ];
+        %tmp.91 = getv function %tmp.90 :println;
+        %tmp.92 = "Warning: Unknown mode, using default count 108";
+        invoke %tmp.90 %tmp.91(%tmp.92);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_97_15_102_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_91_15_102_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_75_15_102_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_65_8_102_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_44_76_103_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 109; @symbol_functiondef = [startUiTimer,109,21,33]; ]
+    private
+    function startUiTimer() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_109_44_119_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 111 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_8_118_8_if_stmt:
+        symbol [ _timer %tmp.2 111 13 19 ];
+        %tmp.2 = getv ? :_timer;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_8_118_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_8_118_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_29_118_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 113 12 ]
+        symbol [ Timer %tmp.7 113 25 30 ];
+        %tmp.7 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.8 113 31 36 ];
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.5 = newc %tmp.8 ();
+        symbol [ _timer ? 113 12 18 ];
+        putv self :_timer %tmp.5;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 115 12 ]
+        symbol [ _timer %tmp.10 115 12 18 ];
+        %tmp.10 = getv ? :_timer;
+        symbol [ start %tmp.11 115 19 24 ];
+        %tmp.11 = getv function %tmp.10 :start;
+        %tmp.12 = self;
+        symbol [ method %tmp.13 115 26 32 ];
+        %tmp.13 = getv function %tmp.12 :method;
+        %tmp.15 = const :updateUi;
+        symbol [ updateUi %tmp.15 115 35 43 const ];
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.17 = 1000;
+        %tmp.18 = true;
+        invoke %tmp.10 %tmp.11(%tmp.16, %tmp.17, %tmp.18);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 117 12 ]
+        symbol [ System %tmp.19 117 12 18 ];
+        %tmp.19 = getm $.Toybox.System;
+        symbol [ println %tmp.20 117 19 26 ];
+        %tmp.20 = getv function %tmp.19 :println;
+        %tmp.21 = "UI Update Timer Started";
+        invoke %tmp.19 %tmp.20(%tmp.21);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_29_118_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_8_118_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_111_8_118_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_109_44_119_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 121; @symbol_functiondef = [stopUiTimer,121,21,32]; ]
+    private
+    function stopUiTimer() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_121_43_131_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 123 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_8_130_8_if_stmt:
+        symbol [ _timer %tmp.2 123 13 19 ];
+        %tmp.2 = getv ? :_timer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_8_130_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_8_130_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_29_130_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 125 12 ]
+        symbol [ _timer %tmp.6 125 12 18 ];
+        %tmp.6 = getv ? :_timer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 125 19 23 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 127 12 ]
+        %tmp.9 = null;
+        symbol [ _timer ? 127 12 18 ];
+        putv self :_timer %tmp.9;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 129 12 ]
+        symbol [ System %tmp.10 129 12 18 ];
+        %tmp.10 = getm $.Toybox.System;
+        symbol [ println %tmp.11 129 19 26 ];
+        %tmp.11 = getv function %tmp.10 :println;
+        %tmp.12 = "UI Update Timer Stopped";
+        invoke %tmp.10 %tmp.11(%tmp.12);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_29_130_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_8_130_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_123_8_130_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_121_43_131_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 133; @symbol_functiondef = [updateUi,133,13,21]; ]
+    function updateUi() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_133_33_136_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 135 8 ]
+        symbol [ WatchUi %tmp.1 135 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 135 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_133_33_136_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 140; @symbol_functiondef = [onLayout,140,13,21]; @symbol_param<0> = [dc,140,23,25]; @symbol_param<0>_type<0> = [Graphics,140,29,37]; @symbol_param<0>_type<1> = [Dc,140,38,40]; ]
+    function onLayout(dc as Graphics.Dc) as Void {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 146; @symbol_functiondef = [onUpdate,146,13,21]; @symbol_param<0> = [dc,146,23,25]; @symbol_param<0>_type<0> = [Graphics,146,29,37]; @symbol_param<0>_type<1> = [Dc,146,38,40]; ]
+    function onUpdate(dc as Graphics.Dc) as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 148 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 148 8 10 ];
+        symbol [ setColor %tmp.2 148 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 148 21 29 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 148 30 41 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 148 43 51 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 148 52 63 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 150 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 150 8 10 ];
+        symbol [ clear %tmp.8 150 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 153 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_8_192_8_if_stmt:
+        symbol [ _session %tmp.10 153 13 21 ];
+        %tmp.10 = getv ? :_session;
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        bf %tmp.12 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_8_192_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_8_192_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_32_192_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 155 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_32_192_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_32_192_8_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 155 16 20 ];
+        symbol [ Activity %tmp.14 155 23 31 ];
+        %tmp.14 = getv ? :Activity;
+        symbol [ getActivityInfo %tmp.15 155 32 47 ];
+        %tmp.15 = getv function %tmp.14 :getActivityInfo;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %info.1 %tmp.16;
+        symbol [ info %info.1 155 16 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 157 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_12_159_16_if_stmt:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_17_157_51_begin:
+        %tmp.17 = lgetv %info.1;
+        symbol [ info %tmp.17 157 17 21 ];
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_12_159_16_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_33_157_51_true:
+        %tmp.20 = lgetv %info.1;
+        symbol [ info %tmp.20 157 33 37 ];
+        %tmp.21 = as %tmp.20 { (!Null) };
+        symbol [ timerTime %tmp.22 157 38 47 ];
+        %tmp.22 = getv %tmp.21 :timerTime;
+        %tmp.23 = null;
+        %tmp.24 = ne %tmp.22 %tmp.23;
+        push %tmp.24;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_33_157_51_end:
+        %tmp.25 = phi [%tmp.19 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_17_157_51_begin] [%tmp.24 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_33_157_51_true] [%tmp.25 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_33_157_51_end];
+        bf %tmp.25 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_12_159_16_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_12_159_16_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_58_159_16_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 158 20 ]
+        %tmp.26 = lgetv %info.1;
+        symbol [ info %tmp.26 158 35 39 ];
+        %tmp.27 = as %tmp.26 { (!Null) };
+        symbol [ timerTime %tmp.28 158 40 49 ];
+        %tmp.28 = getv %tmp.27 :timerTime;
+        symbol [ _elapsedTime ? 158 20 32 ];
+        putv self :_elapsedTime %tmp.28;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_58_159_16_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_12_159_16_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_157_12_159_16_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 162 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_32_192_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_32_192_8_stop" ]
+        %sensorInfo.2 = local;
+        symbol [ sensorInfo %sensorInfo.2 162 16 26 ];
+        symbol [ Sensor %tmp.29 162 29 35 ];
+        %tmp.29 = getm $.Toybox.Sensor;
+        symbol [ getInfo %tmp.30 162 36 43 ];
+        %tmp.30 = getv function %tmp.29 :getInfo;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %sensorInfo.2 %tmp.31;
+        symbol [ sensorInfo %sensorInfo.2 162 16 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 164 12 ]
+        symbol [ System %tmp.32 164 12 18 ];
+        %tmp.32 = getm $.Toybox.System;
+        symbol [ println %tmp.33 164 19 26 ];
+        %tmp.33 = getv function %tmp.32 :println;
+        %tmp.34 = lgetv %sensorInfo.2;
+        symbol [ sensorInfo %tmp.34 164 27 37 ];
+        invoke %tmp.32 %tmp.33(%tmp.34);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 166 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_12_191_12_if_stmt:
+        %tmp.35 = lgetv %sensorInfo.2;
+        symbol [ sensorInfo %tmp.35 166 17 27 ];
+        %tmp.36 = null;
+        %tmp.37 = ne %tmp.35 %tmp.36;
+        bf %tmp.37 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_12_191_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_12_191_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_38_191_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 168 16 ]
+        symbol [ System %tmp.38 168 16 22 ];
+        %tmp.38 = getm $.Toybox.System;
+        symbol [ println %tmp.39 168 23 30 ];
+        %tmp.39 = getv function %tmp.38 :println;
+        %tmp.40 = lgetv %sensorInfo.2;
+        symbol [ sensorInfo %tmp.40 168 32 42 ];
+        %tmp.41 = as %tmp.40 { (!Null) };
+        symbol [ heartRate %tmp.42 168 43 52 ];
+        %tmp.42 = getv %tmp.41 :heartRate;
+        invoke %tmp.38 %tmp.39(%tmp.42);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 170 16 ]
+        %tmp.43 = lgetv %sensorInfo.2;
+        symbol [ sensorInfo %tmp.43 170 33 43 ];
+        %tmp.44 = as %tmp.43 { (!Null) };
+        symbol [ heartRate %tmp.45 170 44 53 ];
+        %tmp.45 = getv %tmp.44 :heartRate;
+        symbol [ _currHeartRate ? 170 16 30 ];
+        putv self :_currHeartRate %tmp.45;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 172 16 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_172_16_176_56_if_stmt:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_173_24_174_41_begin:
+        symbol [ _minHeartRate %tmp.47 173 24 37 ];
+        %tmp.47 = getv ? :_minHeartRate;
+        %tmp.48 = null;
+        %tmp.49 = eq %tmp.47 %tmp.48;
+        bt %tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_172_16_176_56_if_true;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_174_24_174_41_false:
+        symbol [ _currHeartRate %tmp.51 174 24 38 ];
+        %tmp.51 = getv ? :_currHeartRate;
+        symbol [ _minHeartRate %tmp.53 174 41 54 ];
+        %tmp.53 = getv ? :_minHeartRate;
+        %tmp.54 = as %tmp.53 { (!Null) };
+        %tmp.55 = lt %tmp.51 %tmp.54;
+        push %tmp.55;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_174_24_174_41_end:
+        %tmp.56 = phi [%tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_173_24_174_41_begin] [%tmp.55 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_174_24_174_41_false] [%tmp.56 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_174_24_174_41_end];
+        bf %tmp.56 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_172_16_176_56_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_172_16_176_56_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_176_22_176_56_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 176 24 ]
+        symbol [ _currHeartRate %tmp.58 176 40 54 ];
+        %tmp.58 = getv ? :_currHeartRate;
+        symbol [ _minHeartRate ? 176 24 37 ];
+        putv self :_minHeartRate %tmp.58;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_176_22_176_56_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_172_16_176_56_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_172_16_176_56_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 179 16 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_38_191_12_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_38_191_12_stop" ]
+        %subscreen.3 = local;
+        symbol [ subscreen %subscreen.3 179 20 29 ];
+        symbol [ WatchUi %tmp.59 179 32 39 ];
+        %tmp.59 = getm $.Toybox.WatchUi;
+        symbol [ getSubscreen %tmp.60 179 40 52 ];
+        %tmp.60 = getv function %tmp.59 :getSubscreen;
+        %tmp.61 = invoke %tmp.59 %tmp.60();
+        lputv %subscreen.3 %tmp.61;
+        symbol [ subscreen %subscreen.3 179 20 29 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 181 16 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_16_190_16_if_stmt:
+        %tmp.62 = lgetv %subscreen.3;
+        symbol [ subscreen %tmp.62 181 21 30 ];
+        %tmp.63 = null;
+        %tmp.64 = ne %tmp.62 %tmp.63;
+        bf %tmp.64 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_16_190_16_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_16_190_16_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_41_190_16_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 183 20 ]
+        %tmp.65 = lgetv %dc;
+        symbol [ dc %tmp.65 183 20 22 ];
+        symbol [ drawText %tmp.66 183 23 31 ];
+        %tmp.66 = getv function %tmp.65 :drawText;
+        %tmp.67 = lgetv %subscreen.3;
+        symbol [ subscreen %tmp.67 184 24 33 ];
+        %tmp.68 = as %tmp.67 { (!Null) };
+        symbol [ x %tmp.69 184 34 35 ];
+        %tmp.69 = getv %tmp.68 :x;
+        %tmp.70 = lgetv %subscreen.3;
+        symbol [ subscreen %tmp.70 184 38 47 ];
+        %tmp.71 = as %tmp.70 { (!Null) };
+        symbol [ width %tmp.72 184 48 53 ];
+        %tmp.72 = getv %tmp.71 :width;
+        %tmp.73 = 2;
+        %tmp.74 = div %tmp.72 %tmp.73;
+        %tmp.75 = add %tmp.69 %tmp.74;
+        %tmp.76 = lgetv %subscreen.3;
+        symbol [ subscreen %tmp.76 185 24 33 ];
+        %tmp.77 = as %tmp.76 { (!Null) };
+        symbol [ y %tmp.78 185 34 35 ];
+        %tmp.78 = getv %tmp.77 :y;
+        %tmp.79 = lgetv %subscreen.3;
+        symbol [ subscreen %tmp.79 185 38 47 ];
+        %tmp.80 = as %tmp.79 { (!Null) };
+        symbol [ height %tmp.81 185 48 54 ];
+        %tmp.81 = getv %tmp.80 :height;
+        %tmp.82 = 2;
+        %tmp.83 = div %tmp.81 %tmp.82;
+        %tmp.84 = add %tmp.78 %tmp.83;
+        symbol [ Graphics %tmp.85 186 24 32 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.86 186 33 43 ];
+        %tmp.86 = getv %tmp.85 :FONT_SMALL;
+        symbol [ _currHeartRate %tmp.88 187 24 38 ];
+        %tmp.88 = getv ? :_currHeartRate;
+        %tmp.89 = " bpm";
+        %tmp.90 = add %tmp.88 %tmp.89;
+        symbol [ Graphics %tmp.91 188 24 32 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.92 188 33 52 ];
+        %tmp.92 = getv %tmp.91 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.65 %tmp.66(%tmp.75, %tmp.84, %tmp.86, %tmp.90, %tmp.92);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_41_190_16_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_16_190_16_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_181_16_190_16_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_38_191_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_12_191_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_166_12_191_12_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_32_192_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_8_192_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_153_8_192_8_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 194 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %screenWidth.4 = local;
+        symbol [ screenWidth %screenWidth.4 194 12 23 ];
+        %tmp.93 = lgetv %dc;
+        symbol [ dc %tmp.93 194 29 31 ];
+        symbol [ getWidth %tmp.94 194 32 40 ];
+        %tmp.94 = getv function %tmp.93 :getWidth;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        lputv %screenWidth.4 %tmp.95;
+        symbol [ screenWidth %screenWidth.4 194 12 23 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 195 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %screenHeight.5 = local;
+        symbol [ screenHeight %screenHeight.5 195 12 24 ];
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 195 29 31 ];
+        symbol [ getHeight %tmp.97 195 32 41 ];
+        %tmp.97 = getv function %tmp.96 :getHeight;
+        %tmp.98 = invoke %tmp.96 %tmp.97();
+        lputv %screenHeight.5 %tmp.98;
+        symbol [ screenHeight %screenHeight.5 195 12 24 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 196 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %centerX.6 = local;
+        symbol [ centerX %centerX.6 196 12 19 ];
+        %tmp.99 = lgetv %screenWidth.4;
+        symbol [ screenWidth %tmp.99 196 29 40 ];
+        %tmp.100 = 2;
+        %tmp.101 = div %tmp.99 %tmp.100;
+        lputv %centerX.6 %tmp.101;
+        symbol [ centerX %centerX.6 196 12 19 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 198 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %timeStr.7 = local;
+        symbol [ timeStr %timeStr.7 198 12 19 ];
+        %tmp.102 = self;
+        symbol [ formatTime %tmp.103 198 29 39 ];
+        %tmp.103 = getv function %tmp.102 :formatTime;
+        symbol [ _elapsedTime %tmp.105 198 41 53 ];
+        %tmp.105 = getv ? :_elapsedTime;
+        %tmp.106 = invoke %tmp.102 %tmp.103(%tmp.105);
+        lputv %timeStr.7 %tmp.106;
+        symbol [ timeStr %timeStr.7 198 12 19 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 199 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %timeFont.8 = local;
+        symbol [ timeFont %timeFont.8 199 12 20 ];
+        symbol [ Graphics %tmp.107 199 29 37 ];
+        %tmp.107 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.108 199 38 48 ];
+        %tmp.108 = getv %tmp.107 :FONT_LARGE;
+        lputv %timeFont.8 %tmp.108;
+        symbol [ timeFont %timeFont.8 199 12 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 200 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %timeFontHeight.9 = local;
+        symbol [ timeFontHeight %timeFontHeight.9 200 12 26 ];
+        symbol [ Graphics %tmp.109 200 29 37 ];
+        %tmp.109 = getm $.Toybox.Graphics;
+        symbol [ getFontHeight %tmp.110 200 38 51 ];
+        %tmp.110 = getv function %tmp.109 :getFontHeight;
+        %tmp.111 = lgetv %timeFont.8;
+        symbol [ timeFont %tmp.111 200 53 61 ];
+        %tmp.112 = invoke %tmp.109 %tmp.110(%tmp.111);
+        lputv %timeFontHeight.9 %tmp.112;
+        symbol [ timeFontHeight %timeFontHeight.9 200 12 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 204 8 ]
+        %tmp.113 = lgetv %dc;
+        symbol [ dc %tmp.113 204 8 10 ];
+        symbol [ drawText %tmp.114 204 11 19 ];
+        %tmp.114 = getv function %tmp.113 :drawText;
+        %tmp.115 = lgetv %centerX.6;
+        symbol [ centerX %tmp.115 205 12 19 ];
+        %tmp.116 = lgetv %screenHeight.5;
+        symbol [ screenHeight %tmp.116 206 12 24 ];
+        %tmp.117 = 2;
+        %tmp.118 = div %tmp.116 %tmp.117;
+        %tmp.119 = lgetv %timeFontHeight.9;
+        symbol [ timeFontHeight %tmp.119 206 33 47 ];
+        %tmp.120 = 2;
+        %tmp.121 = div %tmp.119 %tmp.120;
+        %tmp.122 = sub %tmp.118 %tmp.121;
+        %tmp.123 = lgetv %timeFont.8;
+        symbol [ timeFont %tmp.123 207 12 20 ];
+        %tmp.124 = lgetv %timeStr.7;
+        symbol [ timeStr %tmp.124 208 12 19 ];
+        symbol [ Graphics %tmp.125 209 12 20 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.126 209 21 40 ];
+        %tmp.126 = getv %tmp.125 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.113 %tmp.114(%tmp.115, %tmp.122, %tmp.123, %tmp.124, %tmp.126);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 212 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %inProgress.10 = local;
+        symbol [ inProgress %inProgress.10 212 12 22 ];
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_25_212_66_begin:
+        symbol [ _session %tmp.128 212 25 33 ];
+        %tmp.128 = getv ? :_session;
+        %tmp.129 = null;
+        %tmp.130 = ne %tmp.128 %tmp.129;
+        %tmp.131 = dup %tmp.130;
+        bf %tmp.131 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_45_212_66_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_45_212_66_true:
+        symbol [ _session %tmp.133 212 45 53 ];
+        %tmp.133 = getv ? :_session;
+        %tmp.134 = as %tmp.133 { (!Null) };
+        symbol [ isRecording %tmp.135 212 54 65 ];
+        %tmp.135 = getv function %tmp.134 :isRecording;
+        %tmp.136 = invoke %tmp.134 %tmp.135();
+        %tmp.137 = and %tmp.130 %tmp.136;
+        push %tmp.137;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_45_212_66_end:
+        %tmp.138 = phi [%tmp.131 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_25_212_66_begin] [%tmp.137 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_45_212_66_true] [%tmp.138 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_212_45_212_66_end];
+        lputv %inProgress.10 %tmp.138;
+        symbol [ inProgress %inProgress.10 212 12 22 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 213 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop" ]
+        %promptText.11 = local;
+        symbol [ promptText %promptText.11 213 12 22 ];
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_begin:
+        %tmp.139 = lgetv %inProgress.10;
+        symbol [ inProgress %tmp.139 213 25 35 ];
+        bf %tmp.139 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_true:
+        %tmp.140 = "Press SELECT to stop";
+        push %tmp.140;
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_false:
+        %tmp.141 = "Press SELECT to start";
+        push %tmp.141;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_end:
+        %tmp.142 = phi [%tmp.139 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_begin] [%tmp.140 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_true] [%tmp.141 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_false] [%tmp.142 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_213_25_213_63_end];
+        lputv %promptText.11 %tmp.142;
+        symbol [ promptText %promptText.11 213 12 22 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 215 8 ]
+        %tmp.143 = lgetv %dc;
+        symbol [ dc %tmp.143 215 8 10 ];
+        symbol [ drawText %tmp.144 215 11 19 ];
+        %tmp.144 = getv function %tmp.143 :drawText;
+        %tmp.145 = lgetv %centerX.6;
+        symbol [ centerX %tmp.145 216 12 19 ];
+        %tmp.146 = lgetv %screenHeight.5;
+        symbol [ screenHeight %tmp.146 217 14 26 ];
+        %tmp.147 = 3;
+        %tmp.148 = mul %tmp.146 %tmp.147;
+        %tmp.149 = 4;
+        %tmp.150 = div %tmp.148 %tmp.149;
+        symbol [ Graphics %tmp.151 218 12 20 ];
+        %tmp.151 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.152 218 21 31 ];
+        %tmp.152 = getv %tmp.151 :FONT_XTINY;
+        %tmp.153 = lgetv %promptText.11;
+        symbol [ promptText %tmp.153 219 12 22 ];
+        symbol [ Graphics %tmp.154 220 12 20 ];
+        %tmp.154 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.155 220 21 40 ];
+        %tmp.155 = getv %tmp.154 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.143 %tmp.144(%tmp.145, %tmp.150, %tmp.152, %tmp.153, %tmp.155);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_146_51_222_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 226; @symbol_functiondef = [updateView,226,13,23]; ]
+    function updateView() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_226_34_229_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 228 8 ]
+        symbol [ WatchUi %tmp.1 228 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 228 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_226_34_229_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 236; @symbol_functiondef = [startMeditation,236,12,27]; ]
+    function startMeditation() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_236_38_261_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 238 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_8_260_8_if_stmt:
+        symbol [ _session %tmp.2 238 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_8_260_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_8_260_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_30_257_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 240 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_30_257_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_30_257_8_stop" ]
+        %sessionData.1 = local;
+        symbol [ sessionData %sessionData.1 240 16 27 ];
+        %tmp.5 = null;
+        lputv %sessionData.1 %tmp.5;
+        symbol [ sessionData %sessionData.1 240 16 27 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 241 12 ]
+        %tmp.6 = self;
+        symbol [ initiateSession %tmp.7 241 26 41 ];
+        %tmp.7 = getv function %tmp.6 :initiateSession;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %sessionData.1 %tmp.8;
+        symbol [ sessionData %sessionData.1 241 12 23 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 243 13 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_13_256_13_if_stmt:
+        %tmp.9 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.9 243 18 29 ];
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        bf %tmp.11 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_13_256_13_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_13_256_13_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_40_252_13_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 245 17 ]
+        %tmp.12 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.12 245 40 51 ];
+        %tmp.13 = as %tmp.12 { (!Null) };
+        %tmp.15 = const :session;
+        symbol [ session %tmp.15 245 54 61 const ];
+        %tmp.16 = agetv %tmp.13 %tmp.15;
+        %tmp.17 = as %tmp.16 ActivityRecording.Session;
+        symbol [ ActivityRecording %tmp.17 245 76 93 ];
+        symbol [ Session %tmp.17 245 94 101 ];
+        symbol [ _session ? 245 17 25 ];
+        putv self :_session %tmp.17;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 246 17 ]
+        %tmp.18 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.18 246 40 51 ];
+        %tmp.19 = as %tmp.18 { (!Null) };
+        %tmp.21 = const :fieldBreathCount;
+        symbol [ fieldBreathCount %tmp.21 246 54 70 const ];
+        %tmp.22 = agetv %tmp.19 %tmp.21;
+        %tmp.23 = as %tmp.22 FitContributor.Field;
+        symbol [ FitContributor %tmp.23 246 76 90 ];
+        symbol [ Field %tmp.23 246 91 96 ];
+        symbol [ _devFieldBreathCount ? 246 17 37 ];
+        putv self :_devFieldBreathCount %tmp.23;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 247 17 ]
+        %tmp.24 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.24 247 40 51 ];
+        %tmp.25 = as %tmp.24 { (!Null) };
+        %tmp.27 = const :fieldBreathRate;
+        symbol [ fieldBreathRate %tmp.27 247 54 69 const ];
+        %tmp.28 = agetv %tmp.25 %tmp.27;
+        %tmp.29 = as %tmp.28 FitContributor.Field;
+        symbol [ FitContributor %tmp.29 247 76 90 ];
+        symbol [ Field %tmp.29 247 91 96 ];
+        symbol [ _devFieldBreathRate ? 247 17 36 ];
+        putv self :_devFieldBreathRate %tmp.29;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 249 17 ]
+        %tmp.30 = self;
+        symbol [ startUiTimer %tmp.31 249 17 29 ];
+        %tmp.31 = getv function %tmp.30 :startUiTimer;
+        invoke %tmp.30 %tmp.31();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 250 17 ]
+        symbol [ WatchUi %tmp.32 250 17 24 ];
+        %tmp.32 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.33 250 25 38 ];
+        %tmp.33 = getv function %tmp.32 :requestUpdate;
+        invoke %tmp.32 %tmp.33();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_40_252_13_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_13_256_13_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_13_256_13_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_252_20_256_13_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 255 17 ]
+        symbol [ System %tmp.34 255 17 23 ];
+        %tmp.34 = getm $.Toybox.System;
+        symbol [ println %tmp.35 255 24 31 ];
+        %tmp.35 = getv function %tmp.34 :println;
+        %tmp.36 = "Failed to get session data from startSession function.";
+        invoke %tmp.34 %tmp.35(%tmp.36);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_252_20_256_13_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_243_13_256_13_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_30_257_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_8_260_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_8_260_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_257_15_260_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 259 12 ]
+        symbol [ System %tmp.37 259 12 18 ];
+        %tmp.37 = getm $.Toybox.System;
+        symbol [ println %tmp.38 259 19 26 ];
+        %tmp.38 = getv function %tmp.37 :println;
+        %tmp.39 = "Warning: startTimer called but session already exists.";
+        invoke %tmp.37 %tmp.38(%tmp.39);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_257_15_260_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_238_8_260_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_236_38_261_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 265; @symbol_functiondef = [pauseMeditation,265,13,28]; ]
+    function pauseMeditation() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_265_39_276_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 267 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_8_275_8_if_stmt:
+        symbol [ _session %tmp.2 267 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_8_275_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_8_275_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_30_272_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 269 12 ]
+        symbol [ _session %tmp.6 269 12 20 ];
+        %tmp.6 = getv ? :_session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 269 21 25 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 270 12 ]
+        %tmp.9 = self;
+        symbol [ stopUiTimer %tmp.10 270 12 23 ];
+        %tmp.10 = getv function %tmp.9 :stopUiTimer;
+        invoke %tmp.9 %tmp.10();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 271 12 ]
+        symbol [ WatchUi %tmp.11 271 12 19 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.12 271 20 33 ];
+        %tmp.12 = getv function %tmp.11 :requestUpdate;
+        invoke %tmp.11 %tmp.12();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_30_272_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_8_275_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_8_275_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_272_15_275_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 274 12 ]
+        symbol [ System %tmp.13 274 12 18 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ println %tmp.14 274 19 26 ];
+        %tmp.14 = getv function %tmp.13 :println;
+        %tmp.15 = "Warning: pauseMeditation called but no session exists.";
+        invoke %tmp.13 %tmp.14(%tmp.15);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_272_15_275_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_267_8_275_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_265_39_276_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 280; @symbol_functiondef = [resumeMeditation,280,13,29]; ]
+    function resumeMeditation() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_280_40_292_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 282 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_8_291_8_if_stmt:
+        symbol [ _session %tmp.2 282 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_8_291_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_8_291_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_30_288_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 284 12 ]
+        symbol [ _session %tmp.6 284 12 20 ];
+        %tmp.6 = getv ? :_session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ start %tmp.8 284 21 26 ];
+        %tmp.8 = getv function %tmp.7 :start;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 285 12 ]
+        %tmp.9 = self;
+        symbol [ startUiTimer %tmp.10 285 12 24 ];
+        %tmp.10 = getv function %tmp.9 :startUiTimer;
+        invoke %tmp.9 %tmp.10();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 286 12 ]
+        symbol [ WatchUi %tmp.11 286 12 19 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.12 286 20 33 ];
+        %tmp.12 = getv function %tmp.11 :requestUpdate;
+        invoke %tmp.11 %tmp.12();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_30_288_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_8_291_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_8_291_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_288_15_291_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 290 12 ]
+        symbol [ System %tmp.13 290 12 18 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ println %tmp.14 290 19 26 ];
+        %tmp.14 = getv function %tmp.13 :println;
+        %tmp.15 = "Warning: resumeMeditation called but no session exists.";
+        invoke %tmp.13 %tmp.14(%tmp.15);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_288_15_291_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_282_8_291_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_280_40_292_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 295; @symbol_functiondef = [clearSession,295,13,25]; ]
+    function clearSession() {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_295_28_300_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 297 8 ]
+        %tmp.1 = null;
+        symbol [ _session ? 297 8 16 ];
+        putv self :_session %tmp.1;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 298 8 ]
+        %tmp.2 = null;
+        symbol [ _devFieldBreathCount ? 298 8 28 ];
+        putv self :_devFieldBreathCount %tmp.2;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 299 8 ]
+        %tmp.3 = null;
+        symbol [ _devFieldBreathRate ? 299 8 27 ];
+        putv self :_devFieldBreathRate %tmp.3;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_295_28_300_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 304; @symbol_functiondef = [saveSession,304,13,24]; ]
+    function saveSession() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_304_35_358_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 307 8 ]
+        symbol [ System %tmp.1 307 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 307 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Saving session...";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 309 8 ]
+        %tmp.4 = self;
+        symbol [ stopUiTimer %tmp.5 309 8 19 ];
+        %tmp.5 = getv function %tmp.4 :stopUiTimer;
+        invoke %tmp.4 %tmp.5();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 311 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_8_354_72_if_stmt:
+        symbol [ _session %tmp.7 311 12 20 ];
+        %tmp.7 = getv ? :_session;
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_8_354_72_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_8_354_72_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 315 13 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_stop" ]
+        %avgBreathRate.1 = local;
+        symbol [ avgBreathRate %avgBreathRate.1 315 17 30 ];
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_begin:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_35_315_70_begin:
+        symbol [ _elapsedTime %tmp.11 315 35 47 ];
+        %tmp.11 = getv ? :_elapsedTime;
+        %tmp.12 = 0;
+        %tmp.13 = gt %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_55_315_70_true:
+        symbol [ _breathCount %tmp.15 315 55 67 ];
+        %tmp.15 = getv ? :_breathCount;
+        %tmp.16 = 0;
+        %tmp.17 = gt %tmp.15 %tmp.16;
+        push %tmp.17;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_55_315_70_end:
+        %tmp.18 = phi [%tmp.13 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_35_315_70_begin] [%tmp.17 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_55_315_70_true] [%tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_55_315_70_end];
+        bf %tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_true:
+        symbol [ _breathCount %tmp.20 316 44 56 ];
+        %tmp.20 = getv ? :_breathCount;
+        symbol [ toFloat %tmp.21 316 57 64 ];
+        %tmp.21 = getv function %tmp.20 :toFloat;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        symbol [ _elapsedTime %tmp.24 316 71 83 ];
+        %tmp.24 = getv ? :_elapsedTime;
+        %tmp.25 = 1000;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        %tmp.27 = 60.0f;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        %tmp.29 = div %tmp.22 %tmp.28;
+        push %tmp.29;
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_false:
+        %tmp.30 = 0.0f;
+        push %tmp.30;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_end:
+        %tmp.31 = phi [%tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_begin] [%tmp.29 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_true] [%tmp.30 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_false] [%tmp.31 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_315_33_317_42_end];
+        lputv %avgBreathRate.1 %tmp.31;
+        symbol [ avgBreathRate %avgBreathRate.1 315 17 30 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 319 12 ]
+        %tmp.32 = lgetv %avgBreathRate.1;
+        symbol [ avgBreathRate %tmp.32 319 26 39 ];
+        symbol [ _breathRate ? 319 12 23 ];
+        putv self :_breathRate %tmp.32;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 323 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_12_324_74_if_stmt:
+        symbol [ _devFieldBreathCount %tmp.34 323 17 37 ];
+        %tmp.34 = getv ? :_devFieldBreathCount;
+        %tmp.35 = null;
+        %tmp.36 = ne %tmp.34 %tmp.35;
+        bf %tmp.36 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_12_324_74_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_12_324_74_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_48_323_96_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 323 50 ]
+        symbol [ _devFieldBreathCount %tmp.38 323 50 70 ];
+        %tmp.38 = getv ? :_devFieldBreathCount;
+        %tmp.39 = as %tmp.38 { (!Null) };
+        symbol [ setData %tmp.40 323 71 78 ];
+        %tmp.40 = getv function %tmp.39 :setData;
+        symbol [ _breathCount %tmp.42 323 80 92 ];
+        %tmp.42 = getv ? :_breathCount;
+        invoke %tmp.39 %tmp.40(%tmp.42);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_48_323_96_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_12_324_74_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_12_324_74_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_324_17_324_74_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 324 19 ]
+        symbol [ System %tmp.43 324 19 25 ];
+        %tmp.43 = getm $.Toybox.System;
+        symbol [ println %tmp.44 324 26 33 ];
+        %tmp.44 = getv function %tmp.43 :println;
+        %tmp.45 = "Error: Breath Count Field is null";
+        invoke %tmp.43 %tmp.44(%tmp.45);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_324_17_324_74_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_323_12_324_74_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 326 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_12_327_73_if_stmt:
+        symbol [ _devFieldBreathRate %tmp.47 326 17 36 ];
+        %tmp.47 = getv ? :_devFieldBreathRate;
+        %tmp.48 = null;
+        %tmp.49 = ne %tmp.47 %tmp.48;
+        bf %tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_12_327_73_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_12_327_73_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_47_326_93_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 326 49 ]
+        symbol [ _devFieldBreathRate %tmp.51 326 49 68 ];
+        %tmp.51 = getv ? :_devFieldBreathRate;
+        %tmp.52 = as %tmp.51 { (!Null) };
+        symbol [ setData %tmp.53 326 69 76 ];
+        %tmp.53 = getv function %tmp.52 :setData;
+        symbol [ _breathRate %tmp.55 326 78 89 ];
+        %tmp.55 = getv ? :_breathRate;
+        invoke %tmp.52 %tmp.53(%tmp.55);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_47_326_93_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_12_327_73_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_12_327_73_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_327_17_327_73_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 327 19 ]
+        symbol [ System %tmp.56 327 19 25 ];
+        %tmp.56 = getm $.Toybox.System;
+        symbol [ println %tmp.57 327 26 33 ];
+        %tmp.57 = getv function %tmp.56 :println;
+        %tmp.58 = "Error: Breath Rate Field is null";
+        invoke %tmp.56 %tmp.57(%tmp.58);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_327_17_327_73_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_326_12_327_73_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 330 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_12_332_12_if_stmt:
+        symbol [ _session %tmp.60 330 17 25 ];
+        %tmp.60 = getv ? :_session;
+        symbol [ isRecording %tmp.61 330 26 37 ];
+        %tmp.61 = getv function %tmp.60 :isRecording;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = not %tmp.62;
+        bf %tmp.63 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_12_332_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_12_332_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_41_332_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 331 17 ]
+        symbol [ _session %tmp.65 331 17 25 ];
+        %tmp.65 = getv ? :_session;
+        symbol [ stop %tmp.66 331 26 30 ];
+        %tmp.66 = getv function %tmp.65 :stop;
+        invoke %tmp.65 %tmp.66();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_41_332_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_12_332_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_330_12_332_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 334 12 ]
+        symbol [ System %tmp.67 334 12 18 ];
+        %tmp.67 = getm $.Toybox.System;
+        symbol [ println %tmp.68 334 19 26 ];
+        %tmp.68 = getv function %tmp.67 :println;
+        %tmp.69 = "count: ";
+        symbol [ _breathCount %tmp.71 334 39 51 ];
+        %tmp.71 = getv ? :_breathCount;
+        %tmp.72 = add %tmp.69 %tmp.71;
+        invoke %tmp.67 %tmp.68(%tmp.72);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 335 12 ]
+        symbol [ System %tmp.73 335 12 18 ];
+        %tmp.73 = getm $.Toybox.System;
+        symbol [ println %tmp.74 335 19 26 ];
+        %tmp.74 = getv function %tmp.73 :println;
+        %tmp.75 = "rate: ";
+        %tmp.76 = lgetv %avgBreathRate.1;
+        symbol [ avgBreathRate %tmp.76 335 38 51 ];
+        %tmp.77 = add %tmp.75 %tmp.76;
+        invoke %tmp.73 %tmp.74(%tmp.77);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 337 11 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_stop" ]
+        %info.2 = local;
+        symbol [ info %info.2 337 15 19 ];
+        symbol [ Activity %tmp.79 337 22 30 ];
+        %tmp.79 = getv ? :Activity;
+        symbol [ getActivityInfo %tmp.80 337 31 46 ];
+        %tmp.80 = getv function %tmp.79 :getActivityInfo;
+        %tmp.81 = invoke %tmp.79 %tmp.80();
+        lputv %info.2 %tmp.81;
+        symbol [ info %info.2 337 15 19 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 339 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_12_343_12_if_stmt:
+        %tmp.82 = lgetv %info.2;
+        symbol [ info %tmp.82 339 16 20 ];
+        %tmp.83 = null;
+        %tmp.84 = ne %tmp.82 %tmp.83;
+        bf %tmp.84 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_12_343_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_12_343_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_30_343_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 341 16 ]
+        %tmp.85 = lgetv %info.2;
+        symbol [ info %tmp.85 341 32 36 ];
+        %tmp.86 = as %tmp.85 { (!Null) };
+        symbol [ averageHeartRate %tmp.87 341 37 53 ];
+        %tmp.87 = getv %tmp.86 :averageHeartRate;
+        symbol [ _avgHeartRate ? 341 16 29 ];
+        putv self :_avgHeartRate %tmp.87;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 342 16 ]
+        %tmp.88 = lgetv %info.2;
+        symbol [ info %tmp.88 342 32 36 ];
+        %tmp.89 = as %tmp.88 { (!Null) };
+        symbol [ maxHeartRate %tmp.90 342 37 49 ];
+        %tmp.90 = getv %tmp.89 :maxHeartRate;
+        symbol [ _maxHeartRate ? 342 16 29 ];
+        putv self :_maxHeartRate %tmp.90;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_30_343_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_12_343_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_339_12_343_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 345 12 ]
+        symbol [ System %tmp.91 345 12 18 ];
+        %tmp.91 = getm $.Toybox.System;
+        symbol [ println %tmp.92 345 19 26 ];
+        %tmp.92 = getv function %tmp.91 :println;
+        %tmp.93 = "Avg Heart Rate: ";
+        symbol [ _avgHeartRate %tmp.95 345 49 62 ];
+        %tmp.95 = getv ? :_avgHeartRate;
+        %tmp.96 = add %tmp.93 %tmp.95;
+        invoke %tmp.91 %tmp.92(%tmp.96);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 346 12 ]
+        symbol [ System %tmp.97 346 12 18 ];
+        %tmp.97 = getm $.Toybox.System;
+        symbol [ println %tmp.98 346 19 26 ];
+        %tmp.98 = getv function %tmp.97 :println;
+        %tmp.99 = "Max Heart Rate: ";
+        symbol [ _maxHeartRate %tmp.101 346 49 62 ];
+        %tmp.101 = getv ? :_maxHeartRate;
+        %tmp.102 = add %tmp.99 %tmp.101;
+        invoke %tmp.97 %tmp.98(%tmp.102);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 347 12 ]
+        symbol [ System %tmp.103 347 12 18 ];
+        %tmp.103 = getm $.Toybox.System;
+        symbol [ println %tmp.104 347 19 26 ];
+        %tmp.104 = getv function %tmp.103 :println;
+        %tmp.105 = "Min Heart Rate: ";
+        symbol [ _minHeartRate %tmp.107 347 49 62 ];
+        %tmp.107 = getv ? :_minHeartRate;
+        %tmp.108 = add %tmp.105 %tmp.107;
+        invoke %tmp.103 %tmp.104(%tmp.108);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 348 12 ]
+        symbol [ System %tmp.109 348 12 18 ];
+        %tmp.109 = getm $.Toybox.System;
+        symbol [ println %tmp.110 348 19 26 ];
+        %tmp.110 = getv function %tmp.109 :println;
+        %tmp.111 = "Current Heart Rate: ";
+        symbol [ _currHeartRate %tmp.113 348 53 67 ];
+        %tmp.113 = getv ? :_currHeartRate;
+        %tmp.114 = add %tmp.111 %tmp.113;
+        invoke %tmp.109 %tmp.110(%tmp.114);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 350 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_stop" ]
+        %saveStatus.3 = local;
+        symbol [ saveStatus %saveStatus.3 350 16 26 ];
+        symbol [ _session %tmp.116 350 29 37 ];
+        %tmp.116 = getv ? :_session;
+        symbol [ save %tmp.117 350 38 42 ];
+        %tmp.117 = getv function %tmp.116 :save;
+        %tmp.118 = invoke %tmp.116 %tmp.117();
+        lputv %saveStatus.3 %tmp.118;
+        symbol [ saveStatus %saveStatus.3 350 16 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 352 12 ]
+        symbol [ System %tmp.119 352 12 18 ];
+        %tmp.119 = getm $.Toybox.System;
+        symbol [ println %tmp.120 352 19 26 ];
+        %tmp.120 = getv function %tmp.119 :println;
+        %tmp.121 = "Session Saved: ";
+        %tmp.122 = lgetv %saveStatus.3;
+        symbol [ saveStatus %tmp.122 352 45 55 ];
+        %tmp.123 = add %tmp.121 %tmp.122;
+        invoke %tmp.119 %tmp.120(%tmp.123);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_30_354_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_8_354_72_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_8_354_72_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_354_15_354_72_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 354 17 ]
+        symbol [ System %tmp.124 354 17 23 ];
+        %tmp.124 = getm $.Toybox.System;
+        symbol [ println %tmp.125 354 24 31 ];
+        %tmp.125 = getv function %tmp.124 :println;
+        %tmp.126 = "Error: No active session to save.";
+        invoke %tmp.124 %tmp.125(%tmp.126);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_354_15_354_72_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_311_8_354_72_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 356 8 ]
+        %tmp.127 = self;
+        symbol [ clearSession %tmp.128 356 8 20 ];
+        %tmp.128 = getv function %tmp.127 :clearSession;
+        invoke %tmp.127 %tmp.128();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_304_35_358_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 361; @symbol_functiondef = [discardSession,361,13,27]; ]
+    function discardSession() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_361_38_375_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 363 8 ]
+        symbol [ System %tmp.1 363 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 363 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Discarding session...";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 365 8 ]
+        %tmp.4 = self;
+        symbol [ stopUiTimer %tmp.5 365 8 19 ];
+        %tmp.5 = getv function %tmp.4 :stopUiTimer;
+        invoke %tmp.4 %tmp.5();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 367 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_8_371_75_if_stmt:
+        symbol [ _session %tmp.7 367 13 21 ];
+        %tmp.7 = getv ? :_session;
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_8_371_75_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_8_371_75_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_32_371_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 369 13 ]
+        symbol [ _session %tmp.11 369 13 21 ];
+        %tmp.11 = getv ? :_session;
+        %tmp.12 = as %tmp.11 { (!Null) };
+        symbol [ discard %tmp.13 369 22 29 ];
+        %tmp.13 = getv function %tmp.12 :discard;
+        invoke %tmp.12 %tmp.13();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 370 13 ]
+        symbol [ System %tmp.14 370 13 19 ];
+        %tmp.14 = getm $.Toybox.System;
+        symbol [ println %tmp.15 370 20 27 ];
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "Session Discarded.";
+        invoke %tmp.14 %tmp.15(%tmp.16);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_32_371_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_8_371_75_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_8_371_75_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_371_15_371_75_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 371 17 ]
+        symbol [ System %tmp.17 371 17 23 ];
+        %tmp.17 = getm $.Toybox.System;
+        symbol [ println %tmp.18 371 24 31 ];
+        %tmp.18 = getv function %tmp.17 :println;
+        %tmp.19 = "No session object exists to discard.";
+        invoke %tmp.17 %tmp.18(%tmp.19);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_371_15_371_75_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_367_8_371_75_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 373 8 ]
+        %tmp.20 = self;
+        symbol [ clearSession %tmp.21 373 8 20 ];
+        %tmp.21 = getv function %tmp.20 :clearSession;
+        invoke %tmp.20 %tmp.21();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_361_38_375_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 381; @symbol_functiondef = [onShow,381,13,19]; ]
+    function onShow() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_381_30_387_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 383 8 ]
+        symbol [ Sensor %tmp.1 383 8 14 ];
+        %tmp.1 = getm $.Toybox.Sensor;
+        symbol [ setEnabledSensors %tmp.2 383 15 32 ];
+        %tmp.2 = getv function %tmp.1 :setEnabledSensors;
+        %tmp.3 = newa 1;
+        symbol [ Sensor %tmp.4 383 34 40 ];
+        %tmp.4 = getm $.Toybox.Sensor;
+        symbol [ SENSOR_HEARTRATE %tmp.5 383 41 57 ];
+        %tmp.5 = getv %tmp.4 :SENSOR_HEARTRATE;
+        %tmp.6 = dup %tmp.3;
+        %tmp.7 = aputv %tmp.6 0 %tmp.5;
+        invoke %tmp.1 %tmp.2(%tmp.7);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 385 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_8_385_54_if_stmt:
+        symbol [ _session %tmp.9 385 13 21 ];
+        %tmp.9 = getv ? :_session;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        bf %tmp.11 @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_8_385_54_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_8_385_54_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_32_385_54_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 385 34 ]
+        %tmp.12 = self;
+        symbol [ resumeMeditation %tmp.13 385 34 50 ];
+        %tmp.13 = getv function %tmp.12 :resumeMeditation;
+        invoke %tmp.12 %tmp.13();
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_32_385_54_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_8_385_54_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_385_8_385_54_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_381_30_387_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 390; @symbol_functiondef = [onHide,390,13,19]; ]
+    function onHide() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_390_30_390_62_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc" 390 32 ]
+        symbol [ Sensor %tmp.1 390 32 38 ];
+        %tmp.1 = getm $.Toybox.Sensor;
+        symbol [ setEnabledSensors %tmp.2 390 39 56 ];
+        %tmp.2 = getv function %tmp.1 :setEnabledSensors;
+        %tmp.3 = newa 0;
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_home_w5hacksphere_Projects_inhale1_source_views_MeditationView_mc_390_30_390_62_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/MeditationView.mc"; @line = 1; ]
+<init> {
+}

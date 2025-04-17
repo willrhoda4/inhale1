@@ -1,0 +1,46 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 9; @symbol_classdef = [InhaleDelegate,9,6,20]; @symbol_extends<0> = [WatchUi,9,29,36]; @symbol_extends<1> = [BehaviorDelegate,9,37,53]; ]
+class InhaleDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; ]
+    function initialize() as Void {
+_home_w5hacksphere_Projects_inhale1_source_delegates_InhaleDelegate_mc_16_26_20_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" 18 8 ]
+        symbol [ BehaviorDelegate %tmp.2 18 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 18 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_w5hacksphere_Projects_inhale1_source_delegates_InhaleDelegate_mc_16_26_20_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 22; @symbol_functiondef = [onSelect,22,12,20]; @symbol_return<0> = [Lang,22,26,30]; @symbol_return<1> = [Boolean,22,31,38]; ]
+    function onSelect() as Lang.Boolean {
+_home_w5hacksphere_Projects_inhale1_source_delegates_InhaleDelegate_mc_22_39_22_54_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" 22 41 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+_home_w5hacksphere_Projects_inhale1_source_delegates_InhaleDelegate_mc_22_39_22_54_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 25; @symbol_functiondef = [onBack,25,12,18]; @symbol_return<0> = [Lang,25,24,28]; @symbol_return<1> = [Boolean,25,29,36]; ]
+    function onBack() as Lang.Boolean {
+_home_w5hacksphere_Projects_inhale1_source_delegates_InhaleDelegate_mc_25_37_25_52_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc" 25 39 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+_home_w5hacksphere_Projects_inhale1_source_delegates_InhaleDelegate_mc_25_37_25_52_stop:
+    }
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/delegates/InhaleDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,225 @@
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [ActivityRecording,1,13,30]; ]
+using Toybox.ActivityRecording;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [FitContributor,2,13,27]; ]
+using Toybox.FitContributor;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Activity,3,13,21]; ]
+using Toybox.Activity;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [System,4,13,19]; ]
+using Toybox.System;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Lang,5,13,17]; ]
+using Toybox.Lang;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Application,6,13,24]; ]
+using Toybox.Application;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 13; @symbol_functiondef = [initiateSession,13,9,24]; @symbol_return<0> = [Lang,13,30,34]; @symbol_return<1> = [Dictionary,13,35,45]; ]
+function initiateSession() as Lang.Dictionary or Null {
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 16 4 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_stop" ]
+    %session.1 = local;
+    symbol [ session %session.1 16 8 15 ];
+    %tmp.1 = null;
+    lputv %session.1 %tmp.1;
+    symbol [ session %session.1 16 8 15 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 17 4 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_stop" ]
+    %devFieldMeditation.2 = local;
+    symbol [ devFieldMeditation %devFieldMeditation.2 17 8 26 ];
+    %tmp.2 = null;
+    lputv %devFieldMeditation.2 %tmp.2;
+    symbol [ devFieldMeditation %devFieldMeditation.2 17 8 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 18 4 ]
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_start" "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_stop" ]
+    %devFieldBreathRate.3 = local;
+    symbol [ devFieldBreathRate %devFieldBreathRate.3 18 8 26 ];
+    %tmp.3 = null;
+    lputv %devFieldBreathRate.3 %tmp.3;
+    symbol [ devFieldBreathRate %devFieldBreathRate.3 18 8 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 21 4 ]
+    try @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_beginTry @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_endTry @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_catch @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_beginTry:
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_8_65_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 23 8 ]
+    symbol [ System %tmp.4 23 8 14 ];
+    %tmp.4 = getm $.Toybox.System;
+    symbol [ println %tmp.5 23 15 22 ];
+    %tmp.5 = getv function %tmp.4 :println;
+    %tmp.6 = "Creating session...";
+    invoke %tmp.4 %tmp.5(%tmp.6);
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 25 8 ]
+    symbol [ ActivityRecording %tmp.7 25 18 35 ];
+    %tmp.7 = getm $.Toybox.ActivityRecording;
+    symbol [ createSession %tmp.8 25 36 49 ];
+    %tmp.8 = getv function %tmp.7 :createSession;
+    %tmp.9 = newd 3;
+    %tmp.11 = const :name;
+    symbol [ name %tmp.11 26 13 17 const ];
+    %tmp.12 = "inhale1";
+    %tmp.13 = dup %tmp.9;
+    %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+    %tmp.16 = const :sport;
+    symbol [ sport %tmp.16 27 13 18 const ];
+    symbol [ Activity %tmp.17 27 25 33 ];
+    %tmp.17 = getm $.Toybox.Activity;
+    symbol [ SPORT_MEDITATION %tmp.18 27 34 50 ];
+    %tmp.18 = getv %tmp.17 :SPORT_MEDITATION;
+    %tmp.19 = dup %tmp.14;
+    %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+    %tmp.22 = const :subSport;
+    symbol [ subSport %tmp.22 28 13 21 const ];
+    symbol [ Activity %tmp.23 28 25 33 ];
+    %tmp.23 = getm $.Toybox.Activity;
+    symbol [ SUB_SPORT_BREATHING %tmp.24 28 34 53 ];
+    %tmp.24 = getv %tmp.23 :SUB_SPORT_BREATHING;
+    %tmp.25 = dup %tmp.20;
+    %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
+    %tmp.27 = invoke %tmp.7 %tmp.8(%tmp.26);
+    lputv %session.1 %tmp.27;
+    symbol [ session %session.1 25 8 15 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 32 8 ]
+    %tmp.28 = lgetv %session.1;
+    symbol [ session %tmp.28 32 31 38 ];
+    symbol [ createField %tmp.29 32 39 50 ];
+    %tmp.29 = getv function %tmp.28 :createField;
+    %tmp.30 = "total_breaths";
+    %tmp.31 = 0;
+    symbol [ FitContributor %tmp.32 35 37 51 ];
+    %tmp.32 = getm $.Toybox.FitContributor;
+    symbol [ DATA_TYPE_UINT16 %tmp.33 35 52 68 ];
+    %tmp.33 = getv %tmp.32 :DATA_TYPE_UINT16;
+    %tmp.34 = newd 2;
+    %tmp.36 = const :mesgType;
+    symbol [ mesgType %tmp.36 37 41 49 const ];
+    symbol [ FitContributor %tmp.37 37 51 65 ];
+    %tmp.37 = getm $.Toybox.FitContributor;
+    symbol [ MESG_TYPE_SESSION %tmp.38 37 66 83 ];
+    %tmp.38 = getv %tmp.37 :MESG_TYPE_SESSION;
+    %tmp.39 = dup %tmp.34;
+    %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
+    %tmp.42 = const :units;
+    symbol [ units %tmp.42 38 41 46 const ];
+    %tmp.43 = "breaths";
+    %tmp.44 = dup %tmp.40;
+    %tmp.45 = aputv %tmp.44 %tmp.42 %tmp.43;
+    %tmp.46 = invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.33, %tmp.45);
+    lputv %devFieldMeditation.2 %tmp.46;
+    symbol [ devFieldMeditation %devFieldMeditation.2 32 8 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 42 8 ]
+    %tmp.47 = lgetv %session.1;
+    symbol [ session %tmp.47 42 32 39 ];
+    symbol [ createField %tmp.48 42 40 51 ];
+    %tmp.48 = getv function %tmp.47 :createField;
+    %tmp.49 = "avg_breath_rate";
+    %tmp.50 = 1;
+    symbol [ FitContributor %tmp.51 45 36 50 ];
+    %tmp.51 = getm $.Toybox.FitContributor;
+    symbol [ DATA_TYPE_FLOAT %tmp.52 45 51 66 ];
+    %tmp.52 = getv %tmp.51 :DATA_TYPE_FLOAT;
+    %tmp.53 = newd 2;
+    %tmp.55 = const :mesgType;
+    symbol [ mesgType %tmp.55 47 41 49 const ];
+    symbol [ FitContributor %tmp.56 47 51 65 ];
+    %tmp.56 = getm $.Toybox.FitContributor;
+    symbol [ MESG_TYPE_SESSION %tmp.57 47 66 83 ];
+    %tmp.57 = getv %tmp.56 :MESG_TYPE_SESSION;
+    %tmp.58 = dup %tmp.53;
+    %tmp.59 = aputv %tmp.58 %tmp.55 %tmp.57;
+    %tmp.61 = const :units;
+    symbol [ units %tmp.61 48 41 46 const ];
+    %tmp.62 = "bpm";
+    %tmp.63 = dup %tmp.59;
+    %tmp.64 = aputv %tmp.63 %tmp.61 %tmp.62;
+    %tmp.65 = invoke %tmp.47 %tmp.48(%tmp.49, %tmp.50, %tmp.52, %tmp.64);
+    lputv %devFieldBreathRate.3 %tmp.65;
+    symbol [ devFieldBreathRate %devFieldBreathRate.3 42 8 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 53 8 ]
+    %tmp.66 = lgetv %session.1;
+    symbol [ session %tmp.66 53 8 15 ];
+    symbol [ start %tmp.67 53 16 21 ];
+    %tmp.67 = getv function %tmp.66 :start;
+    invoke %tmp.66 %tmp.67();
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 55 8 ]
+    symbol [ System %tmp.68 55 8 14 ];
+    %tmp.68 = getm $.Toybox.System;
+    symbol [ println %tmp.69 55 15 22 ];
+    %tmp.69 = getv function %tmp.68 :println;
+    %tmp.70 = "Session Started and Recording";
+    invoke %tmp.68 %tmp.69(%tmp.70);
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 59 8 ]
+    %tmp.71 = newd 3;
+    %tmp.73 = const :session;
+    symbol [ session %tmp.73 60 13 20 const ];
+    %tmp.74 = lgetv %session.1;
+    symbol [ session %tmp.74 60 33 40 ];
+    %tmp.75 = dup %tmp.71;
+    %tmp.76 = aputv %tmp.75 %tmp.73 %tmp.74;
+    %tmp.78 = const :fieldMeditation;
+    symbol [ fieldMeditation %tmp.78 61 13 28 const ];
+    %tmp.79 = lgetv %devFieldMeditation.2;
+    symbol [ devFieldMeditation %tmp.79 61 32 50 ];
+    %tmp.80 = dup %tmp.76;
+    %tmp.81 = aputv %tmp.80 %tmp.78 %tmp.79;
+    %tmp.83 = const :fieldBreathRate;
+    symbol [ fieldBreathRate %tmp.83 62 13 28 const ];
+    %tmp.84 = lgetv %devFieldBreathRate.3;
+    symbol [ devFieldBreathRate %tmp.84 62 33 51 ];
+    %tmp.85 = dup %tmp.81;
+    %tmp.86 = aputv %tmp.85 %tmp.83 %tmp.84;
+    jsr @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+    ret %tmp.86;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_8_65_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_endTry:
+    jsr @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+    goto @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_end;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_catch:
+    %tmp.87 = exception;
+    push %tmp.87;
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 65 6 ]
+    %tmp.88 = dup %tmp.87;
+    symbol [ Lang %tmp.89 65 28 32 ];
+    %tmp.89 = getm $.Toybox.Lang;
+    symbol [ Exception %tmp.90 65 33 42 ];
+    %tmp.90 = getv %tmp.89 :Exception;
+    %tmp.91 = isa %tmp.88 %tmp.90;
+    bf %tmp.91 @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_6_71_4_next;
+    [ "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_catch" "_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_6_71_4_next" ]
+    %ex.4 = local;
+    symbol [ ex %ex.4 65 14 16 ];
+    %tmp.92 = dup %tmp.87;
+    %tmp.93 = as %tmp.92 Lang.Exception;
+    lputv %ex.4 %tmp.93;
+    symbol [ ex %ex.4 65 14 16 ];
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_45_71_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 67 8 ]
+    symbol [ System %tmp.94 67 8 14 ];
+    %tmp.94 = getm $.Toybox.System;
+    symbol [ println %tmp.95 67 15 22 ];
+    %tmp.95 = getv function %tmp.94 :println;
+    %tmp.96 = "Error starting session: ";
+    %tmp.97 = lgetv %ex.4;
+    symbol [ ex %tmp.97 67 53 55 ];
+    symbol [ getErrorMessage %tmp.98 67 56 71 ];
+    %tmp.98 = getv function %tmp.97 :getErrorMessage;
+    %tmp.99 = invoke %tmp.97 %tmp.98();
+    %tmp.100 = add %tmp.96 %tmp.99;
+    invoke %tmp.94 %tmp.95(%tmp.100);
+[ "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc" 70 8 ]
+    pop;
+    %tmp.101 = null;
+    jsr @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+    ret %tmp.101;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_45_71_4_stop:
+    jsr @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+    pop;
+    goto @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_end;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_6_71_4_next:
+    try @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_catch @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_6_71_4_next @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_65_6_71_4_next @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+    jsr @_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally;
+    throw %tmp.87;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_finally:
+    jsrret;
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_21_4_71_4_end:
+_home_w5hacksphere_Projects_inhale1_source_funcs_initiateSession_mc_13_54_72_0_stop:
+}
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/funcs/initiateSession.mc"; @line = 1; ]
+<init> {
+}

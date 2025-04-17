@@ -1,887 +1,1142 @@
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
 using Toybox.WatchUi;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
 using Toybox.Graphics;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Timer,3,13,18]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Timer,3,13,18]; ]
 using Toybox.Timer;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
 using Toybox.Lang;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [System,5,13,19]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [System,5,13,19]; ]
 using Toybox.System;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Application,6,13,24]; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Application,6,13,24]; ]
 using Toybox.Application;
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 12; @symbol_classdef = [BreathCountView,12,6,21]; @symbol_extends<0> = [WatchUi,12,30,37]; @symbol_extends<1> = [View,12,38,42]; ]
-class BreathCountView extends WatchUi.View {
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 12; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [ActivityRecording,7,13,30]; ]
+using Toybox.ActivityRecording;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [FitContributor,8,13,27]; ]
+using Toybox.FitContributor;
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 15; @symbol_classdef = [SessionView,15,6,17]; @symbol_extends<0> = [WatchUi,15,26,33]; @symbol_extends<1> = [View,15,34,38]; ]
+class SessionView extends WatchUi.View {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 15; ]
     <init> {
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 12; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 15; ]
     static
     <init> {
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 15; @position = 16; @symbol_vardef = [_mode,15,16,21]; @symbol_type<0> = [Lang,15,32,36]; @symbol_type<1> = [Symbol,15,37,43]; ]
-    private
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 18; @position = 16; @symbol_vardef = [_mode,18,16,21]; @symbol_type<0> = [Lang,18,33,37]; @symbol_type<1> = [Symbol,18,38,44]; ]
+    public
     var _mode as Lang.Symbol;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 16; @position = 16; @symbol_vardef = [_breathCount,16,16,28]; @symbol_type<0> = [Lang,16,32,36]; @symbol_type<1> = [Number,16,37,43]; ]
-    private
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 19; @position = 16; @symbol_vardef = [_breathCount,19,16,28]; @symbol_type<0> = [Lang,19,33,37]; @symbol_type<1> = [Number,19,38,44]; ]
+    public
     var _breathCount as Lang.Number;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 17; @position = 16; @symbol_vardef = [_timer,17,16,22]; @symbol_type<0> = [Timer,17,32,37]; @symbol_type<1> = [Timer,17,38,43]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 20; @position = 16; @symbol_vardef = [_breathRate,20,16,27]; @symbol_type<0> = [Lang,20,33,37]; @symbol_type<1> = [Float,20,38,43]; ]
+    public
+    var _breathRate as Lang.Float;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 21; @position = 16; @symbol_vardef = [_session,21,16,24]; @symbol_type<0> = [ActivityRecording,21,33,50]; @symbol_type<1> = [Session,21,51,58]; ]
+    public
+    var _session as ActivityRecording.Session or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 22; @position = 16; @symbol_vardef = [_elapsedTime,22,16,28]; @symbol_type<0> = [Lang,22,33,37]; @symbol_type<1> = [Number,22,38,44]; ]
+    public
+    var _elapsedTime as Lang.Number;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 24; @position = 16; @symbol_vardef = [_timer,24,16,22]; @symbol_type<0> = [Timer,24,33,38]; @symbol_type<1> = [Timer,24,39,44]; ]
     private
     var _timer as Timer.Timer or Null;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 18; @position = 16; @symbol_vardef = [_elapsedTime,18,16,28]; ]
-    private
-    var _elapsedTime = 0;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 19; @position = 16; @symbol_vardef = [_isRunning,19,16,26]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 26; @position = 15; @symbol_vardef = [_devFieldBreathCount,26,15,35]; @symbol_type<0> = [FitContributor,26,39,53]; @symbol_type<1> = [Field,26,54,59]; ]
     public
-    var _isRunning = false;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 20; @position = 16; @symbol_vardef = [_showResults,20,16,28]; ]
+    var _devFieldBreathCount as FitContributor.Field or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 27; @position = 15; @symbol_vardef = [_devFieldBreathRate,27,15,34]; @symbol_type<0> = [FitContributor,27,39,53]; @symbol_type<1> = [Field,27,54,59]; ]
     public
-    var _showResults = false;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 21; @position = 16; @symbol_vardef = [_resultRate,21,16,27]; ]
-    private
-    var _resultRate = 0.0f;
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 31; @symbol_functiondef = [initialize,31,13,23]; @symbol_param<0> = [mode,31,25,29]; @symbol_param<0>_type<0> = [Lang,31,33,37]; @symbol_param<0>_type<1> = [Symbol,31,38,44]; @symbol_param<1> = [options,31,46,53]; @symbol_param<1>_type<0> = [Lang,31,57,61]; @symbol_param<1>_type<1> = [Dictionary,31,62,72]; ]
+    var _devFieldBreathRate as FitContributor.Field or Null;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 29; @position = 15; @symbol_constdef = [DEFAULT_COUNT,29,15,28]; ]
+    const DEFAULT_COUNT = 108;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 38; @symbol_functiondef = [initialize,38,13,23]; @symbol_param<0> = [mode,38,25,29]; @symbol_param<0>_type<0> = [Lang,38,33,37]; @symbol_param<0>_type<1> = [Symbol,38,38,44]; @symbol_param<1> = [options,38,46,53]; @symbol_param<1>_type<0> = [Lang,38,57,61]; @symbol_param<1>_type<1> = [Dictionary,38,62,72]; ]
     function initialize(mode as Lang.Symbol, options as Lang.Dictionary or Null) as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_31_76_80_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 33 8 ]
-        symbol [ View %tmp.2 33 8 12 ];
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_38_76_88_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 40 8 ]
+        symbol [ View %tmp.2 40 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 33 13 23 ];
+        symbol [ initialize %tmp.3 40 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 35 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 42 8 ]
         %tmp.4 = lgetv %mode;
-        symbol [ mode %tmp.4 35 16 20 ];
-        symbol [ _mode ? 35 8 13 ];
+        symbol [ mode %tmp.4 42 31 35 ];
+        symbol [ _mode ? 42 8 13 ];
         putv self :_mode %tmp.4;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 37 8 ]
-        symbol [ System %tmp.5 37 8 14 ];
-        %tmp.5 = getm $.Toybox.System;
-        symbol [ println %tmp.6 37 15 22 ];
-        %tmp.6 = getv function %tmp.5 :println;
-        %tmp.7 = "BreathCountView initialized with mode: ";
-        symbol [ _mode %tmp.9 37 68 73 ];
-        %tmp.9 = getv ? :_mode;
-        %tmp.10 = add %tmp.7 %tmp.9;
-        invoke %tmp.5 %tmp.6(%tmp.10);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 40 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_8_79_8_if_stmt:
-        symbol [ _mode %tmp.12 40 13 18 ];
-        %tmp.12 = getv ? :_mode;
-        %tmp.14 = const :daily;
-        symbol [ daily %tmp.14 40 23 28 const ];
-        %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_8_79_8_if_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_8_79_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_31_52_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 42 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_31_52_8_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_31_52_8_stop" ]
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 43 8 ]
+        %tmp.5 = null;
+        symbol [ _timer ? 43 8 14 ];
+        putv self :_timer %tmp.5;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 44 8 ]
+        %tmp.6 = null;
+        symbol [ _devFieldBreathCount ? 44 8 28 ];
+        putv self :_devFieldBreathCount %tmp.6;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 45 8 ]
+        %tmp.7 = null;
+        symbol [ _devFieldBreathRate ? 45 8 27 ];
+        putv self :_devFieldBreathRate %tmp.7;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 46 8 ]
+        %tmp.8 = 0;
+        symbol [ _elapsedTime ? 46 8 20 ];
+        putv self :_elapsedTime %tmp.8;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 47 8 ]
+        %tmp.9 = 0.0;
+        symbol [ _breathRate ? 47 8 19 ];
+        putv self :_breathRate %tmp.9;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 50 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_8_87_8_if_stmt:
+        symbol [ _mode %tmp.11 50 13 18 ];
+        %tmp.11 = getv ? :_mode;
+        %tmp.13 = const :daily;
+        symbol [ daily %tmp.13 50 23 28 const ];
+        %tmp.14 = eq %tmp.11 %tmp.13;
+        bf %tmp.14 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_8_87_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_8_87_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_31_60_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 53 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_31_60_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_31_60_8_stop" ]
         %storedCount.1 = local;
-        symbol [ storedCount %storedCount.1 42 16 27 ];
-        symbol [ Application %tmp.16 42 30 41 ];
-        %tmp.16 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.17 42 42 49 ];
-        %tmp.17 = getv %tmp.16 :Storage;
-        symbol [ getValue %tmp.18 42 50 58 ];
-        %tmp.18 = getv function %tmp.17 :getValue;
-        %tmp.19 = "dailyBreathCount";
-        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
-        lputv %storedCount.1 %tmp.20;
-        symbol [ storedCount %storedCount.1 42 16 27 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 44 12 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_12_48_54_if_stmt:
-        %tmp.21 = lgetv %storedCount.1;
-        symbol [ storedCount %tmp.21 44 17 28 ];
-        symbol [ Lang %tmp.22 44 40 44 ];
-        %tmp.22 = getm $.Toybox.Lang;
-        symbol [ Number %tmp.23 44 45 51 ];
-        %tmp.23 = getv %tmp.22 :Number;
-        %tmp.24 = isa %tmp.21 %tmp.23;
-        bf %tmp.24 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_12_48_54_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_12_48_54_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_54_44_84_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 44 56 ]
-        %tmp.25 = lgetv %storedCount.1;
-        symbol [ storedCount %tmp.25 44 71 82 ];
-        %tmp.26 = as %tmp.25 { (Lang.Number) };
-        symbol [ _breathCount ? 44 56 68 ];
-        putv self :_breathCount %tmp.26;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_54_44_84_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_12_48_54_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_12_48_54_if_else_false:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_46_54_48_54_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 46 56 ]
-        %tmp.27 = 108;
-        symbol [ _breathCount ? 46 56 68 ];
-        putv self :_breathCount %tmp.27;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 47 56 ]
-        symbol [ Application %tmp.28 47 56 67 ];
-        %tmp.28 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.29 47 68 75 ];
-        %tmp.29 = getv %tmp.28 :Storage;
-        symbol [ setValue %tmp.30 47 76 84 ];
-        %tmp.30 = getv function %tmp.29 :setValue;
-        %tmp.31 = "dailyBreathCount";
-        symbol [ _breathCount %tmp.33 47 106 118 ];
+        symbol [ storedCount %storedCount.1 53 16 27 ];
+        symbol [ Application %tmp.15 53 30 41 ];
+        %tmp.15 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.16 53 42 49 ];
+        %tmp.16 = getv %tmp.15 :Storage;
+        symbol [ getValue %tmp.17 53 50 58 ];
+        %tmp.17 = getv function %tmp.16 :getValue;
+        %tmp.18 = "dailyBreathCount";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        lputv %storedCount.1 %tmp.19;
+        symbol [ storedCount %storedCount.1 53 16 27 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 55 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_begin:
+        %tmp.20 = lgetv %storedCount.1;
+        symbol [ storedCount %tmp.20 55 27 38 ];
+        symbol [ Lang %tmp.21 55 50 54 ];
+        %tmp.21 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.22 55 55 61 ];
+        %tmp.22 = getv %tmp.21 :Number;
+        %tmp.23 = isa %tmp.20 %tmp.22;
+        bf %tmp.23 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_true:
+        %tmp.24 = lgetv %storedCount.1;
+        symbol [ storedCount %tmp.24 55 64 75 ];
+        %tmp.25 = as %tmp.24 { (Lang.Number) };
+        push %tmp.25;
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_false:
+        symbol [ DEFAULT_COUNT %tmp.27 55 78 91 ];
+        %tmp.27 = getv ? :DEFAULT_COUNT;
+        push %tmp.27;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_end:
+        %tmp.28 = phi [%tmp.23 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_begin] [%tmp.25 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_true] [%tmp.27 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_false] [%tmp.28 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_55_27_55_78_end];
+        symbol [ _breathCount ? 55 12 24 ];
+        putv self :_breathCount %tmp.28;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 57 12 ]
+        symbol [ System %tmp.29 57 12 18 ];
+        %tmp.29 = getm $.Toybox.System;
+        symbol [ println %tmp.30 57 19 26 ];
+        %tmp.30 = getv function %tmp.29 :println;
+        %tmp.31 = "Daily mode breath count: ";
+        symbol [ _breathCount %tmp.33 57 58 70 ];
         %tmp.33 = getv ? :_breathCount;
-        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.33);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_46_54_48_54_stop:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_44_12_48_54_if_end:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 50 12 ]
-        symbol [ System %tmp.34 50 12 18 ];
-        %tmp.34 = getm $.Toybox.System;
-        symbol [ println %tmp.35 50 19 26 ];
-        %tmp.35 = getv function %tmp.34 :println;
-        %tmp.36 = "Daily mode breath count: ";
-        symbol [ _breathCount %tmp.38 50 58 70 ];
-        %tmp.38 = getv ? :_breathCount;
-        %tmp.39 = add %tmp.36 %tmp.38;
-        invoke %tmp.34 %tmp.35(%tmp.39);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_31_52_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_8_79_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_8_79_8_if_false:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 52 15 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_15_79_8_if_stmt:
-        symbol [ _mode %tmp.41 52 20 25 ];
-        %tmp.41 = getv ? :_mode;
-        %tmp.43 = const :custom;
-        symbol [ custom %tmp.43 52 30 36 const ];
-        %tmp.44 = eq %tmp.41 %tmp.43;
-        bf %tmp.44 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_15_79_8_if_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_15_79_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_39_68_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 55 12 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_stmt:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_20_57_58_begin:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_20_56_47_begin:
-        %tmp.45 = lgetv %options;
-        symbol [ options %tmp.45 55 20 27 ];
-        %tmp.46 = null;
-        %tmp.47 = ne %tmp.45 %tmp.46;
-        bf %tmp.47 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_56_20_56_47_true:
-        %tmp.48 = lgetv %options;
-        symbol [ options %tmp.48 56 20 27 ];
-        %tmp.49 = as %tmp.48 { (!Null) };
-        symbol [ hasKey %tmp.50 56 28 34 ];
-        %tmp.50 = getv function %tmp.49 :hasKey;
-        %tmp.52 = const :breathCount;
-        symbol [ breathCount %tmp.52 56 36 47 const ];
-        %tmp.53 = invoke %tmp.49 %tmp.50(%tmp.52);
-        push %tmp.53;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_56_20_56_47_end:
-        %tmp.54 = phi [%tmp.47 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_20_56_47_begin] [%tmp.53 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_56_20_56_47_true] [%tmp.54 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_56_20_56_47_end];
-        bf %tmp.54 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_57_20_57_58_true:
-        %tmp.55 = lgetv %options;
-        symbol [ options %tmp.55 57 20 27 ];
-        %tmp.56 = as %tmp.55 { (!Null) };
-        %tmp.58 = const :breathCount;
-        symbol [ breathCount %tmp.58 57 29 40 const ];
-        %tmp.59 = agetv %tmp.56 %tmp.58;
-        symbol [ Lang %tmp.60 57 53 57 ];
-        %tmp.60 = getm $.Toybox.Lang;
-        symbol [ Number %tmp.61 57 58 64 ];
-        %tmp.61 = getv %tmp.60 :Number;
-        %tmp.62 = isa %tmp.59 %tmp.61;
-        push %tmp.62;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_57_20_57_58_end:
-        %tmp.63 = phi [%tmp.54 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_20_57_58_begin] [%tmp.62 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_57_20_57_58_true] [%tmp.63 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_57_20_57_58_end];
-        bf %tmp.63 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_59_17_59_58_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 59 20 ]
-        %tmp.64 = lgetv %options;
-        symbol [ options %tmp.64 59 35 42 ];
-        %tmp.65 = as %tmp.64 { (!Null) };
-        %tmp.67 = const :breathCount;
-        symbol [ breathCount %tmp.67 59 44 55 const ];
-        %tmp.68 = agetv %tmp.65 %tmp.67;
-        symbol [ _breathCount ? 59 20 32 ];
-        putv self :_breathCount %tmp.68;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_59_17_59_58_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_else_false:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_61_17_64_12_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 62 20 ]
-        %tmp.69 = 1;
-        symbol [ _breathCount ? 62 20 32 ];
-        putv self :_breathCount %tmp.69;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 63 20 ]
-        symbol [ System %tmp.70 63 20 26 ];
-        %tmp.70 = getm $.Toybox.System;
-        symbol [ println %tmp.71 63 27 34 ];
-        %tmp.71 = getv function %tmp.70 :println;
-        %tmp.72 = "Warning: Custom mode started without valid breath count in options.";
-        invoke %tmp.70 %tmp.71(%tmp.72);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_61_17_64_12_stop:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_55_12_64_12_if_end:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 66 12 ]
-        symbol [ System %tmp.73 66 12 18 ];
-        %tmp.73 = getm $.Toybox.System;
-        symbol [ println %tmp.74 66 19 26 ];
-        %tmp.74 = getv function %tmp.73 :println;
-        %tmp.75 = "Custom mode breath count: ";
-        symbol [ _breathCount %tmp.77 66 59 71 ];
-        %tmp.77 = getv ? :_breathCount;
-        %tmp.78 = add %tmp.75 %tmp.77;
-        invoke %tmp.73 %tmp.74(%tmp.78);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_39_68_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_15_79_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_15_79_8_if_false:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 68 15 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_15_79_8_if_stmt:
-        symbol [ _mode %tmp.80 68 20 25 ];
-        %tmp.80 = getv ? :_mode;
-        %tmp.82 = const :freestyle;
-        symbol [ freestyle %tmp.82 68 30 39 const ];
-        %tmp.83 = eq %tmp.80 %tmp.82;
-        bf %tmp.83 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_15_79_8_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_15_79_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_42_74_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 70 13 ]
-        %tmp.84 = 0;
-        symbol [ _breathCount ? 70 13 25 ];
-        putv self :_breathCount %tmp.84;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 72 13 ]
-        symbol [ System %tmp.85 72 13 19 ];
-        %tmp.85 = getm $.Toybox.System;
-        symbol [ println %tmp.86 72 20 27 ];
-        %tmp.86 = getv function %tmp.85 :println;
-        %tmp.87 = "Freestyle mode - breath count TBD";
-        invoke %tmp.85 %tmp.86(%tmp.87);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_42_74_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_15_79_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_15_79_8_if_else_false:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_74_15_79_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 76 13 ]
-        %tmp.88 = 108;
-        symbol [ _breathCount ? 76 13 25 ];
-        putv self :_breathCount %tmp.88;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 78 13 ]
-        symbol [ System %tmp.89 78 13 19 ];
-        %tmp.89 = getm $.Toybox.System;
-        symbol [ println %tmp.90 78 20 27 ];
-        %tmp.90 = getv function %tmp.89 :println;
-        %tmp.91 = "Warning: Unknown mode, using default count 108";
-        invoke %tmp.89 %tmp.90(%tmp.91);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_74_15_79_8_stop:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_68_15_79_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_52_15_79_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_40_8_79_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_31_76_80_4_stop:
+        %tmp.34 = add %tmp.31 %tmp.33;
+        invoke %tmp.29 %tmp.30(%tmp.34);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_31_60_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_8_87_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_8_87_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 60 15 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_15_87_8_if_stmt:
+        symbol [ _mode %tmp.36 60 20 25 ];
+        %tmp.36 = getv ? :_mode;
+        %tmp.38 = const :custom;
+        symbol [ custom %tmp.38 60 30 36 const ];
+        %tmp.39 = eq %tmp.36 %tmp.38;
+        bf %tmp.39 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_15_87_8_if_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_15_87_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_39_76_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 63 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_stmt:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_20_65_67_begin:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_20_64_49_begin:
+        %tmp.40 = lgetv %options;
+        symbol [ options %tmp.40 63 20 27 ];
+        %tmp.41 = null;
+        %tmp.42 = ne %tmp.40 %tmp.41;
+        bf %tmp.42 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_64_20_64_49_true:
+        %tmp.43 = lgetv %options;
+        symbol [ options %tmp.43 64 20 27 ];
+        %tmp.44 = as %tmp.43 { (!Null) };
+        symbol [ hasKey %tmp.45 64 28 34 ];
+        %tmp.45 = getv function %tmp.44 :hasKey;
+        %tmp.47 = const :breathCount;
+        symbol [ breathCount %tmp.47 64 37 48 const ];
+        %tmp.48 = invoke %tmp.44 %tmp.45(%tmp.47);
+        push %tmp.48;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_64_20_64_49_end:
+        %tmp.49 = phi [%tmp.42 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_20_64_49_begin] [%tmp.48 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_64_20_64_49_true] [%tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_64_20_64_49_end];
+        bf %tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_65_20_65_67_true:
+        %tmp.50 = lgetv %options;
+        symbol [ options %tmp.50 65 20 27 ];
+        %tmp.51 = as %tmp.50 { (!Null) };
+        %tmp.53 = const :breathCount;
+        symbol [ breathCount %tmp.53 65 37 48 const ];
+        %tmp.54 = agetv %tmp.51 %tmp.53;
+        symbol [ Lang %tmp.55 65 62 66 ];
+        %tmp.55 = getm $.Toybox.Lang;
+        symbol [ Number %tmp.56 65 67 73 ];
+        %tmp.56 = getv %tmp.55 :Number;
+        %tmp.57 = isa %tmp.54 %tmp.56;
+        push %tmp.57;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_65_20_65_67_end:
+        %tmp.58 = phi [%tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_20_65_67_begin] [%tmp.57 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_65_20_65_67_true] [%tmp.58 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_65_20_65_67_end];
+        bf %tmp.58 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_67_17_67_60_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 67 20 ]
+        %tmp.59 = lgetv %options;
+        symbol [ options %tmp.59 67 35 42 ];
+        %tmp.60 = as %tmp.59 { (!Null) };
+        %tmp.62 = const :breathCount;
+        symbol [ breathCount %tmp.62 67 45 56 const ];
+        %tmp.63 = agetv %tmp.60 %tmp.62;
+        symbol [ _breathCount ? 67 20 32 ];
+        putv self :_breathCount %tmp.63;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_67_17_67_60_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_69_17_72_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 70 20 ]
+        symbol [ DEFAULT_COUNT %tmp.65 70 35 48 ];
+        %tmp.65 = getv ? :DEFAULT_COUNT;
+        symbol [ _breathCount ? 70 20 32 ];
+        putv self :_breathCount %tmp.65;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 71 20 ]
+        symbol [ System %tmp.66 71 20 26 ];
+        %tmp.66 = getm $.Toybox.System;
+        symbol [ println %tmp.67 71 27 34 ];
+        %tmp.67 = getv function %tmp.66 :println;
+        %tmp.68 = "Warning: Custom mode started without valid breath count in options.";
+        invoke %tmp.66 %tmp.67(%tmp.68);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_69_17_72_12_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_63_12_72_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 74 12 ]
+        symbol [ System %tmp.69 74 12 18 ];
+        %tmp.69 = getm $.Toybox.System;
+        symbol [ println %tmp.70 74 19 26 ];
+        %tmp.70 = getv function %tmp.69 :println;
+        %tmp.71 = "Custom mode breath count: ";
+        symbol [ _breathCount %tmp.73 74 59 71 ];
+        %tmp.73 = getv ? :_breathCount;
+        %tmp.74 = add %tmp.71 %tmp.73;
+        invoke %tmp.69 %tmp.70(%tmp.74);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_39_76_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_15_87_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_15_87_8_if_false:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 76 15 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_15_87_8_if_stmt:
+        symbol [ _mode %tmp.76 76 20 25 ];
+        %tmp.76 = getv ? :_mode;
+        %tmp.78 = const :freestyle;
+        symbol [ freestyle %tmp.78 76 30 39 const ];
+        %tmp.79 = eq %tmp.76 %tmp.78;
+        bf %tmp.79 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_15_87_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_15_87_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_42_82_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 78 13 ]
+        %tmp.80 = 0;
+        symbol [ _breathCount ? 78 13 25 ];
+        putv self :_breathCount %tmp.80;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 80 13 ]
+        symbol [ System %tmp.81 80 13 19 ];
+        %tmp.81 = getm $.Toybox.System;
+        symbol [ println %tmp.82 80 20 27 ];
+        %tmp.82 = getv function %tmp.81 :println;
+        %tmp.83 = "Freestyle mode - breath count TBD";
+        invoke %tmp.81 %tmp.82(%tmp.83);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_42_82_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_15_87_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_15_87_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_82_15_87_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 84 13 ]
+        symbol [ DEFAULT_COUNT %tmp.85 84 28 41 ];
+        %tmp.85 = getv ? :DEFAULT_COUNT;
+        symbol [ _breathCount ? 84 13 25 ];
+        putv self :_breathCount %tmp.85;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 86 13 ]
+        symbol [ System %tmp.86 86 13 19 ];
+        %tmp.86 = getm $.Toybox.System;
+        symbol [ println %tmp.87 86 20 27 ];
+        %tmp.87 = getv function %tmp.86 :println;
+        %tmp.88 = "Warning: Unknown mode, using default count 108";
+        invoke %tmp.86 %tmp.87(%tmp.88);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_82_15_87_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_76_15_87_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_60_15_87_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_50_8_87_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_38_76_88_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 83; @symbol_functiondef = [onLayout,83,13,21]; @symbol_param<0> = [dc,83,23,25]; @symbol_param<0>_type<0> = [Graphics,83,29,37]; @symbol_param<0>_type<1> = [Dc,83,38,40]; ]
-    function onLayout(dc as Graphics.Dc) as Void {
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 94; @symbol_functiondef = [startUiTimer,94,21,33]; ]
+    private
+    function startUiTimer() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_94_44_104_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 96 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_8_103_8_if_stmt:
+        symbol [ _timer %tmp.2 96 13 19 ];
+        %tmp.2 = getv ? :_timer;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_8_103_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_8_103_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_29_103_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 98 12 ]
+        symbol [ Timer %tmp.7 98 25 30 ];
+        %tmp.7 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.8 98 31 36 ];
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.5 = newc %tmp.8 ();
+        symbol [ _timer ? 98 12 18 ];
+        putv self :_timer %tmp.5;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 100 12 ]
+        symbol [ _timer %tmp.10 100 12 18 ];
+        %tmp.10 = getv ? :_timer;
+        symbol [ start %tmp.11 100 19 24 ];
+        %tmp.11 = getv function %tmp.10 :start;
+        %tmp.12 = self;
+        symbol [ method %tmp.13 100 26 32 ];
+        %tmp.13 = getv function %tmp.12 :method;
+        %tmp.15 = const :updateUi;
+        symbol [ updateUi %tmp.15 100 35 43 const ];
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.17 = 1000;
+        %tmp.18 = true;
+        invoke %tmp.10 %tmp.11(%tmp.16, %tmp.17, %tmp.18);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 102 12 ]
+        symbol [ System %tmp.19 102 12 18 ];
+        %tmp.19 = getm $.Toybox.System;
+        symbol [ println %tmp.20 102 19 26 ];
+        %tmp.20 = getv function %tmp.19 :println;
+        %tmp.21 = "UI Update Timer Started";
+        invoke %tmp.19 %tmp.20(%tmp.21);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_29_103_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_8_103_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_96_8_103_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_94_44_104_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 86; @symbol_functiondef = [onShow,86,13,19]; ]
-    function onShow() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_86_30_90_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 88 8 ]
-        symbol [ Timer %tmp.3 88 21 26 ];
-        %tmp.3 = getm $.Toybox.Timer;
-        symbol [ Timer %tmp.4 88 27 32 ];
-        %tmp.4 = getv function ? %tmp.3 :Timer;
-        %tmp.1 = newc %tmp.4 ();
-        symbol [ _timer ? 88 8 14 ];
-        putv self :_timer %tmp.1;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_86_30_90_4_stop:
-    }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 93; @symbol_functiondef = [onHide,93,13,19]; ]
-    function onHide() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_93_30_99_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 95 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_8_95_46_if_stmt:
-        symbol [ _timer %tmp.2 95 12 18 ];
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 106; @symbol_functiondef = [stopUiTimer,106,21,32]; ]
+    private
+    function stopUiTimer() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_106_43_116_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 108 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_8_115_8_if_stmt:
+        symbol [ _timer %tmp.2 108 13 19 ];
         %tmp.2 = getv ? :_timer;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_8_95_46_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_8_95_46_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_29_95_46_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 95 31 ]
-        symbol [ _timer %tmp.6 95 31 37 ];
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_8_115_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_8_115_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_29_115_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 110 12 ]
+        symbol [ _timer %tmp.6 110 12 18 ];
         %tmp.6 = getv ? :_timer;
         %tmp.7 = as %tmp.6 { (!Null) };
-        symbol [ stop %tmp.8 95 38 42 ];
+        symbol [ stop %tmp.8 110 19 23 ];
         %tmp.8 = getv function %tmp.7 :stop;
         invoke %tmp.7 %tmp.8();
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_29_95_46_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_8_95_46_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_95_8_95_46_if_end:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 97 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 112 12 ]
         %tmp.9 = null;
-        symbol [ _timer ? 97 8 14 ];
+        symbol [ _timer ? 112 12 18 ];
         putv self :_timer %tmp.9;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_93_30_99_4_stop:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 114 12 ]
+        symbol [ System %tmp.10 114 12 18 ];
+        %tmp.10 = getm $.Toybox.System;
+        symbol [ println %tmp.11 114 19 26 ];
+        %tmp.11 = getv function %tmp.10 :println;
+        %tmp.12 = "UI Update Timer Stopped";
+        invoke %tmp.10 %tmp.11(%tmp.12);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_29_115_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_8_115_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_108_8_115_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_106_43_116_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 105; @symbol_functiondef = [onUpdate,105,13,21]; @symbol_param<0> = [dc,105,23,25]; @symbol_param<0>_type<0> = [Graphics,105,29,37]; @symbol_param<0>_type<1> = [Dc,105,38,40]; ]
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 118; @symbol_functiondef = [updateUi,118,13,21]; ]
+    function updateUi() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_118_33_121_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 120 8 ]
+        symbol [ WatchUi %tmp.1 120 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 120 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_118_33_121_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 125; @symbol_functiondef = [onLayout,125,13,21]; @symbol_param<0> = [dc,125,23,25]; @symbol_param<0>_type<0> = [Graphics,125,29,37]; @symbol_param<0>_type<1> = [Dc,125,38,40]; ]
+    function onLayout(dc as Graphics.Dc) as Void {
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 132; @symbol_functiondef = [onUpdate,132,13,21]; @symbol_param<0> = [dc,132,23,25]; @symbol_param<0>_type<0> = [Graphics,132,29,37]; @symbol_param<0>_type<1> = [Dc,132,38,40]; ]
     function onUpdate(dc as Graphics.Dc) as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 107 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 134 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 107 8 10 ];
-        symbol [ setColor %tmp.2 107 11 19 ];
+        symbol [ dc %tmp.1 134 8 10 ];
+        symbol [ setColor %tmp.2 134 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 107 21 29 ];
+        symbol [ Graphics %tmp.3 134 21 29 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.4 107 30 41 ];
+        symbol [ COLOR_WHITE %tmp.4 134 30 41 ];
         %tmp.4 = getv %tmp.3 :COLOR_WHITE;
-        symbol [ Graphics %tmp.5 107 43 51 ];
+        symbol [ Graphics %tmp.5 134 43 51 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 107 52 63 ];
+        symbol [ COLOR_BLACK %tmp.6 134 52 63 ];
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 109 8 ]
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 136 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 109 8 10 ];
-        symbol [ clear %tmp.8 109 11 16 ];
+        symbol [ dc %tmp.7 136 8 10 ];
+        symbol [ clear %tmp.8 136 11 16 ];
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 111 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_stop" ]
-        %screenWidth.1 = local;
-        symbol [ screenWidth %screenWidth.1 111 12 23 ];
-        %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 111 27 29 ];
-        symbol [ getWidth %tmp.10 111 30 38 ];
-        %tmp.10 = getv function %tmp.9 :getWidth;
-        %tmp.11 = invoke %tmp.9 %tmp.10();
-        lputv %screenWidth.1 %tmp.11;
-        symbol [ screenWidth %screenWidth.1 111 12 23 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 112 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_stop" ]
-        %screenHeight.2 = local;
-        symbol [ screenHeight %screenHeight.2 112 12 24 ];
-        %tmp.12 = lgetv %dc;
-        symbol [ dc %tmp.12 112 27 29 ];
-        symbol [ getHeight %tmp.13 112 30 39 ];
-        %tmp.13 = getv function %tmp.12 :getHeight;
-        %tmp.14 = invoke %tmp.12 %tmp.13();
-        lputv %screenHeight.2 %tmp.14;
-        symbol [ screenHeight %screenHeight.2 112 12 24 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 113 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_stop" ]
-        %centerX.3 = local;
-        symbol [ centerX %centerX.3 113 12 19 ];
-        %tmp.15 = lgetv %screenWidth.1;
-        symbol [ screenWidth %tmp.15 113 27 38 ];
-        %tmp.16 = 2;
-        %tmp.17 = div %tmp.15 %tmp.16;
-        lputv %centerX.3 %tmp.17;
-        symbol [ centerX %centerX.3 113 12 19 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 115 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_8_135_8_if_stmt:
-        symbol [ _showResults %tmp.19 115 13 25 ];
-        %tmp.19 = getv ? :_showResults;
-        bf %tmp.19 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_8_135_8_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_8_135_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_28_123_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 117 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_28_123_8_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_28_123_8_stop" ]
-        %durationStr.4 = local;
-        symbol [ durationStr %durationStr.4 117 16 27 ];
-        %tmp.20 = self;
-        symbol [ formatTime %tmp.21 117 30 40 ];
-        %tmp.21 = getv function %tmp.20 :formatTime;
-        symbol [ _elapsedTime %tmp.23 117 42 54 ];
-        %tmp.23 = getv ? :_elapsedTime;
-        %tmp.24 = invoke %tmp.20 %tmp.21(%tmp.23);
-        lputv %durationStr.4 %tmp.24;
-        symbol [ durationStr %durationStr.4 117 16 27 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 119 12 ]
-        %tmp.25 = lgetv %dc;
-        symbol [ dc %tmp.25 119 12 14 ];
-        symbol [ drawText %tmp.26 119 15 23 ];
-        %tmp.26 = getv function %tmp.25 :drawText;
-        %tmp.27 = lgetv %centerX.3;
-        symbol [ centerX %tmp.27 119 25 32 ];
-        %tmp.28 = lgetv %screenHeight.2;
-        symbol [ screenHeight %tmp.28 119 36 48 ];
-        %tmp.29 = 5;
-        %tmp.30 = div %tmp.28 %tmp.29;
-        symbol [ Graphics %tmp.31 119 59 67 ];
-        %tmp.31 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.32 119 68 79 ];
-        %tmp.32 = getv %tmp.31 :FONT_MEDIUM;
-        %tmp.33 = "Time: ";
-        %tmp.34 = lgetv %durationStr.4;
-        symbol [ durationStr %tmp.34 119 92 103 ];
-        %tmp.35 = add %tmp.33 %tmp.34;
-        symbol [ Graphics %tmp.36 119 129 137 ];
-        %tmp.36 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.37 119 138 157 ];
-        %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.30, %tmp.32, %tmp.35, %tmp.37);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 120 12 ]
-        %tmp.38 = lgetv %dc;
-        symbol [ dc %tmp.38 120 12 14 ];
-        symbol [ drawText %tmp.39 120 15 23 ];
-        %tmp.39 = getv function %tmp.38 :drawText;
-        %tmp.40 = lgetv %centerX.3;
-        symbol [ centerX %tmp.40 120 25 32 ];
-        %tmp.41 = lgetv %screenHeight.2;
-        symbol [ screenHeight %tmp.41 120 36 48 ];
-        %tmp.42 = 2;
-        %tmp.43 = mul %tmp.41 %tmp.42;
-        %tmp.44 = 5;
-        %tmp.45 = div %tmp.43 %tmp.44;
-        symbol [ Graphics %tmp.46 120 59 67 ];
-        %tmp.46 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.47 120 68 79 ];
-        %tmp.47 = getv %tmp.46 :FONT_MEDIUM;
-        %tmp.48 = "Rate: ";
-        symbol [ _resultRate %tmp.50 120 92 103 ];
-        %tmp.50 = getv ? :_resultRate;
-        symbol [ format %tmp.51 120 104 110 ];
-        %tmp.51 = getv function %tmp.50 :format;
-        %tmp.52 = "%.2f";
-        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
-        %tmp.54 = add %tmp.48 %tmp.53;
-        %tmp.55 = " bpm";
-        %tmp.56 = add %tmp.54 %tmp.55;
-        symbol [ Graphics %tmp.57 120 129 137 ];
-        %tmp.57 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.58 120 138 157 ];
-        %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.45, %tmp.47, %tmp.56, %tmp.58);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 121 12 ]
-        %tmp.59 = lgetv %dc;
-        symbol [ dc %tmp.59 121 12 14 ];
-        symbol [ drawText %tmp.60 121 15 23 ];
-        %tmp.60 = getv function %tmp.59 :drawText;
-        %tmp.61 = lgetv %centerX.3;
-        symbol [ centerX %tmp.61 121 25 32 ];
-        %tmp.62 = lgetv %screenHeight.2;
-        symbol [ screenHeight %tmp.62 121 36 48 ];
-        %tmp.63 = 3;
-        %tmp.64 = mul %tmp.62 %tmp.63;
-        %tmp.65 = 5;
-        %tmp.66 = div %tmp.64 %tmp.65;
-        symbol [ Graphics %tmp.67 121 59 67 ];
-        %tmp.67 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.68 121 68 78 ];
-        %tmp.68 = getv %tmp.67 :FONT_SMALL;
-        %tmp.69 = "(";
-        symbol [ _breathCount %tmp.71 121 87 99 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 139 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_8_147_8_if_stmt:
+        symbol [ _session %tmp.10 139 13 21 ];
+        %tmp.10 = getv ? :_session;
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        bf %tmp.12 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_8_147_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_8_147_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_32_147_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 141 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_32_147_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_32_147_8_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 141 16 20 ];
+        symbol [ Activity %tmp.14 141 23 31 ];
+        %tmp.14 = getv ? :Activity;
+        symbol [ getActivityInfo %tmp.15 141 32 47 ];
+        %tmp.15 = getv function %tmp.14 :getActivityInfo;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %info.1 %tmp.16;
+        symbol [ info %info.1 141 16 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 143 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_12_146_12_if_stmt:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_17_143_51_begin:
+        %tmp.17 = lgetv %info.1;
+        symbol [ info %tmp.17 143 17 21 ];
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_12_146_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_33_143_51_true:
+        %tmp.20 = lgetv %info.1;
+        symbol [ info %tmp.20 143 33 37 ];
+        %tmp.21 = as %tmp.20 { (!Null) };
+        symbol [ timerTime %tmp.22 143 38 47 ];
+        %tmp.22 = getv %tmp.21 :timerTime;
+        %tmp.23 = null;
+        %tmp.24 = ne %tmp.22 %tmp.23;
+        push %tmp.24;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_33_143_51_end:
+        %tmp.25 = phi [%tmp.19 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_17_143_51_begin] [%tmp.24 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_33_143_51_true] [%tmp.25 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_33_143_51_end];
+        bf %tmp.25 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_12_146_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_12_146_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_58_146_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 145 16 ]
+        %tmp.26 = lgetv %info.1;
+        symbol [ info %tmp.26 145 31 35 ];
+        %tmp.27 = as %tmp.26 { (!Null) };
+        symbol [ timerTime %tmp.28 145 36 45 ];
+        %tmp.28 = getv %tmp.27 :timerTime;
+        symbol [ _elapsedTime ? 145 16 28 ];
+        putv self :_elapsedTime %tmp.28;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_58_146_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_12_146_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_143_12_146_12_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_32_147_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_8_147_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_139_8_147_8_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 149 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %screenWidth.2 = local;
+        symbol [ screenWidth %screenWidth.2 149 12 23 ];
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 149 29 31 ];
+        symbol [ getWidth %tmp.30 149 32 40 ];
+        %tmp.30 = getv function %tmp.29 :getWidth;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %screenWidth.2 %tmp.31;
+        symbol [ screenWidth %screenWidth.2 149 12 23 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 150 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %screenHeight.3 = local;
+        symbol [ screenHeight %screenHeight.3 150 12 24 ];
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 150 29 31 ];
+        symbol [ getHeight %tmp.33 150 32 41 ];
+        %tmp.33 = getv function %tmp.32 :getHeight;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        lputv %screenHeight.3 %tmp.34;
+        symbol [ screenHeight %screenHeight.3 150 12 24 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 151 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %centerX.4 = local;
+        symbol [ centerX %centerX.4 151 12 19 ];
+        %tmp.35 = lgetv %screenWidth.2;
+        symbol [ screenWidth %tmp.35 151 29 40 ];
+        %tmp.36 = 2;
+        %tmp.37 = div %tmp.35 %tmp.36;
+        lputv %centerX.4 %tmp.37;
+        symbol [ centerX %centerX.4 151 12 19 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 153 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %timeStr.5 = local;
+        symbol [ timeStr %timeStr.5 153 12 19 ];
+        %tmp.38 = self;
+        symbol [ formatTime %tmp.39 153 29 39 ];
+        %tmp.39 = getv function %tmp.38 :formatTime;
+        symbol [ _elapsedTime %tmp.41 153 41 53 ];
+        %tmp.41 = getv ? :_elapsedTime;
+        %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.41);
+        lputv %timeStr.5 %tmp.42;
+        symbol [ timeStr %timeStr.5 153 12 19 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 154 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %timeFont.6 = local;
+        symbol [ timeFont %timeFont.6 154 12 20 ];
+        symbol [ Graphics %tmp.43 154 29 37 ];
+        %tmp.43 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.44 154 38 48 ];
+        %tmp.44 = getv %tmp.43 :FONT_LARGE;
+        lputv %timeFont.6 %tmp.44;
+        symbol [ timeFont %timeFont.6 154 12 20 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 155 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %timeFontHeight.7 = local;
+        symbol [ timeFontHeight %timeFontHeight.7 155 12 26 ];
+        symbol [ Graphics %tmp.45 155 29 37 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ getFontHeight %tmp.46 155 38 51 ];
+        %tmp.46 = getv function %tmp.45 :getFontHeight;
+        %tmp.47 = lgetv %timeFont.6;
+        symbol [ timeFont %tmp.47 155 53 61 ];
+        %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
+        lputv %timeFontHeight.7 %tmp.48;
+        symbol [ timeFontHeight %timeFontHeight.7 155 12 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 159 8 ]
+        %tmp.49 = lgetv %dc;
+        symbol [ dc %tmp.49 159 8 10 ];
+        symbol [ drawText %tmp.50 159 11 19 ];
+        %tmp.50 = getv function %tmp.49 :drawText;
+        %tmp.51 = lgetv %centerX.4;
+        symbol [ centerX %tmp.51 160 12 19 ];
+        %tmp.52 = lgetv %screenHeight.3;
+        symbol [ screenHeight %tmp.52 161 12 24 ];
+        %tmp.53 = 2;
+        %tmp.54 = div %tmp.52 %tmp.53;
+        %tmp.55 = lgetv %timeFontHeight.7;
+        symbol [ timeFontHeight %tmp.55 161 33 47 ];
+        %tmp.56 = 2;
+        %tmp.57 = div %tmp.55 %tmp.56;
+        %tmp.58 = sub %tmp.54 %tmp.57;
+        %tmp.59 = lgetv %timeFont.6;
+        symbol [ timeFont %tmp.59 162 12 20 ];
+        %tmp.60 = lgetv %timeStr.5;
+        symbol [ timeStr %tmp.60 163 12 19 ];
+        symbol [ Graphics %tmp.61 164 12 20 ];
+        %tmp.61 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.62 164 21 40 ];
+        %tmp.62 = getv %tmp.61 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.49 %tmp.50(%tmp.51, %tmp.58, %tmp.59, %tmp.60, %tmp.62);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 167 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %inProgress.8 = local;
+        symbol [ inProgress %inProgress.8 167 12 22 ];
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_25_167_66_begin:
+        symbol [ _session %tmp.64 167 25 33 ];
+        %tmp.64 = getv ? :_session;
+        %tmp.65 = null;
+        %tmp.66 = ne %tmp.64 %tmp.65;
+        %tmp.67 = dup %tmp.66;
+        bf %tmp.67 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_45_167_66_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_45_167_66_true:
+        symbol [ _session %tmp.69 167 45 53 ];
+        %tmp.69 = getv ? :_session;
+        %tmp.70 = as %tmp.69 { (!Null) };
+        symbol [ isRecording %tmp.71 167 54 65 ];
+        %tmp.71 = getv function %tmp.70 :isRecording;
+        %tmp.72 = invoke %tmp.70 %tmp.71();
+        %tmp.73 = and %tmp.66 %tmp.72;
+        push %tmp.73;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_45_167_66_end:
+        %tmp.74 = phi [%tmp.67 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_25_167_66_begin] [%tmp.73 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_45_167_66_true] [%tmp.74 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_167_45_167_66_end];
+        lputv %inProgress.8 %tmp.74;
+        symbol [ inProgress %inProgress.8 167 12 22 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 168 8 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop" ]
+        %promptText.9 = local;
+        symbol [ promptText %promptText.9 168 12 22 ];
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_begin:
+        %tmp.75 = lgetv %inProgress.8;
+        symbol [ inProgress %tmp.75 168 25 35 ];
+        bf %tmp.75 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_true:
+        %tmp.76 = "Press SELECT to stop";
+        push %tmp.76;
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_false:
+        %tmp.77 = "Press SELECT to start";
+        push %tmp.77;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_end:
+        %tmp.78 = phi [%tmp.75 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_begin] [%tmp.76 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_true] [%tmp.77 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_false] [%tmp.78 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_168_25_168_63_end];
+        lputv %promptText.9 %tmp.78;
+        symbol [ promptText %promptText.9 168 12 22 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 170 8 ]
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 170 8 10 ];
+        symbol [ drawText %tmp.80 170 11 19 ];
+        %tmp.80 = getv function %tmp.79 :drawText;
+        %tmp.81 = lgetv %centerX.4;
+        symbol [ centerX %tmp.81 171 12 19 ];
+        %tmp.82 = lgetv %screenHeight.3;
+        symbol [ screenHeight %tmp.82 172 14 26 ];
+        %tmp.83 = 3;
+        %tmp.84 = mul %tmp.82 %tmp.83;
+        %tmp.85 = 4;
+        %tmp.86 = div %tmp.84 %tmp.85;
+        symbol [ Graphics %tmp.87 173 12 20 ];
+        %tmp.87 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.88 173 21 31 ];
+        %tmp.88 = getv %tmp.87 :FONT_XTINY;
+        %tmp.89 = lgetv %promptText.9;
+        symbol [ promptText %tmp.89 174 12 22 ];
+        symbol [ Graphics %tmp.90 175 12 20 ];
+        %tmp.90 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.91 175 21 40 ];
+        %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.79 %tmp.80(%tmp.81, %tmp.86, %tmp.88, %tmp.89, %tmp.91);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_132_51_177_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 181; @symbol_functiondef = [updateView,181,13,23]; ]
+    function updateView() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_181_34_184_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 183 8 ]
+        symbol [ WatchUi %tmp.1 183 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 183 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_181_34_184_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 191; @symbol_functiondef = [startMeditation,191,12,27]; ]
+    function startMeditation() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_191_38_216_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 193 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_8_215_8_if_stmt:
+        symbol [ _session %tmp.2 193 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_8_215_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_8_215_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_30_212_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 195 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_30_212_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_30_212_8_stop" ]
+        %sessionData.1 = local;
+        symbol [ sessionData %sessionData.1 195 16 27 ];
+        %tmp.5 = null;
+        lputv %sessionData.1 %tmp.5;
+        symbol [ sessionData %sessionData.1 195 16 27 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 196 12 ]
+        %tmp.6 = self;
+        symbol [ initiateSession %tmp.7 196 26 41 ];
+        %tmp.7 = getv function %tmp.6 :initiateSession;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %sessionData.1 %tmp.8;
+        symbol [ sessionData %sessionData.1 196 12 23 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 198 13 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_13_211_13_if_stmt:
+        %tmp.9 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.9 198 18 29 ];
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        bf %tmp.11 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_13_211_13_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_13_211_13_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_40_207_13_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 200 17 ]
+        %tmp.12 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.12 200 40 51 ];
+        %tmp.13 = as %tmp.12 { (!Null) };
+        %tmp.15 = const :session;
+        symbol [ session %tmp.15 200 54 61 const ];
+        %tmp.16 = agetv %tmp.13 %tmp.15;
+        %tmp.17 = as %tmp.16 ActivityRecording.Session;
+        symbol [ ActivityRecording %tmp.17 200 76 93 ];
+        symbol [ Session %tmp.17 200 94 101 ];
+        symbol [ _session ? 200 17 25 ];
+        putv self :_session %tmp.17;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 201 17 ]
+        %tmp.18 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.18 201 40 51 ];
+        %tmp.19 = as %tmp.18 { (!Null) };
+        %tmp.21 = const :fieldBreathCount;
+        symbol [ fieldBreathCount %tmp.21 201 54 70 const ];
+        %tmp.22 = agetv %tmp.19 %tmp.21;
+        %tmp.23 = as %tmp.22 FitContributor.Field;
+        symbol [ FitContributor %tmp.23 201 76 90 ];
+        symbol [ Field %tmp.23 201 91 96 ];
+        symbol [ _devFieldBreathCount ? 201 17 37 ];
+        putv self :_devFieldBreathCount %tmp.23;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 202 17 ]
+        %tmp.24 = lgetv %sessionData.1;
+        symbol [ sessionData %tmp.24 202 40 51 ];
+        %tmp.25 = as %tmp.24 { (!Null) };
+        %tmp.27 = const :fieldBreathRate;
+        symbol [ fieldBreathRate %tmp.27 202 54 69 const ];
+        %tmp.28 = agetv %tmp.25 %tmp.27;
+        %tmp.29 = as %tmp.28 FitContributor.Field;
+        symbol [ FitContributor %tmp.29 202 76 90 ];
+        symbol [ Field %tmp.29 202 91 96 ];
+        symbol [ _devFieldBreathRate ? 202 17 36 ];
+        putv self :_devFieldBreathRate %tmp.29;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 204 17 ]
+        %tmp.30 = self;
+        symbol [ startUiTimer %tmp.31 204 17 29 ];
+        %tmp.31 = getv function %tmp.30 :startUiTimer;
+        invoke %tmp.30 %tmp.31();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 205 17 ]
+        symbol [ WatchUi %tmp.32 205 17 24 ];
+        %tmp.32 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.33 205 25 38 ];
+        %tmp.33 = getv function %tmp.32 :requestUpdate;
+        invoke %tmp.32 %tmp.33();
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_40_207_13_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_13_211_13_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_13_211_13_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_207_20_211_13_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 210 17 ]
+        symbol [ System %tmp.34 210 17 23 ];
+        %tmp.34 = getm $.Toybox.System;
+        symbol [ println %tmp.35 210 24 31 ];
+        %tmp.35 = getv function %tmp.34 :println;
+        %tmp.36 = "Failed to get session data from startSession function.";
+        invoke %tmp.34 %tmp.35(%tmp.36);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_207_20_211_13_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_198_13_211_13_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_30_212_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_8_215_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_8_215_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_212_15_215_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 214 12 ]
+        symbol [ System %tmp.37 214 12 18 ];
+        %tmp.37 = getm $.Toybox.System;
+        symbol [ println %tmp.38 214 19 26 ];
+        %tmp.38 = getv function %tmp.37 :println;
+        %tmp.39 = "Warning: startTimer called but session already exists.";
+        invoke %tmp.37 %tmp.38(%tmp.39);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_212_15_215_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_193_8_215_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_191_38_216_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 220; @symbol_functiondef = [pauseMeditation,220,13,28]; ]
+    function pauseMeditation() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_220_39_231_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 222 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_8_230_8_if_stmt:
+        symbol [ _session %tmp.2 222 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_8_230_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_8_230_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_30_227_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 224 12 ]
+        symbol [ _session %tmp.6 224 12 20 ];
+        %tmp.6 = getv ? :_session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 224 21 25 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 225 12 ]
+        %tmp.9 = self;
+        symbol [ stopUiTimer %tmp.10 225 12 23 ];
+        %tmp.10 = getv function %tmp.9 :stopUiTimer;
+        invoke %tmp.9 %tmp.10();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 226 12 ]
+        symbol [ WatchUi %tmp.11 226 12 19 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.12 226 20 33 ];
+        %tmp.12 = getv function %tmp.11 :requestUpdate;
+        invoke %tmp.11 %tmp.12();
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_30_227_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_8_230_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_8_230_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_227_15_230_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 229 12 ]
+        symbol [ System %tmp.13 229 12 18 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ println %tmp.14 229 19 26 ];
+        %tmp.14 = getv function %tmp.13 :println;
+        %tmp.15 = "Warning: pauseMeditation called but no session exists.";
+        invoke %tmp.13 %tmp.14(%tmp.15);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_227_15_230_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_222_8_230_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_220_39_231_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 235; @symbol_functiondef = [resumeMeditation,235,13,29]; ]
+    function resumeMeditation() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_235_40_247_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 237 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_8_246_8_if_stmt:
+        symbol [ _session %tmp.2 237 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_8_246_8_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_8_246_8_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_30_243_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 239 12 ]
+        symbol [ _session %tmp.6 239 12 20 ];
+        %tmp.6 = getv ? :_session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ start %tmp.8 239 21 26 ];
+        %tmp.8 = getv function %tmp.7 :start;
+        invoke %tmp.7 %tmp.8();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 240 12 ]
+        %tmp.9 = self;
+        symbol [ startUiTimer %tmp.10 240 12 24 ];
+        %tmp.10 = getv function %tmp.9 :startUiTimer;
+        invoke %tmp.9 %tmp.10();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 241 12 ]
+        symbol [ WatchUi %tmp.11 241 12 19 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.12 241 20 33 ];
+        %tmp.12 = getv function %tmp.11 :requestUpdate;
+        invoke %tmp.11 %tmp.12();
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_30_243_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_8_246_8_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_8_246_8_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_243_15_246_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 245 12 ]
+        symbol [ System %tmp.13 245 12 18 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ println %tmp.14 245 19 26 ];
+        %tmp.14 = getv function %tmp.13 :println;
+        %tmp.15 = "Warning: resumeMeditation called but no session exists.";
+        invoke %tmp.13 %tmp.14(%tmp.15);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_243_15_246_8_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_237_8_246_8_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_235_40_247_4_stop:
+    }
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 252; @symbol_functiondef = [saveSession,252,13,24]; ]
+    function saveSession() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_252_35_293_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 255 8 ]
+        symbol [ System %tmp.1 255 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 255 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Saving session...";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 257 8 ]
+        %tmp.4 = self;
+        symbol [ stopUiTimer %tmp.5 257 8 19 ];
+        %tmp.5 = getv function %tmp.4 :stopUiTimer;
+        invoke %tmp.4 %tmp.5();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 259 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_8_290_72_if_stmt:
+        symbol [ _session %tmp.7 259 12 20 ];
+        %tmp.7 = getv ? :_session;
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_8_290_72_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_8_290_72_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_30_290_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 263 13 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_30_290_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_30_290_8_stop" ]
+        %avgBreathRate.1 = local;
+        symbol [ avgBreathRate %avgBreathRate.1 263 17 30 ];
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_begin:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_35_263_70_begin:
+        symbol [ _elapsedTime %tmp.11 263 35 47 ];
+        %tmp.11 = getv ? :_elapsedTime;
+        %tmp.12 = 0;
+        %tmp.13 = gt %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_55_263_70_true:
+        symbol [ _breathCount %tmp.15 263 55 67 ];
+        %tmp.15 = getv ? :_breathCount;
+        %tmp.16 = 0;
+        %tmp.17 = gt %tmp.15 %tmp.16;
+        push %tmp.17;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_55_263_70_end:
+        %tmp.18 = phi [%tmp.13 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_35_263_70_begin] [%tmp.17 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_55_263_70_true] [%tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_55_263_70_end];
+        bf %tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_true:
+        symbol [ _breathCount %tmp.20 264 44 56 ];
+        %tmp.20 = getv ? :_breathCount;
+        symbol [ toFloat %tmp.21 264 57 64 ];
+        %tmp.21 = getv function %tmp.20 :toFloat;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        symbol [ _elapsedTime %tmp.24 264 71 83 ];
+        %tmp.24 = getv ? :_elapsedTime;
+        %tmp.25 = 1000;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        %tmp.27 = 60.0f;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        %tmp.29 = div %tmp.22 %tmp.28;
+        push %tmp.29;
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_false:
+        %tmp.30 = 0.0f;
+        push %tmp.30;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_end:
+        %tmp.31 = phi [%tmp.18 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_begin] [%tmp.29 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_true] [%tmp.30 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_false] [%tmp.31 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_263_33_265_42_end];
+        lputv %avgBreathRate.1 %tmp.31;
+        symbol [ avgBreathRate %avgBreathRate.1 263 17 30 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 267 12 ]
+        %tmp.32 = lgetv %avgBreathRate.1;
+        symbol [ avgBreathRate %tmp.32 267 26 39 ];
+        symbol [ _breathRate ? 267 12 23 ];
+        putv self :_breathRate %tmp.32;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 271 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_12_272_74_if_stmt:
+        symbol [ _devFieldBreathCount %tmp.34 271 17 37 ];
+        %tmp.34 = getv ? :_devFieldBreathCount;
+        %tmp.35 = null;
+        %tmp.36 = ne %tmp.34 %tmp.35;
+        bf %tmp.36 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_12_272_74_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_12_272_74_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_48_271_96_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 271 50 ]
+        symbol [ _devFieldBreathCount %tmp.38 271 50 70 ];
+        %tmp.38 = getv ? :_devFieldBreathCount;
+        %tmp.39 = as %tmp.38 { (!Null) };
+        symbol [ setData %tmp.40 271 71 78 ];
+        %tmp.40 = getv function %tmp.39 :setData;
+        symbol [ _breathCount %tmp.42 271 80 92 ];
+        %tmp.42 = getv ? :_breathCount;
+        invoke %tmp.39 %tmp.40(%tmp.42);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_48_271_96_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_12_272_74_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_12_272_74_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_272_17_272_74_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 272 19 ]
+        symbol [ System %tmp.43 272 19 25 ];
+        %tmp.43 = getm $.Toybox.System;
+        symbol [ println %tmp.44 272 26 33 ];
+        %tmp.44 = getv function %tmp.43 :println;
+        %tmp.45 = "Error: Breath Count Field is null";
+        invoke %tmp.43 %tmp.44(%tmp.45);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_272_17_272_74_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_271_12_272_74_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 274 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_12_275_73_if_stmt:
+        symbol [ _devFieldBreathRate %tmp.47 274 17 36 ];
+        %tmp.47 = getv ? :_devFieldBreathRate;
+        %tmp.48 = null;
+        %tmp.49 = ne %tmp.47 %tmp.48;
+        bf %tmp.49 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_12_275_73_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_12_275_73_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_47_274_93_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 274 49 ]
+        symbol [ _devFieldBreathRate %tmp.51 274 49 68 ];
+        %tmp.51 = getv ? :_devFieldBreathRate;
+        %tmp.52 = as %tmp.51 { (!Null) };
+        symbol [ setData %tmp.53 274 69 76 ];
+        %tmp.53 = getv function %tmp.52 :setData;
+        symbol [ _breathRate %tmp.55 274 78 89 ];
+        %tmp.55 = getv ? :_breathRate;
+        invoke %tmp.52 %tmp.53(%tmp.55);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_47_274_93_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_12_275_73_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_12_275_73_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_275_17_275_73_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 275 19 ]
+        symbol [ System %tmp.56 275 19 25 ];
+        %tmp.56 = getm $.Toybox.System;
+        symbol [ println %tmp.57 275 26 33 ];
+        %tmp.57 = getv function %tmp.56 :println;
+        %tmp.58 = "Error: Breath Rate Field is null";
+        invoke %tmp.56 %tmp.57(%tmp.58);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_275_17_275_73_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_274_12_275_73_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 278 12 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_12_280_12_if_stmt:
+        symbol [ _session %tmp.60 278 17 25 ];
+        %tmp.60 = getv ? :_session;
+        symbol [ isRecording %tmp.61 278 26 37 ];
+        %tmp.61 = getv function %tmp.60 :isRecording;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = not %tmp.62;
+        bf %tmp.63 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_12_280_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_12_280_12_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_41_280_12_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 279 17 ]
+        symbol [ _session %tmp.65 279 17 25 ];
+        %tmp.65 = getv ? :_session;
+        symbol [ stop %tmp.66 279 26 30 ];
+        %tmp.66 = getv function %tmp.65 :stop;
+        invoke %tmp.65 %tmp.66();
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_41_280_12_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_12_280_12_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_278_12_280_12_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 282 12 ]
+        symbol [ System %tmp.67 282 12 18 ];
+        %tmp.67 = getm $.Toybox.System;
+        symbol [ println %tmp.68 282 19 26 ];
+        %tmp.68 = getv function %tmp.67 :println;
+        %tmp.69 = "count: ";
+        symbol [ _breathCount %tmp.71 282 39 51 ];
         %tmp.71 = getv ? :_breathCount;
         %tmp.72 = add %tmp.69 %tmp.71;
-        %tmp.73 = " breaths)";
-        %tmp.74 = add %tmp.72 %tmp.73;
-        symbol [ Graphics %tmp.75 121 129 137 ];
-        %tmp.75 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.76 121 138 157 ];
-        %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.66, %tmp.68, %tmp.74, %tmp.76);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 122 12 ]
-        %tmp.77 = lgetv %dc;
-        symbol [ dc %tmp.77 122 12 14 ];
-        symbol [ drawText %tmp.78 122 15 23 ];
-        %tmp.78 = getv function %tmp.77 :drawText;
-        %tmp.79 = lgetv %centerX.3;
-        symbol [ centerX %tmp.79 122 25 32 ];
-        %tmp.80 = lgetv %screenHeight.2;
-        symbol [ screenHeight %tmp.80 122 36 48 ];
-        %tmp.81 = 4;
-        %tmp.82 = mul %tmp.80 %tmp.81;
-        %tmp.83 = 5;
-        %tmp.84 = div %tmp.82 %tmp.83;
-        symbol [ Graphics %tmp.85 122 59 67 ];
-        %tmp.85 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.86 122 68 78 ];
-        %tmp.86 = getv %tmp.85 :FONT_XTINY;
-        %tmp.87 = "Press START to reset";
-        symbol [ Graphics %tmp.88 122 129 137 ];
-        %tmp.88 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.89 122 138 157 ];
-        %tmp.89 = getv %tmp.88 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.77 %tmp.78(%tmp.79, %tmp.84, %tmp.86, %tmp.87, %tmp.89);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_28_123_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_8_135_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_8_135_8_if_else_false:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 126 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_stop" ]
-        %timeStr.5 = local;
-        symbol [ timeStr %timeStr.5 126 16 23 ];
-        %tmp.90 = self;
-        symbol [ formatTime %tmp.91 126 33 43 ];
-        %tmp.91 = getv function %tmp.90 :formatTime;
-        symbol [ _elapsedTime %tmp.93 126 45 57 ];
-        %tmp.93 = getv ? :_elapsedTime;
-        %tmp.94 = invoke %tmp.90 %tmp.91(%tmp.93);
-        lputv %timeStr.5 %tmp.94;
-        symbol [ timeStr %timeStr.5 126 16 23 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 127 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_stop" ]
-        %timeFont.6 = local;
-        symbol [ timeFont %timeFont.6 127 16 24 ];
-        symbol [ Graphics %tmp.95 127 33 41 ];
-        %tmp.95 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.96 127 42 52 ];
-        %tmp.96 = getv %tmp.95 :FONT_LARGE;
-        lputv %timeFont.6 %tmp.96;
-        symbol [ timeFont %timeFont.6 127 16 24 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 128 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_stop" ]
-        %timeFontHeight.7 = local;
-        symbol [ timeFontHeight %timeFontHeight.7 128 16 30 ];
-        symbol [ Graphics %tmp.97 128 33 41 ];
-        %tmp.97 = getm $.Toybox.Graphics;
-        symbol [ getFontHeight %tmp.98 128 42 55 ];
-        %tmp.98 = getv function %tmp.97 :getFontHeight;
-        %tmp.99 = lgetv %timeFont.6;
-        symbol [ timeFont %tmp.99 128 57 65 ];
-        %tmp.100 = invoke %tmp.97 %tmp.98(%tmp.99);
-        lputv %timeFontHeight.7 %tmp.100;
-        symbol [ timeFontHeight %timeFontHeight.7 128 16 30 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 130 12 ]
-        %tmp.101 = lgetv %dc;
-        symbol [ dc %tmp.101 130 12 14 ];
-        symbol [ drawText %tmp.102 130 15 23 ];
-        %tmp.102 = getv function %tmp.101 :drawText;
-        %tmp.103 = lgetv %centerX.3;
-        symbol [ centerX %tmp.103 130 25 32 ];
-        %tmp.104 = lgetv %screenHeight.2;
-        symbol [ screenHeight %tmp.104 130 34 46 ];
-        %tmp.105 = 2;
-        %tmp.106 = div %tmp.104 %tmp.105;
-        %tmp.107 = lgetv %timeFontHeight.7;
-        symbol [ timeFontHeight %tmp.107 130 55 69 ];
-        %tmp.108 = 2;
-        %tmp.109 = div %tmp.107 %tmp.108;
-        %tmp.110 = sub %tmp.106 %tmp.109;
-        %tmp.111 = lgetv %timeFont.6;
-        symbol [ timeFont %tmp.111 130 77 85 ];
-        %tmp.112 = lgetv %timeStr.5;
-        symbol [ timeStr %tmp.112 130 87 94 ];
-        symbol [ Graphics %tmp.113 130 96 104 ];
-        %tmp.113 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.114 130 105 124 ];
-        %tmp.114 = getv %tmp.113 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.101 %tmp.102(%tmp.103, %tmp.110, %tmp.111, %tmp.112, %tmp.114);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 132 12 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_stop" ]
-        %promptText.8 = local;
-        symbol [ promptText %promptText.8 132 16 26 ];
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_begin:
-        symbol [ _isRunning %tmp.116 132 29 39 ];
-        %tmp.116 = getv ? :_isRunning;
-        bf %tmp.116 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_true:
-        %tmp.117 = "Press START to stop";
-        push %tmp.117;
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_false:
-        %tmp.118 = "Press START to begin";
-        push %tmp.118;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_end:
-        %tmp.119 = phi [%tmp.116 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_begin] [%tmp.117 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_true] [%tmp.118 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_false] [%tmp.119 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_132_29_132_66_end];
-        lputv %promptText.8 %tmp.119;
-        symbol [ promptText %promptText.8 132 16 26 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 134 12 ]
-        %tmp.120 = lgetv %dc;
-        symbol [ dc %tmp.120 134 12 14 ];
-        symbol [ drawText %tmp.121 134 15 23 ];
-        %tmp.121 = getv function %tmp.120 :drawText;
-        %tmp.122 = lgetv %centerX.3;
-        symbol [ centerX %tmp.122 134 25 32 ];
-        %tmp.123 = lgetv %screenHeight.2;
-        symbol [ screenHeight %tmp.123 134 36 48 ];
-        %tmp.124 = 3;
-        %tmp.125 = mul %tmp.123 %tmp.124;
-        %tmp.126 = 4;
-        %tmp.127 = div %tmp.125 %tmp.126;
-        symbol [ Graphics %tmp.128 134 60 68 ];
-        %tmp.128 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.129 134 69 79 ];
-        %tmp.129 = getv %tmp.128 :FONT_XTINY;
-        %tmp.130 = lgetv %promptText.8;
-        symbol [ promptText %tmp.130 134 81 91 ];
-        symbol [ Graphics %tmp.131 134 93 101 ];
-        %tmp.131 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.132 134 102 121 ];
-        %tmp.132 = getv %tmp.131 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.120 %tmp.121(%tmp.122, %tmp.127, %tmp.129, %tmp.130, %tmp.132);
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_124_14_135_8_stop:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_115_8_135_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_105_51_136_4_stop:
+        invoke %tmp.67 %tmp.68(%tmp.72);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 283 12 ]
+        symbol [ System %tmp.73 283 12 18 ];
+        %tmp.73 = getm $.Toybox.System;
+        symbol [ println %tmp.74 283 19 26 ];
+        %tmp.74 = getv function %tmp.73 :println;
+        %tmp.75 = "rate: ";
+        %tmp.76 = lgetv %avgBreathRate.1;
+        symbol [ avgBreathRate %tmp.76 283 38 51 ];
+        %tmp.77 = add %tmp.75 %tmp.76;
+        invoke %tmp.73 %tmp.74(%tmp.77);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 286 12 ]
+        [ "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_30_290_8_start" "_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_30_290_8_stop" ]
+        %saveStatus.2 = local;
+        symbol [ saveStatus %saveStatus.2 286 16 26 ];
+        symbol [ _session %tmp.79 286 29 37 ];
+        %tmp.79 = getv ? :_session;
+        symbol [ save %tmp.80 286 38 42 ];
+        %tmp.80 = getv function %tmp.79 :save;
+        %tmp.81 = invoke %tmp.79 %tmp.80();
+        lputv %saveStatus.2 %tmp.81;
+        symbol [ saveStatus %saveStatus.2 286 16 26 ];
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 288 12 ]
+        symbol [ System %tmp.82 288 12 18 ];
+        %tmp.82 = getm $.Toybox.System;
+        symbol [ println %tmp.83 288 19 26 ];
+        %tmp.83 = getv function %tmp.82 :println;
+        %tmp.84 = "Session Saved: ";
+        %tmp.85 = lgetv %saveStatus.2;
+        symbol [ saveStatus %tmp.85 288 45 55 ];
+        %tmp.86 = add %tmp.84 %tmp.85;
+        invoke %tmp.82 %tmp.83(%tmp.86);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_30_290_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_8_290_72_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_8_290_72_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_290_15_290_72_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 290 17 ]
+        symbol [ System %tmp.87 290 17 23 ];
+        %tmp.87 = getm $.Toybox.System;
+        symbol [ println %tmp.88 290 24 31 ];
+        %tmp.88 = getv function %tmp.87 :println;
+        %tmp.89 = "Error: No active session to save.";
+        invoke %tmp.87 %tmp.88(%tmp.89);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_290_15_290_72_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_259_8_290_72_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 292 9 ]
+        %tmp.90 = null;
+        symbol [ _session ? 292 9 17 ];
+        putv self :_session %tmp.90;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 292 26 ]
+        %tmp.91 = null;
+        symbol [ _devFieldBreathCount ? 292 26 46 ];
+        putv self :_devFieldBreathCount %tmp.91;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 292 55 ]
+        %tmp.92 = null;
+        symbol [ _devFieldBreathRate ? 292 55 74 ];
+        putv self :_devFieldBreathRate %tmp.92;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_252_35_293_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 140; @symbol_functiondef = [startTimer,140,13,23]; ]
-    function startTimer() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_140_34_153_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 142 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_8_152_8_if_stmt:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_13_142_38_begin:
-        symbol [ _isRunning %tmp.2 142 14 24 ];
-        %tmp.2 = getv ? :_isRunning;
-        %tmp.3 = not %tmp.2;
-        bf %tmp.3 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_8_152_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_28_142_38_true:
-        symbol [ _timer %tmp.5 142 28 34 ];
-        %tmp.5 = getv ? :_timer;
-        %tmp.6 = null;
-        %tmp.7 = ne %tmp.5 %tmp.6;
-        push %tmp.7;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_28_142_38_end:
-        %tmp.8 = phi [%tmp.3 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_13_142_38_begin] [%tmp.7 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_28_142_38_true] [%tmp.8 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_28_142_38_end];
-        bf %tmp.8 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_8_152_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_8_152_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_45_152_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 144 13 ]
-        %tmp.9 = true;
-        symbol [ _isRunning ? 144 13 23 ];
-        putv self :_isRunning %tmp.9;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 145 13 ]
-        %tmp.10 = false;
-        symbol [ _showResults ? 145 13 25 ];
-        putv self :_showResults %tmp.10;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 146 13 ]
-        %tmp.11 = 0;
-        symbol [ _elapsedTime ? 146 13 25 ];
-        putv self :_elapsedTime %tmp.11;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 148 13 ]
-        symbol [ _timer %tmp.13 148 13 19 ];
-        %tmp.13 = getv ? :_timer;
-        %tmp.14 = as %tmp.13 { (!Null) };
-        symbol [ start %tmp.15 148 20 25 ];
-        %tmp.15 = getv function %tmp.14 :start;
-        %tmp.16 = self;
-        symbol [ method %tmp.17 148 27 33 ];
-        %tmp.17 = getv function %tmp.16 :method;
-        %tmp.19 = const :timerCallback;
-        symbol [ timerCallback %tmp.19 148 36 49 const ];
-        %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.19);
-        %tmp.21 = 1000;
-        %tmp.22 = true;
-        invoke %tmp.14 %tmp.15(%tmp.20, %tmp.21, %tmp.22);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 150 13 ]
-        symbol [ System %tmp.23 150 13 19 ];
-        %tmp.23 = getm $.Toybox.System;
-        symbol [ println %tmp.24 150 20 27 ];
-        %tmp.24 = getv function %tmp.23 :println;
-        %tmp.25 = "Timer Started (Mode: ";
-        symbol [ _mode %tmp.27 150 55 60 ];
-        %tmp.27 = getv ? :_mode;
-        %tmp.28 = add %tmp.25 %tmp.27;
-        %tmp.29 = ") ";
-        %tmp.30 = add %tmp.28 %tmp.29;
-        invoke %tmp.23 %tmp.24(%tmp.30);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 151 13 ]
-        symbol [ WatchUi %tmp.31 151 13 20 ];
-        %tmp.31 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.32 151 21 34 ];
-        %tmp.32 = getv function %tmp.31 :requestUpdate;
-        invoke %tmp.31 %tmp.32();
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_45_152_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_8_152_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_142_8_152_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_140_34_153_4_stop:
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 296; @symbol_functiondef = [discardSession,296,13,27]; ]
+    function discardSession() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_296_38_309_4_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 298 8 ]
+        symbol [ System %tmp.1 298 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 298 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Discarding session...";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 300 8 ]
+        %tmp.4 = self;
+        symbol [ stopUiTimer %tmp.5 300 8 19 ];
+        %tmp.5 = getv function %tmp.4 :stopUiTimer;
+        invoke %tmp.4 %tmp.5();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 302 8 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_8_306_75_if_stmt:
+        symbol [ _session %tmp.7 302 13 21 ];
+        %tmp.7 = getv ? :_session;
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_8_306_75_if_else_false;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_8_306_75_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_32_306_8_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 304 13 ]
+        symbol [ _session %tmp.11 304 13 21 ];
+        %tmp.11 = getv ? :_session;
+        %tmp.12 = as %tmp.11 { (!Null) };
+        symbol [ discard %tmp.13 304 22 29 ];
+        %tmp.13 = getv function %tmp.12 :discard;
+        invoke %tmp.12 %tmp.13();
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 305 13 ]
+        symbol [ System %tmp.14 305 13 19 ];
+        %tmp.14 = getm $.Toybox.System;
+        symbol [ println %tmp.15 305 20 27 ];
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "Session Discarded.";
+        invoke %tmp.14 %tmp.15(%tmp.16);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_32_306_8_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_8_306_75_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_8_306_75_if_else_false:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_306_15_306_75_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 306 17 ]
+        symbol [ System %tmp.17 306 17 23 ];
+        %tmp.17 = getm $.Toybox.System;
+        symbol [ println %tmp.18 306 24 31 ];
+        %tmp.18 = getv function %tmp.17 :println;
+        %tmp.19 = "No session object exists to discard.";
+        invoke %tmp.17 %tmp.18(%tmp.19);
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_306_15_306_75_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_302_8_306_75_if_end:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 308 8 ]
+        %tmp.20 = null;
+        symbol [ _session ? 308 8 16 ];
+        putv self :_session %tmp.20;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 308 25 ]
+        %tmp.21 = null;
+        symbol [ _devFieldBreathCount ? 308 25 45 ];
+        putv self :_devFieldBreathCount %tmp.21;
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 308 54 ]
+        %tmp.22 = null;
+        symbol [ _devFieldBreathRate ? 308 54 73 ];
+        putv self :_devFieldBreathRate %tmp.22;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_296_38_309_4_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 156; @symbol_functiondef = [stopTimer,156,13,22]; ]
-    function stopTimer() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_156_33_175_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 158 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_8_174_8_if_stmt:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_13_158_37_begin:
-        symbol [ _isRunning %tmp.2 158 13 23 ];
-        %tmp.2 = getv ? :_isRunning;
-        bf %tmp.2 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_8_174_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_27_158_37_true:
-        symbol [ _timer %tmp.4 158 27 33 ];
-        %tmp.4 = getv ? :_timer;
-        %tmp.5 = null;
-        %tmp.6 = ne %tmp.4 %tmp.5;
-        push %tmp.6;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_27_158_37_end:
-        %tmp.7 = phi [%tmp.2 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_13_158_37_begin] [%tmp.6 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_27_158_37_true] [%tmp.7 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_27_158_37_end];
-        bf %tmp.7 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_8_174_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_8_174_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_44_174_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 160 12 ]
-        %tmp.8 = false;
-        symbol [ _isRunning ? 160 12 22 ];
-        putv self :_isRunning %tmp.8;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 161 12 ]
-        symbol [ _timer %tmp.10 161 12 18 ];
-        %tmp.10 = getv ? :_timer;
-        %tmp.11 = as %tmp.10 { (!Null) };
-        symbol [ stop %tmp.12 161 19 23 ];
-        %tmp.12 = getv function %tmp.11 :stop;
-        invoke %tmp.11 %tmp.12();
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 162 12 ]
-        symbol [ System %tmp.13 162 12 18 ];
-        %tmp.13 = getm $.Toybox.System;
-        symbol [ println %tmp.14 162 19 26 ];
-        %tmp.14 = getv function %tmp.13 :println;
-        %tmp.15 = "Timer Stopped. Elapsed: ";
-        symbol [ _elapsedTime %tmp.17 162 57 69 ];
-        %tmp.17 = getv ? :_elapsedTime;
-        %tmp.18 = add %tmp.15 %tmp.17;
-        invoke %tmp.13 %tmp.14(%tmp.18);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 164 12 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_stmt:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_17_164_52_begin:
-        symbol [ _elapsedTime %tmp.20 164 17 29 ];
-        %tmp.20 = getv ? :_elapsedTime;
-        %tmp.21 = 0;
-        %tmp.22 = gt %tmp.20 %tmp.21;
-        bf %tmp.22 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_37_164_52_true:
-        symbol [ _breathCount %tmp.24 164 37 49 ];
-        %tmp.24 = getv ? :_breathCount;
-        %tmp.25 = 0;
-        %tmp.26 = gt %tmp.24 %tmp.25;
-        push %tmp.26;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_37_164_52_end:
-        %tmp.27 = phi [%tmp.22 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_17_164_52_begin] [%tmp.26 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_37_164_52_true] [%tmp.27 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_37_164_52_end];
-        bf %tmp.27 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_else_false;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_56_168_12_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 166 21 ]
-        symbol [ _breathCount %tmp.29 166 35 47 ];
-        %tmp.29 = getv ? :_breathCount;
-        symbol [ _elapsedTime %tmp.31 166 52 64 ];
-        %tmp.31 = getv ? :_elapsedTime;
-        %tmp.32 = 60.0f;
-        %tmp.33 = div %tmp.31 %tmp.32;
-        %tmp.34 = div %tmp.29 %tmp.33;
-        symbol [ _resultRate ? 166 21 32 ];
-        putv self :_resultRate %tmp.34;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_56_168_12_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_else_false:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_168_19_168_41_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 168 21 ]
-        %tmp.35 = 0.0f;
-        symbol [ _resultRate ? 168 21 32 ];
-        putv self :_resultRate %tmp.35;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_168_19_168_41_stop:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_164_12_168_41_if_end:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 170 12 ]
-        %tmp.36 = true;
-        symbol [ _showResults ? 170 12 24 ];
-        putv self :_showResults %tmp.36;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 172 12 ]
-        symbol [ WatchUi %tmp.37 172 12 19 ];
-        %tmp.37 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.38 172 20 33 ];
-        %tmp.38 = getv function %tmp.37 :requestUpdate;
-        invoke %tmp.37 %tmp.38();
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_44_174_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_8_174_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_158_8_174_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_156_33_175_4_stop:
-    }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 178; @symbol_functiondef = [resetTimer,178,13,23]; ]
-    function resetTimer() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_178_34_189_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 180 8 ]
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_8_188_8_if_stmt:
-        symbol [ _showResults %tmp.2 180 13 25 ];
-        %tmp.2 = getv ? :_showResults;
-        bf %tmp.2 @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_8_188_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_8_188_8_if_true:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_28_188_8_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 182 12 ]
-        %tmp.3 = false;
-        symbol [ _showResults ? 182 12 24 ];
-        putv self :_showResults %tmp.3;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 183 12 ]
-        %tmp.4 = 0;
-        symbol [ _elapsedTime ? 183 12 24 ];
-        putv self :_elapsedTime %tmp.4;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 184 12 ]
-        %tmp.5 = 0.0f;
-        symbol [ _resultRate ? 184 12 23 ];
-        putv self :_resultRate %tmp.5;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 186 12 ]
-        symbol [ System %tmp.6 186 12 18 ];
-        %tmp.6 = getm $.Toybox.System;
-        symbol [ println %tmp.7 186 19 26 ];
-        %tmp.7 = getv function %tmp.6 :println;
-        %tmp.8 = "Timer Reset";
-        invoke %tmp.6 %tmp.7(%tmp.8);
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 187 12 ]
-        symbol [ WatchUi %tmp.9 187 12 19 ];
-        %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.10 187 20 33 ];
-        %tmp.10 = getv function %tmp.9 :requestUpdate;
-        invoke %tmp.9 %tmp.10();
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_28_188_8_stop:
-        goto @_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_8_188_8_if_end;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_180_8_188_8_if_end:
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_178_34_189_4_stop:
-    }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 192; @symbol_functiondef = [timerCallback,192,13,26]; ]
-    function timerCallback() as Void {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_192_37_196_4_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 194 8 ]
-        symbol [ _elapsedTime %tmp.3 194 8 20 ];
-        %tmp.3 = getv ? :_elapsedTime;
-        %tmp.4 = add %tmp.3 1;
-        symbol [ _elapsedTime ? 194 8 20 ];
-        putv self :_elapsedTime dup %tmp.4;
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 195 8 ]
-        symbol [ WatchUi %tmp.5 195 8 15 ];
-        %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.6 195 16 29 ];
-        %tmp.6 = getv function %tmp.5 :requestUpdate;
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 315; @symbol_functiondef = [onShow,315,13,19]; ]
+    function onShow() as Void {
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_30_315_80_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 315 32 ]
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_32_315_78_if_stmt:
+        symbol [ _session %tmp.2 315 37 45 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_32_315_78_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_32_315_78_if_true:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_56_315_78_start:
+[ "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc" 315 58 ]
+        %tmp.5 = self;
+        symbol [ resumeMeditation %tmp.6 315 58 74 ];
+        %tmp.6 = getv function %tmp.5 :resumeMeditation;
         invoke %tmp.5 %tmp.6();
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_192_37_196_4_stop:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_56_315_78_stop:
+        goto @_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_32_315_78_if_end;
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_32_315_78_if_end:
+_home_w5hacksphere_Projects_inhale1_source_views_BreathCountView_mc_315_30_315_80_stop:
     }
-    [ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 199; @symbol_functiondef = [formatTime,199,21,31]; @symbol_param<0> = [totalSeconds,199,33,45]; @symbol_param<0>_type<0> = [Lang,199,49,53]; @symbol_param<0>_type<1> = [Number,199,54,60]; @symbol_return<0> = [Lang,199,66,70]; @symbol_return<1> = [String,199,71,77]; ]
-    private
-    function formatTime(totalSeconds as Lang.Number) as Lang.String {
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_199_78_204_97_start:
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 201 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_199_78_204_97_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_199_78_204_97_stop" ]
-        %minutes.1 = local;
-        symbol [ minutes %minutes.1 201 12 19 ];
-        %tmp.1 = lgetv %totalSeconds;
-        symbol [ totalSeconds %tmp.1 201 22 34 ];
-        %tmp.2 = 60;
-        %tmp.3 = div %tmp.1 %tmp.2;
-        lputv %minutes.1 %tmp.3;
-        symbol [ minutes %minutes.1 201 12 19 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 202 8 ]
-        [ "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_199_78_204_97_start" "_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_199_78_204_97_stop" ]
-        %seconds.2 = local;
-        symbol [ seconds %seconds.2 202 12 19 ];
-        %tmp.4 = lgetv %totalSeconds;
-        symbol [ totalSeconds %tmp.4 202 22 34 ];
-        %tmp.5 = 60;
-        %tmp.6 = mod %tmp.4 %tmp.5;
-        lputv %seconds.2 %tmp.6;
-        symbol [ seconds %seconds.2 202 12 19 ];
-[ "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc" 204 8 ]
-        symbol [ Lang %tmp.7 204 15 19 ];
-        %tmp.7 = getm $.Toybox.Lang;
-        symbol [ format %tmp.8 204 20 26 ];
-        %tmp.8 = getv function %tmp.7 :format;
-        %tmp.9 = "$1$:$2$";
-        %tmp.10 = newa 2;
-        %tmp.11 = lgetv %minutes.1;
-        symbol [ minutes %tmp.11 204 41 48 ];
-        symbol [ format %tmp.12 204 49 55 ];
-        %tmp.12 = getv function %tmp.11 :format;
-        %tmp.13 = "%02d";
-        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
-        %tmp.15 = dup %tmp.10;
-        %tmp.16 = aputv %tmp.15 0 %tmp.14;
-        %tmp.17 = lgetv %seconds.2;
-        symbol [ seconds %tmp.17 204 67 74 ];
-        symbol [ format %tmp.18 204 75 81 ];
-        %tmp.18 = getv function %tmp.17 :format;
-        %tmp.19 = "%02d";
-        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
-        %tmp.21 = dup %tmp.16;
-        %tmp.22 = aputv %tmp.21 1 %tmp.20;
-        %tmp.23 = invoke %tmp.7 %tmp.8(%tmp.9, %tmp.22);
-        ret %tmp.23;
-_home_w5hacksphere_Projects_BreathCount_source_views_BreathCountView_mc_199_78_204_97_stop:
+    [ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 318; @symbol_functiondef = [onHide,318,13,19]; ]
+    function onHide() as Void {
     }
 }
-[ @file = "/home/w5hacksphere/Projects/BreathCount/source/views/BreathCountView.mc"; @line = 1; ]
+[ @file = "/home/w5hacksphere/Projects/inhale1/source/views/BreathCountView.mc"; @line = 1; ]
 <init> {
 }

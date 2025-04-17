@@ -6,12 +6,12 @@ using Toybox.Lang;
 
 class FreestyleCountPickerDelegate extends WatchUi.PickerDelegate {
 
-    private var _breathCountView        as BreathCountView; // Reference to our mode-aware view
+    private var _meditationView        as MeditationView; // Reference to our mode-aware view
 
-    function initialize( breathCountView as BreathCountView ) {
+    function initialize( meditationView as MeditationView ) {
         
         PickerDelegate.initialize();
-        _breathCountView = breathCountView;        
+        _meditationView = meditationView;        
     }   
 
 
@@ -21,14 +21,14 @@ class FreestyleCountPickerDelegate extends WatchUi.PickerDelegate {
 
         System.println( "Freestyle Breaths entered: " + breathCount );
 
-        _breathCountView._breathCount = breathCount;
+        _meditationView._breathCount = breathCount;
 
-        _breathCountView.saveSession();
+        _meditationView.saveSession();
 
 
         WatchUi.pushView( 
-            new ResultsView( _breathCountView ), 
-            new ResultsDelegate( _breathCountView._mode ), 
+            new ResultsView( _meditationView ), 
+            new ResultsDelegate( _meditationView._mode ), 
             WatchUi.SLIDE_LEFT 
         );
 
