@@ -15,5 +15,6 @@ function makeMainMenu() as WatchUi.Menu2 {
             menu.addItem( new WatchUi.MenuItem( "Freestyle", "Set Count After",  :freestyle, {} ) );
             menu.addItem( new WatchUi.MenuItem( "Options",   "Settings",         :options,   {} ) );
 
+            menu.setIcon( Rez.Drawables.main_menu_icon );
         return menu;
 }

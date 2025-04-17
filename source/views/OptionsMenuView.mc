@@ -24,12 +24,8 @@ class OptionsMenuView extends WatchUi.Menu2 {
     /**
      * Called when the View is shown. Reload the menu by creating a new one.
      */
-    function onShow() as Void {
+    function onShow() as Void { initialize(); }
 
-        Menu2.initialize( { :title=>"Options" } ); // Create a new Menu2
-        
-        loadMenu();
-    }
 
     /**
      * Helper function to load the menu items.
@@ -50,6 +46,9 @@ class OptionsMenuView extends WatchUi.Menu2 {
             :setDailyCount,
             {}
         ) );
+
+
+        setIcon( Rez.Drawables.options_menu_icon );
     }
 
     // We no longer need onUpdate or onLayout as Menu2 handles its own drawing.

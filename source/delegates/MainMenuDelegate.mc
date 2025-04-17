@@ -47,7 +47,7 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
 
 
             WatchUi.pushView(
-                new CountPickerView( "set today's count", defaultCount ), 
+                new CountPickerView( "set count", defaultCount ), 
                 new CustomPickerDelegate(), 
                 WatchUi.SLIDE_LEFT
             );
@@ -56,8 +56,8 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
 
             System.println( "Freestyle mode selected - launching timer" );
 
-            var view     = new BreathCountView(     :freestyle, null );
-            var delegate = new BreathCountDelegate(  view            );
+            var view     = new SessionView(     :freestyle, null );
+            var delegate = new SessionDelegate(  view            );
             
             WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
 

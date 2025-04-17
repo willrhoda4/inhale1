@@ -6,7 +6,7 @@ using Toybox.Lang;
  * Input Delegate class for the BreathCount Timer.
  * No major changes needed yet for mode handling, as View holds the state.
  */
-class BreathCountDelegate extends WatchUi.BehaviorDelegate {
+class SessionDelegate extends WatchUi.BehaviorDelegate {
 
     private var _view as BreathCountView; // Reference to our mode-aware view
 

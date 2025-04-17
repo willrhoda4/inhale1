@@ -1,96 +1,67 @@
 using Toybox.WatchUi;
-using Toybox.System;
+using Toybox.Application;
 using Toybox.Lang;
 using Toybox.Graphics;
 
-class ResultsView extends WatchUi.View {
+/**
+ * View class for the Options/Settings menu.
+ * NOW EXTENDS Menu2 DIRECTLY.
+ */
+class ResultsView extends WatchUi.Menu2 {
 
-    private var _elapsedTime as Lang.Number;
-    private var _breathCount as Lang.Number;
-    private var _avgBreathRate as Lang.Float;  // Add this
 
-    function initialize(elapsedTime as Lang.Number, breathCount as Lang.Number, avgBreathRate as Lang.Float) { //add avgBreathRate
-        View.initialize();
-        _elapsedTime = elapsedTime;
-        _breathCount = breathCount;
-        _avgBreathRate = avgBreathRate;
+
+    private var _breathCountView as BreathCountView; // Holds the reference to the BreathCountView
+    /**
+     * Constructor. Initializes the options menu.
+     */
+    function initialize( breathCountView as BreathCountView) {
+
+
+        _breathCountView = breathCountView; // Store the reference to the BreathCountView 
+        // Call the parent Menu2's initialize
+        Menu2.initialize( { :title=>"Session Summary" } );
+        
+        loadMenu();
     }
 
-    function onLayout(dc as Graphics.Dc) {
 
-        setLayout([
-            new WatchUi.Text({
-                :text => "Session Results",
-                :color => Graphics.COLOR_WHITE,
-                :font => Graphics.FONT_LARGE,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 20,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-            new WatchUi.Text({
-                :text => "Time:",
-                :color => Graphics.COLOR_WHITE,
-                :font => Graphics.FONT_MEDIUM,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 70,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-            new WatchUi.Text({
-                :text => formatTime(_elapsedTime),  // Use helper
-                :color => Graphics.COLOR_YELLOW,
-                :font => Graphics.FONT_MEDIUM,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 100,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-            new WatchUi.Text({
-                :text => "Breaths:",
-                :color => Graphics.COLOR_WHITE,
-                :font => Graphics.FONT_MEDIUM,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 130,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-            new WatchUi.Text({
-                :text => _breathCount.toString(),
-                :color => Graphics.COLOR_YELLOW,
-                :font => Graphics.FONT_MEDIUM,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 160,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-             new WatchUi.Text({  //display average breath rate.
-                :text => "Avg Rate:",
-                :color => Graphics.COLOR_WHITE,
-                :font => Graphics.FONT_MEDIUM,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 190,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-            new WatchUi.Text({
-                :text => _avgBreathRate.format("%.2f") + " bpm",
-                :color => Graphics.COLOR_YELLOW,
-                :font => Graphics.FONT_MEDIUM,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 220,
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            }),
-            new WatchUi.Text({
-                :text => "Press BACK to return",
-                :color => Graphics.COLOR_DK_GRAY,
-                :font => Graphics.FONT_SMALL,
-                :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY => 270,  // Adjust as needed
-                :justification => Graphics.TEXT_JUSTIFY_CENTER
-            })
-        ]);
+    /**
+     * Called when the View is shown. Reload the menu by creating a new one.
+     */
+    function onShow() as Void { initialize( _breathCountView ); } 
+
+
+    /**
+     * Helper function to load the menu items.
+     */
+    function loadMenu() as Void {
+
+
+
+        addItem( new WatchUi.MenuItem(
+            formatTime( _breathCountView._elapsedTime ),
+            "total time spent",
+            null,
+            {}
+        ) );
+    
+        addItem( new WatchUi.MenuItem(
+            _breathCountView._breathCount+" breaths",
+            "total breath count",
+            null,
+            {}
+        ) );
+
+        addItem( new WatchUi.MenuItem(
+            _breathCountView._breathRate.format("%.2f")+" bpm",
+            "breaths per minute",
+            null,
+            {}
+        ) );    
+
+        setIcon( Rez.Drawables.results_view_icon ); 
     }
 
-    function onShow() {
-        View.onShow();
-    }
-
-    function onUpdate(dc as Graphics.Dc) {
-        View.onUpdate(dc);
-    }
+    // We no longer need onUpdate or onLayout as Menu2 handles its own drawing.
 }

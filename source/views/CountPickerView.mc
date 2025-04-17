@@ -21,6 +21,7 @@ class CountPickerView extends WatchUi.Picker {
         
         if ( currentCount < -1 || currentCount >= factory.getSize() ) {
             currentCount = 106; // Fallback for 108
+        
         }
 
         Picker.initialize( {

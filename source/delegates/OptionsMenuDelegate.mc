@@ -33,7 +33,7 @@ class OptionsMenuDelegate extends WatchUi.Menu2InputDelegate {
             }
 
             WatchUi.pushView( 
-                new CountPickerView( "set daily count", currentCount ), 
+                new CountPickerView( "set count", currentCount ), 
                 new DailyCountPickerDelegate(), 
                 WatchUi.SLIDE_LEFT
             );

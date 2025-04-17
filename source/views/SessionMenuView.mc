@@ -16,6 +16,7 @@ class SessionMenuView extends WatchUi.Menu2 {
         addItem( new WatchUi.MenuItem( "Resume Session",  "Continue your practice",  :return_session,  null ) );
         addItem( new WatchUi.MenuItem( "Discard Session", "End without saving",      :discard_session, null ) );
 
+        setIcon( Rez.Drawables.session_menu_icon );
     }
 
     function onLayout(dc as Graphics.Dc) as Void {

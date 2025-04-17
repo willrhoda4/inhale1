@@ -13,7 +13,8 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
 
 
     private var _breathCountView as BreathCountView; // Reference to our mode-aware view
-
+    
+    
     function initialize(breathCountView as BreathCountView) {
 
         Menu2InputDelegate.initialize();
@@ -33,8 +34,9 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
             if (_breathCountView._mode == :freestyle) {
 
                 var defaultCount = Application.Storage.getValue( "dailyBreathCount" );
-                var picker       = new CountPickerView( "enter today's total", defaultCount );        
-                
+                var picker       = new CountPickerView( "set count", defaultCount );        
+
+
                 WatchUi.pushView(
                     picker, 
                     new FreestyleCountPickerDelegate( _breathCountView ), 
@@ -50,7 +52,11 @@ class SessionMenuDelegate extends WatchUi.Menu2InputDelegate {
             _breathCountView.saveSession();
 
 
-            
+            WatchUi.pushView( 
+                new ResultsView( _breathCountView ), 
+                new ResultsDelegate( _breathCountView._mode ), 
+                WatchUi.SLIDE_LEFT 
+            );
 
 
 

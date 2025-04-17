@@ -12,11 +12,12 @@ using Toybox.FitContributor;
  * Main View class for the BreathCount Timer.
  * Updated constructor to accept optional parameters (like breath count for custom).
  */
-class BreathCountView extends WatchUi.View {
+class SessionView extends WatchUi.View {
 
     // --- Member Variables ---
     public  var _mode         as Lang.Symbol;
     public  var _breathCount  as Lang.Number; // Now set based on mode and options
+    public  var _breathRate   as Lang.Float; // Breath rate in breaths per minute
     public  var _session      as ActivityRecording.Session or Null; // Nullable type
     public  var _elapsedTime  as Lang.Number; // Elapsed time in milliseconds
 
@@ -43,6 +44,7 @@ class BreathCountView extends WatchUi.View {
         _devFieldBreathCount = null;
         _devFieldBreathRate  = null;
         _elapsedTime         = 0; // Initialize elapsed time
+        _breathRate          = 0.0; // Initialize breath rate
 
         // Initialize breath count based on mode and options
         if ( _mode == :daily ) {
@@ -262,12 +264,14 @@ class BreathCountView extends WatchUi.View {
                                         ? ( _breathCount.toFloat() / ( _elapsedTime / 1000 / 60.0f ) ) 
                                         : 0.0f;
 
+            _breathRate = avgBreathRate; // Update the breath rate variable                                        
+
             // Set Developer Data Fields
             // Add null checks for field objects before calling setData
             if ( _devFieldBreathCount != null ) { _devFieldBreathCount.setData( _breathCount ); }
             else { System.println( "Error: Breath Count Field is null" ); }
             
-            if ( _devFieldBreathRate != null ) { _devFieldBreathRate.setData( avgBreathRate ); }
+            if ( _devFieldBreathRate != null ) { _devFieldBreathRate.setData( _breathRate ); }
             else { System.println( "Error: Breath Rate Field is null" ); }
 
             // Stop (if paused) and Save

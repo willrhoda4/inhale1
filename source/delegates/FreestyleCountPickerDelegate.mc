@@ -6,13 +6,13 @@ using Toybox.Lang;
 
 class FreestyleCountPickerDelegate extends WatchUi.PickerDelegate {
 
-    private var _view        as BreathCountView; // Reference to our mode-aware view
+    private var _breathCountView        as BreathCountView; // Reference to our mode-aware view
 
-    function initialize( view as BreathCountView ) {
+    function initialize( breathCountView as BreathCountView ) {
         
         PickerDelegate.initialize();
-        _view = view;        
-    }
+        _breathCountView = breathCountView;        
+    }   
 
 
     function onAccept( values as Lang.Array) as Lang.Boolean {
@@ -21,13 +21,17 @@ class FreestyleCountPickerDelegate extends WatchUi.PickerDelegate {
 
         System.println( "Freestyle Breaths entered: " + breathCount );
 
-        _view._breathCount = breathCount;
+        _breathCountView._breathCount = breathCount;
 
-        _view.saveSession();
+        _breathCountView.saveSession();
 
-        WatchUi.popView( WatchUi.SLIDE_RIGHT     );
-        WatchUi.popView( WatchUi.SLIDE_IMMEDIATE ); // Go back to picker view
-        WatchUi.popView( WatchUi.SLIDE_IMMEDIATE ); // Go back to picker view
+
+        WatchUi.pushView( 
+            new ResultsView( _breathCountView ), 
+            new ResultsDelegate( _breathCountView._mode ), 
+            WatchUi.SLIDE_LEFT 
+        );
+
 
 
         return true;

@@ -30,8 +30,8 @@ class CustomPickerDelegate extends WatchUi.PickerDelegate {
             Application.Storage.setValue( "customBreathCount", selectedValue );
 
             var options  =     { :breathCount => selectedValue };
-            var view     = new BreathCountView( :custom, options );
-            var delegate = new BreathCountDelegate( view );
+            var view     = new SessionView( :custom, options );
+            var delegate = new SessionDelegate( view );
 
             // Use pushView as requested (Back from timer goes to picker, then menu)
             WatchUi.pushView( view, delegate, WatchUi.SLIDE_LEFT );
